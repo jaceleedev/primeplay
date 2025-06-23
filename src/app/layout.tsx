@@ -1,15 +1,193 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const nanumHuman = localFont({
+  src: [
+    {
+      path: "../../public/fonts/NanumHuman/NanumHumanEL.woff",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/NanumHuman/NanumHumanLight.woff",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/NanumHuman/NanumHumanRegular.woff",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/NanumHuman/NanumHumanBold.woff",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/NanumHuman/NanumHumanEB.woff",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/NanumHuman/NanumHumanHeavy.woff",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-nanum-human",
+  display: "swap",
+  preload: true,
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const nanumMyeongjoYetHangul = localFont({
+  src: [
+    {
+      path: "../../public/fonts/NanumMyeongjoYetHangul/NanumMyeongjo-YetHangul.otf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-nanum-myeongjo-yet-hangul",
+  display: "swap",
+  preload: true,
+});
+
+const paperlogy = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Paperlogy/Paperlogy-1Thin.ttf",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Paperlogy/Paperlogy-2ExtraLight.ttf",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Paperlogy/Paperlogy-3Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Paperlogy/Paperlogy-4Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Paperlogy/Paperlogy-5Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Paperlogy/Paperlogy-6SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Paperlogy/Paperlogy-7Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Paperlogy/Paperlogy-8ExtraBold.ttf",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Paperlogy/Paperlogy-9Black.ttf",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-paperlogy",
+  display: "swap",
+  preload: true,
+});
+
+const sCoreDream = localFont({
+  src: [
+    {
+      path: "../../public/fonts/S-Core_Dream/SCDream1.otf",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/S-Core_Dream/SCDream2.otf",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/S-Core_Dream/SCDream3.otf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/S-Core_Dream/SCDream4.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/S-Core_Dream/SCDream5.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/S-Core_Dream/SCDream6.otf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/S-Core_Dream/SCDream7.otf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/S-Core_Dream/SCDream8.otf",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/S-Core_Dream/SCDream9.otf",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-s-core-dream",
+  display: "swap",
+  preload: true,
+});
+
+const cafe24OhsquareAir = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Cafe24OhsquareAir/Cafe24OhsquareAir-v2.0.woff2",
+      weight: "normal",
+      style: "normal",
+    },
+  ],
+  variable: "--font-cafe24-ohsquare-air",
+  display: "swap",
+  preload: true,
+});
+
+const giants = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Giants/Giants-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Giants/Giants-Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-giants",
+  display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -25,7 +203,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${nanumHuman.variable} ${nanumMyeongjoYetHangul.variable} ${paperlogy.variable} ${sCoreDream.variable} ${cafe24OhsquareAir.variable} ${giants.variable} antialiased`}
       >
         {children}
       </body>
