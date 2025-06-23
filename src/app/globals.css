@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 @theme {
   --font-nanum-human: var(--font-nanum-human), sans-serif;
