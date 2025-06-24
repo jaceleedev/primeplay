@@ -46,6 +46,7 @@ export default function Navbar() {
                   width={69}
                   height={42}
                   className="cursor-pointer"
+                  priority
                 />
               </Link>
             </div>
