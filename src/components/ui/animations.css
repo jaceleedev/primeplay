@@ -12,6 +12,18 @@
   }
 }
 
+/* Fade In Up - 아래에서 위로 올라오며 나타나는 애니메이션 */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(var(--fade-distance, 60px));
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Fade Out Down - 스크롤 인디케이터용 */
 @keyframes fadeOutDown {
   0% {
@@ -49,6 +61,11 @@
 /* Animation Classes */
 .fade-in-down {
   animation: fadeInDown 1.5s ease-out forwards;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-fill-mode: backwards; /* 애니메이션 지연시간 동안 시작 상태 유지 */
 }
 
 .fade-out-down-infinite {
