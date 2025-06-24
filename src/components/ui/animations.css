@@ -1,0 +1,42 @@
+/* Custom Animations Library */
+
+/* Fade In Down - CSS 변수로 거리 조정 가능 */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(var(--fade-distance, -60px));
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade Out Down - 스크롤 인디케이터용 */
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+
+/* Animation Classes */
+.fade-in-down {
+  animation: fadeInDown 1.5s ease-out forwards;
+}
+
+.fade-out-down-infinite {
+  animation: fadeOutDown 1.5s ease-in-out infinite;
+}
+
+/* Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
