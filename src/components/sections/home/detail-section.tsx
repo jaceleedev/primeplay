@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import "@/components/ui/animations.css";
 
@@ -90,8 +90,8 @@ const DetailSection = ({
                   font-paperlogy font-bold last:mb-0
                   ${
                     lineIndex === 0
-                      ? "text-xl sm:text-2xl md:text-4xl lg:text-5xl tracking-[8px] md:tracking-[12px] lg:tracking-[14.88px] mb-6 md:mb-9 lg:mb-12"
-                      : "text-xl sm:text-2xl md:text-4xl lg:text-5xl mb-6 md:mb-9 lg:mb-12"
+                      ? "max-[450px]:text-xl text-2xl md:text-4xl lg:text-5xl tracking-[8px] md:tracking-[12px] lg:tracking-[14.88px] mb-6 md:mb-9 lg:mb-12"
+                      : "max-[450px]:text-xl text-2xl md:text-4xl lg:text-5xl mb-6 md:mb-9 lg:mb-12"
                   }
                   ${isVisible ? "text-scale-animation" : "opacity-0"}
                 `}
