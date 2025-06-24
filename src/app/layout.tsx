@@ -45,7 +45,7 @@ const nanumHuman = localFont({
 const nanumMyeongjoYetHangul = localFont({
   src: [
     {
-      path: "../../public/fonts/NanumMyeongjoYetHangul/NanumMyeongjo-YetHangul.otf",
+      path: "../../public/fonts/NanumMyeongjoYetHangul/NanumMyeongjo-YetHangul.woff2",
       weight: "400",
       style: "normal",
     },
@@ -207,9 +207,11 @@ export default function RootLayout({
       <body
         className={`${nanumHuman.variable} ${nanumMyeongjoYetHangul.variable} ${paperlogy.variable} ${sCoreDream.variable} ${cafe24OhsquareAir.variable} ${giants.variable} antialiased`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <div className="max-w-[1920px] mx-auto">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
