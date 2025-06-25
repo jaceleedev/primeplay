@@ -1,6 +1,7 @@
 import VideoSection from "@/components/sections/home/video-section";
 import ServicesSection from "@/components/sections/viral-marketing/services-section";
 import BackgroundImageSection from "@/components/sections/viral-marketing/background-image-section";
+import ChannelSection from "@/components/sections/viral-marketing/channel-section";
 
 const ViralMarketingPage = () => {
   return (
@@ -33,6 +34,7 @@ const ViralMarketingPage = () => {
         <br className="xl:hidden block" /> 영상 기획부터{" "}
         <br className="min-[400px]:hidden block" /> 촬영 편집까지.
       </BackgroundImageSection>
+      <ChannelSection />
     </main>
   );
 };
