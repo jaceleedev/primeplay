@@ -1,4 +1,5 @@
 import VideoSection from "@/components/sections/home/video-section";
+import SolutionSection from "@/components/sections/web-app-dev/solution-section";
 import WorkProcessSection from "@/components/sections/web-app-dev/work-process-section";
 
 const WebAppDevPage = () => {
@@ -15,6 +16,7 @@ const WebAppDevPage = () => {
         }}
       />
       <WorkProcessSection />
+      <SolutionSection />
     </main>
   );
 };
