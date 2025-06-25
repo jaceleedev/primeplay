@@ -1,13 +1,13 @@
 export interface MetricCardProps {
   defaultText: string;
   hoverText: string;
-  hoverColor?: string;
+  hoverColor: string;
 }
 
 const MetricCard = ({
   defaultText,
   hoverText,
-  hoverColor = "#0a3cff",
+  hoverColor,
 }: MetricCardProps) => {
   return (
     <div
