@@ -1,6 +1,8 @@
 import VideoSection from "@/components/sections/home/video-section";
 import DetailSection from "@/components/sections/home/detail-section";
 import BusinessSolutionSection from "@/components/sections/home/business-solution-section";
+import ProductSection from "@/components/sections/home/product-section";
+import { productCards } from "@/data/product-cards";
 
 export default function Home() {
   return (
@@ -42,6 +44,7 @@ export default function Home() {
         imageAlt="비즈니스 네트워크를 표현하는 기하학적 패턴"
       />
       {/* 여기에 다른 섹션들을 추가하시면 됩니다 */}
+      <ProductSection cards={productCards} />
     </main>
   );
 }
