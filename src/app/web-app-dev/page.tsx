@@ -1,4 +1,5 @@
 import VideoSection from "@/components/sections/home/video-section";
+import WorkProcessSection from "@/components/sections/web-app-dev/work-process-section";
 
 const WebAppDevPage = () => {
   return (
@@ -13,6 +14,7 @@ const WebAppDevPage = () => {
           ],
         }}
       />
+      <WorkProcessSection />
     </main>
   );
 };
