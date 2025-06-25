@@ -13,8 +13,9 @@ const ArrowIcon = () => (
   <Image
     src="/icons/right-arrow.svg"
     alt="오른쪽 화살표 아이콘"
-    width={24}
-    height={44}
+    width={36}
+    height={96}
+    style={{ width: "24px", height: "44px" }}
   />
 );
 
