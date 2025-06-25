@@ -3,6 +3,8 @@ import DetailSection from "@/components/sections/home/detail-section";
 import BusinessSolutionSection from "@/components/sections/home/business-solution-section";
 import ProductSection from "@/components/sections/home/product-section";
 import { productCards } from "@/data/product-cards";
+import PlayToPSection from "@/components/sections/home/play-to-p-section";
+import { metricCards } from "@/data/metric-cards";
 
 export default function Home() {
   return (
@@ -45,6 +47,9 @@ export default function Home() {
       />
       {/* 여기에 다른 섹션들을 추가하시면 됩니다 */}
       <ProductSection cards={productCards} />
+
+      {/* 새로운 섹션 추가 */}
+      <PlayToPSection cards={metricCards} />
     </main>
   );
 }

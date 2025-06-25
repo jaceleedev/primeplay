@@ -6,7 +6,7 @@
   --font-nanum-myeongjo-yet-hangul: var(--font-nanum-myeongjo-yet-hangul), serif;
   --font-paperlogy: var(--font-paperlogy), sans-serif;
   --font-s-core-dream: var(--font-s-core-dream), sans-serif;
-  --font-cafe24-air: var(--font-cafe24-ohsquare-air), sans-serif;
+  --font-cafe24-ohsquare-air: var(--font-cafe24-ohsquare-air), sans-serif;
   --font-giants: var(--font-giants), sans-serif;
 }
 
@@ -158,5 +158,186 @@
 
   .product-card {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* metric-card.css */
+
+.metric-card {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  height: 300px; /* 모바일 높이 조정 */
+  background-color: #d9d9d9;
+  border-radius: 8px;
+  overflow: hidden; /* overflow: hidden 복원 */
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  /* CSS 변수 기본값 */
+  --hover-color: #0a3cff;
+  --curve-radius: 40px; /* 곡선 반지름 변수 */
+}
+
+.metric-top-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 65%;
+  transition: height 0.3s ease;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.metric-bottom-card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 35%;
+  transition: height 0.3s ease;
+  background-color: var(--hover-color);
+  border-top-right-radius: var(--curve-radius); /* 오른쪽 상단 곡선 */
+  z-index: 1; /* ::before 요소가 보이도록 z-index 추가 */
+}
+
+/* 왼쪽 상단에 오목한 곡선 삼각형 추가 */
+.metric-bottom-card::before {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--curve-radius));
+  left: 0;
+  width: var(--curve-radius);
+  height: calc(var(--curve-radius) + 1px); /* 1px 겹쳐서 경계선 틈 제거 */
+  background-color: var(--hover-color);
+  mask: radial-gradient(
+    farthest-corner at top right,
+    transparent calc(var(--curve-radius) - 1px),
+    #000 var(--curve-radius)
+  );
+  -webkit-mask: radial-gradient(
+    farthest-corner at top right,
+    transparent calc(var(--curve-radius) - 1px),
+    #000 var(--curve-radius)
+  );
+}
+
+/* 기본 상태 텍스트 (위쪽 영역) */
+.metric-default-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.metric-default-text {
+  font-family: var(--font-cafe24-ohsquare-air);
+  font-weight: 700;
+  font-size: 26px; /* 폰트 크기 증가 */
+  line-height: 1.2;
+  color: #000;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  text-transform: uppercase; /* 대문자 변환 */
+}
+
+/* 호버 상태 텍스트 (아래쪽 영역) */
+.metric-card-content {
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.metric-hover-text {
+  font-family: var(--font-cafe24-ohsquare-air);
+  font-size: 16px; /* 폰트 크기 증가 */
+  font-weight: 500;
+  line-height: 1.4;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  white-space: pre-line;
+  opacity: 0;
+  transition: opacity 0.3s ease 0.1s;
+}
+
+/* 호버 효과 */
+.metric-card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.metric-card:hover .metric-top-card {
+  height: 25%; /* 더 작게 축소 */
+  transition: height 0.3s ease;
+}
+
+.metric-card:hover .metric-bottom-card {
+  height: 75%; /* 더 크게 확장 */
+  transition: height 0.3s ease;
+}
+
+.metric-card:hover .metric-default-text {
+  opacity: 1; /* 투명도 효과 제거 */
+}
+
+.metric-card:hover .metric-hover-text {
+  opacity: 1; /* 호버 텍스트를 보이게 */
+  transition: opacity 0.3s ease 0.1s;
+}
+
+/* 450px 이하 모바일 뷰포트에서 호버 효과 상시 적용 */
+@media (max-width: 450px) {
+  .metric-card .metric-top-card {
+    height: 25%;
+  }
+  .metric-card .metric-bottom-card {
+    height: 75%;
+  }
+  .metric-card .metric-hover-text {
+    opacity: 1;
+  }
+}
+
+/* 반응형 디자인 */
+@media (min-width: 640px) {
+  .metric-card {
+    max-width: 300px;
+    height: 325px;
+  }
+
+  .metric-default-text {
+    font-size: 28px; /* 폰트 크기 증가 */
+  }
+
+  .metric-hover-text {
+    font-size: 17px; /* 폰트 크기 증가 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .metric-card {
+    max-width: 320px;
+    height: 350px;
+  }
+
+  .metric-default-text {
+    font-size: 30px; /* 폰트 크기 증가 */
+  }
+
+  .metric-hover-text {
+    font-size: 18px; /* 폰트 크기 증가 */
+    line-height: 1.5;
   }
 }
