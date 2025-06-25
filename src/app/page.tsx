@@ -5,6 +5,7 @@ import ProductSection from "@/components/sections/home/product-section";
 import { productCards } from "@/data/product-cards";
 import PlayToPSection from "@/components/sections/home/play-to-p-section";
 import { metricCards } from "@/data/metric-cards";
+import ContactSection from "@/components/sections/home/contact-section";
 
 export default function Home() {
   return (
@@ -45,11 +46,12 @@ export default function Home() {
         imageSrc="/images/business-network.webp"
         imageAlt="비즈니스 네트워크를 표현하는 기하학적 패턴"
       />
-      {/* 여기에 다른 섹션들을 추가하시면 됩니다 */}
       <ProductSection cards={productCards} />
-
-      {/* 새로운 섹션 추가 */}
       <PlayToPSection cards={metricCards} />
+      <ContactSection
+        imageSrc="/images/handshake.webp"
+        imageAlt="전문가들의 협력을 상징하는 악수 이미지"
+      />
     </main>
   );
 }
