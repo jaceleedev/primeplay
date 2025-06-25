@@ -1,15 +1,22 @@
 import VideoSection from "@/components/sections/home/video-section";
+import ServicesSection from "@/components/sections/viral-marketing/services-section";
 
-export default function ViralMarketing() {
+const ViralMarketingPage = () => {
   return (
     <main>
       <VideoSection
         videoSrc="/videos/viral-marketing-background.webm"
-        mainTitle="디지털 마케팅의 모든 것"
+        mainTitle="결과로 증명하는 바이럴 마케팅"
         subTexts={{
-          korean: ["세상 모든 디지털 마케팅의 종합 솔루션"],
+          korean: [
+            "수많은 성공 사례를 통해 입증된 전문가 그룹이",
+            "가장 효과적인 마케팅 전략을 제시합니다.",
+          ],
         }}
       />
+      <ServicesSection />
     </main>
   );
-}
+};
+
+export default ViralMarketingPage;
