@@ -1,7 +1,53 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 
 export default function Navbar() {
+  const detailsRef = useRef<HTMLDetailsElement>(null);
+  const mobileDetailsRef = useRef<HTMLDetailsElement>(null);
+
+  const handleLinkClick = () => {
+    // Close desktop dropdown
+    if (detailsRef.current) {
+      detailsRef.current.removeAttribute("open");
+    }
+    // Close mobile dropdown
+    if (mobileDetailsRef.current) {
+      mobileDetailsRef.current.removeAttribute("open");
+    }
+    // Close mobile sidebar
+    const drawerToggle = document.getElementById(
+      "my-drawer-3"
+    ) as HTMLInputElement | null;
+    if (drawerToggle) {
+      drawerToggle.checked = false;
+    }
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        detailsRef.current &&
+        !detailsRef.current.contains(event.target as Node)
+      ) {
+        detailsRef.current.removeAttribute("open");
+      }
+      if (
+        mobileDetailsRef.current &&
+        !mobileDetailsRef.current.contains(event.target as Node)
+      ) {
+        mobileDetailsRef.current.removeAttribute("open");
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, []);
+
   return (
     <nav className="fixed top-0 left-1/2 transform -translate-x-1/2 w-full z-50">
       <div className="drawer">
@@ -58,25 +104,53 @@ export default function Navbar() {
             <div className="hidden md:block mr-8 md:mr-10 lg:mr-16 xl:mr-30 2xl:mr-40">
               <ul className="menu menu-horizontal space-x-6 md:space-x-8 lg:space-x-10 xl:space-x-16 2xl:space-x-20">
                 <li>
-                  <Link
-                    href="/business"
-                    className="text-white text-center font-nanum-human text-2xl font-bold leading-normal hover:bg-transparent"
-                  >
-                    사업영역
-                  </Link>
+                  <details ref={detailsRef}>
+                    <summary className="text-white text-center font-nanum-human text-2xl font-bold leading-normal hover:bg-transparent flex items-center">
+                      사업영역
+                    </summary>
+                    <ul
+                      className="menu rounded-box z-[1] w-52 p-2 shadow-lg mt-4"
+                      style={{
+                        background: "rgba(72, 72, 72, 0.9)",
+                        backdropFilter: "blur(4px)",
+                        border: "1px solid rgba(255, 255, 255, 0.1)",
+                      }}
+                    >
+                      <li>
+                        <Link
+                          href="/viral-marketing"
+                          className="text-white font-nanum-human text-lg font-medium rounded-md"
+                          onClick={handleLinkClick}
+                        >
+                          바이럴 마케팅
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/web-app-dev"
+                          className="text-white font-nanum-human text-lg font-medium rounded-md"
+                          onClick={handleLinkClick}
+                        >
+                          Web/App 개발
+                        </Link>
+                      </li>
+                    </ul>
+                  </details>
                 </li>
                 <li>
                   <Link
-                    href="/faq"
+                    href="/"
                     className="text-white text-center font-nanum-human text-2xl font-bold leading-normal hover:bg-transparent"
+                    onClick={handleLinkClick}
                   >
                     자주 묻는 질문
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/support"
+                    href="/"
                     className="text-white text-center font-nanum-human text-2xl font-bold leading-normal hover:bg-transparent"
+                    onClick={handleLinkClick}
                   >
                     고객지원
                   </Link>
@@ -101,25 +175,46 @@ export default function Navbar() {
             }}
           >
             <li className="mb-4">
-              <Link
-                href="/business"
-                className="text-white text-center font-nanum-human text-2xl font-bold leading-normal"
-              >
-                사업영역
-              </Link>
+              <details ref={mobileDetailsRef}>
+                <summary className="text-white font-nanum-human text-2xl font-bold leading-normal flex items-center">
+                  사업영역
+                </summary>
+                <ul className="p-2">
+                  <li className="mb-2">
+                    <Link
+                      href="/viral-marketing"
+                      className="text-white text-center font-nanum-human text-lg font-medium"
+                      onClick={handleLinkClick}
+                    >
+                      바이럴 마케팅
+                    </Link>
+                  </li>
+                  <li className="mb-2">
+                    <Link
+                      href="/web-app-dev"
+                      className="text-white text-center font-nanum-human text-lg font-medium"
+                      onClick={handleLinkClick}
+                    >
+                      Web/App 개발
+                    </Link>
+                  </li>
+                </ul>
+              </details>
             </li>
             <li className="mb-4">
               <Link
-                href="/faq"
-                className="text-white text-center font-nanum-human text-2xl font-bold leading-normal"
+                href="/"
+                className="text-white font-nanum-human text-2xl font-bold leading-normal flex"
+                onClick={handleLinkClick}
               >
                 자주 묻는 질문
               </Link>
             </li>
             <li className="mb-4">
               <Link
-                href="/support"
-                className="text-white text-center font-nanum-human text-2xl font-bold leading-normal"
+                href="/"
+                className="text-white font-nanum-human text-2xl font-bold leading-normal"
+                onClick={handleLinkClick}
               >
                 고객지원
               </Link>
