@@ -36,7 +36,7 @@ const WorkProcessSection = () => {
         <p
           className="
             font-paperlogy font-medium text-black text-center
-            text-2xl sm:text-3xl md:text-4xl lg:text-[48px]
+            text-2xl md:text-3xl lg:text-4xl
             mb-16 sm:mb-20 md:mb-24 lg:mb-28 xl:mb-32"
         >
           프로젝트의 진행 단계에 <br className="min-[470px]:hidden block" />{" "}
