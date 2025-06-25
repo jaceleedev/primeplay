@@ -35,25 +35,25 @@ export default function Footer() {
               SERVICE INFO
             </h6>
             <Link
-              href="/service"
+              href="/"
               className="text-white font-paperlogy text-sm font-normal leading-normal hover:opacity-80 block w-fit mb-2"
             >
               서비스 안내
             </Link>
             <Link
-              href="/faq"
+              href="/"
               className="text-white font-paperlogy text-sm font-normal leading-normal hover:opacity-80 block w-fit mb-2"
             >
               자주 묻는 질문
             </Link>
             <Link
-              href="/support"
+              href="/"
               className="text-white font-paperlogy text-sm font-normal leading-normal hover:opacity-80 block w-fit mb-2"
             >
               고객지원
             </Link>
             <Link
-              href="/privacy"
+              href="/"
               className="text-white font-paperlogy text-sm font-normal leading-normal hover:opacity-80 block w-fit"
             >
               개인정보처리방침
