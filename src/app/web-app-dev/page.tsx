@@ -2,6 +2,7 @@ import VideoSection from "@/components/sections/home/video-section";
 import MoreThanSolutionsSection from "@/components/sections/web-app-dev/more-than-solutions-section";
 import SolutionSection from "@/components/sections/web-app-dev/solution-section";
 import WorkProcessSection from "@/components/sections/web-app-dev/work-process-section";
+import BlockchainServiceSection from "@/components/sections/web-app-dev/blockchain-service-section";
 
 const WebAppDevPage = () => {
   return (
@@ -26,6 +27,7 @@ const WebAppDevPage = () => {
       <WorkProcessSection />
       <SolutionSection />
       <MoreThanSolutionsSection />
+      <BlockchainServiceSection />
     </main>
   );
 };
