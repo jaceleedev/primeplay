@@ -135,6 +135,26 @@ export default function Navbar() {
                           Web/App 개발
                         </Link>
                       </li>
+                      <li>
+                        <a
+                          href="https://csi-play.com"
+                          target="_blank"
+                          className="text-white font-nanum-human text-base font-medium rounded-md"
+                          onClick={handleLinkClick}
+                        >
+                          CSI PLAY
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://ty-play.com"
+                          target="_blank"
+                          className="text-white font-nanum-human text-base font-medium rounded-md"
+                          onClick={handleLinkClick}
+                        >
+                          TY PLAY
+                        </a>
+                      </li>
                     </ul>
                   </details>
                 </li>
@@ -198,6 +218,26 @@ export default function Navbar() {
                     >
                       Web/App 개발
                     </Link>
+                  </li>
+                  <li className="mb-2">
+                    <a
+                      href="https://csi-play.com"
+                      target="_blank"
+                      className="text-white text-center font-nanum-human text-base font-medium"
+                      onClick={handleLinkClick}
+                    >
+                      CSI PLAY
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a
+                      href="https://ty-play.com"
+                      target="_blank"
+                      className="text-white text-center font-nanum-human text-base font-medium"
+                      onClick={handleLinkClick}
+                    >
+                      TY PLAY
+                    </a>
                   </li>
                 </ul>
               </details>

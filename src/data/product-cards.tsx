@@ -15,7 +15,7 @@ export const productCards: ProductCardProps[] = [
     description:
       "결제대행사(PG)를 통해 빠른 정산과 안정적인 서비스를 제공합니다.",
     href: "/",
-    isExternal: true,
+    isExternal: false,
     gradientColors: { from: "#C60000", to: "#FF6D00" },
   },
   {
@@ -40,7 +40,7 @@ export const productCards: ProductCardProps[] = [
     title: "SNS PLAY",
     description: "SNS에서 적용 가능한 마케팅 전용 프로그램을 제공합니다.",
     href: "/",
-    isExternal: true,
+    isExternal: false,
     gradientColors: { from: "#C60000", to: "#FF6D00" },
   },
   {
