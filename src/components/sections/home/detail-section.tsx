@@ -66,8 +66,8 @@ const DetailSection = ({
 
   return (
     <section ref={sectionRef} className="relative w-full">
-      {/* 배경 이미지 컨테이너 - 비율 유지, 최대/최소 높이 설정 */}
-      <div className="relative w-full aspect-[4096/2734] min-h-[400px] md:min-h-[500px] max-h-[1024px] overflow-hidden">
+      {/* 배경 이미지 컨테이너 - 개선된 반응형 높이 설정 */}
+      <div className="relative w-full h-[70vh] sm:h-[65vh] md:h-[60vh] lg:h-[70vh] xl:h-[65vh] min-h-[500px] max-h-[800px] overflow-hidden">
         <Image
           src={imageSrc}
           alt={imageAlt}
@@ -82,7 +82,7 @@ const DetailSection = ({
 
         {/* 텍스트 오버레이 */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center text-white px-4">
+          <div className="text-center text-white px-4 max-w-5xl mx-auto">
             {lines.map((line, lineIndex) => (
               <div
                 key={lineIndex}
@@ -90,8 +90,8 @@ const DetailSection = ({
                   font-paperlogy font-bold last:mb-0
                   ${
                     lineIndex === 0
-                      ? "max-[450px]:text-xl text-2xl md:text-4xl lg:text-5xl tracking-[8px] md:tracking-[12px] lg:tracking-[14.88px] mb-6 md:mb-9 lg:mb-12"
-                      : "max-[450px]:text-xl text-2xl md:text-4xl lg:text-5xl mb-6 md:mb-9 lg:mb-12"
+                      ? "text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-[4px] sm:tracking-[6px] md:tracking-[8px] lg:tracking-[10px] xl:tracking-[12px] mb-4 sm:mb-6 md:mb-8 lg:mb-10"
+                      : "text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 sm:mb-6 md:mb-8 lg:mb-10"
                   }
                   ${isVisible ? "text-scale-animation" : "opacity-0"}
                 `}

@@ -12,16 +12,37 @@ export default function Home() {
     <main>
       <VideoSection
         videoSrc="/videos/main-background.webm"
-        mainTitle="세상에 없던 새로운 연결고리"
+        mainTitle={
+          <>
+            세상에 없던 새로운 <br className="max-[400px]:block hidden" />
+            연결고리
+          </>
+        }
         subTexts={{
-          korean: [
-            "자신을 변화시키는 가장 빠른 방법은,",
-            "자신이 되고 싶은 사람들과 많은 시간을 보내는 것이다.",
-          ],
-          english: [
-            "The fastest way to change yourself is to hang out",
-            "with people who are already the way you want to be.",
-          ],
+          korean: (
+            <>
+              <p>자신을 변화시키는 가장 빠른 방법은,</p>
+              <p>
+                자신이 되고 싶은 사람들과
+                <br className="max-[400px]:block hidden" />
+                많은 시간을 보내는 것이다.
+              </p>
+            </>
+          ),
+          english: (
+            <>
+              <p>
+                The fastest way to change yourself
+                <br className="max-[400px]:block hidden" />
+                is to hang out
+              </p>
+              <p>
+                with people who are already
+                <br className="max-[400px]:block hidden" />
+                the way you want to be.
+              </p>
+            </>
+          ),
           author: "Reid Hoffman",
         }}
       />

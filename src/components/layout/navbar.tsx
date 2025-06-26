@@ -53,9 +53,9 @@ export default function Navbar() {
       <div className="drawer">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
-          {/* Navbar */}
+          {/* Navbar - 높이 줄임 */}
           <div
-            className="navbar w-full h-[100px]"
+            className="navbar w-full h-[70px]"
             style={{
               background: "rgba(72, 72, 72, 0.34)",
               backdropFilter: "blur(2px)",
@@ -65,13 +65,13 @@ export default function Navbar() {
               <label
                 htmlFor="my-drawer-3"
                 aria-label="open sidebar"
-                className="btn btn-square btn-ghost"
+                className="btn btn-square btn-ghost btn-sm"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  className="inline-block h-6 w-6 stroke-current text-white"
+                  className="inline-block h-5 w-5 stroke-current text-white"
                 >
                   <path
                     strokeLinecap="round"
@@ -83,8 +83,8 @@ export default function Navbar() {
               </label>
             </div>
 
-            {/* Logo */}
-            <div className="ml-10 md:ml-20 lg:ml-40 xl:ml-60 2xl:ml-80">
+            {/* Logo - 크기와 마진 줄임 */}
+            <div className="ml-6 md:ml-12 lg:ml-20 xl:ml-32 2xl:ml-40">
               <Link href="/">
                 <Image
                   src="/logos/primeplay-navbar-logo.svg"
@@ -93,6 +93,7 @@ export default function Navbar() {
                   height={42}
                   className="cursor-pointer"
                   priority
+                  style={{ width: "55px", height: "34px" }}
                 />
               </Link>
             </div>
@@ -100,16 +101,16 @@ export default function Navbar() {
             {/* Spacer */}
             <div className="flex-1"></div>
 
-            {/* Desktop Menu */}
-            <div className="hidden md:block mr-8 md:mr-10 lg:mr-16 xl:mr-30 2xl:mr-40">
-              <ul className="menu menu-horizontal space-x-6 md:space-x-8 lg:space-x-10 xl:space-x-16 2xl:space-x-20">
+            {/* Desktop Menu - 폰트 크기와 간격 줄임 */}
+            <div className="hidden md:block mr-6 md:mr-8 lg:mr-12 xl:mr-20 2xl:mr-32">
+              <ul className="menu menu-horizontal space-x-4 md:space-x-6 lg:space-x-8 xl:space-x-12 2xl:space-x-16">
                 <li>
                   <details ref={detailsRef}>
-                    <summary className="text-white text-center font-nanum-human text-2xl font-bold leading-normal hover:bg-transparent flex items-center">
+                    <summary className="text-white text-center font-nanum-human text-lg font-bold leading-normal hover:bg-transparent flex items-center">
                       사업영역
                     </summary>
                     <ul
-                      className="menu rounded-box z-[1] w-52 p-2 shadow-lg mt-4"
+                      className="menu rounded-box z-[1] w-44 p-2 shadow-lg mt-3"
                       style={{
                         background: "rgba(72, 72, 72, 0.9)",
                         backdropFilter: "blur(4px)",
@@ -119,7 +120,7 @@ export default function Navbar() {
                       <li>
                         <Link
                           href="/viral-marketing"
-                          className="text-white font-nanum-human text-lg font-medium rounded-md"
+                          className="text-white font-nanum-human text-base font-medium rounded-md"
                           onClick={handleLinkClick}
                         >
                           바이럴 마케팅
@@ -128,7 +129,7 @@ export default function Navbar() {
                       <li>
                         <Link
                           href="/web-app-dev"
-                          className="text-white font-nanum-human text-lg font-medium rounded-md"
+                          className="text-white font-nanum-human text-base font-medium rounded-md"
                           onClick={handleLinkClick}
                         >
                           Web/App 개발
@@ -140,7 +141,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/"
-                    className="text-white text-center font-nanum-human text-2xl font-bold leading-normal hover:bg-transparent"
+                    className="text-white text-center font-nanum-human text-lg font-bold leading-normal hover:bg-transparent"
                     onClick={handleLinkClick}
                   >
                     자주 묻는 질문
@@ -149,7 +150,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/"
-                    className="text-white text-center font-nanum-human text-2xl font-bold leading-normal hover:bg-transparent"
+                    className="text-white text-center font-nanum-human text-lg font-bold leading-normal hover:bg-transparent"
                     onClick={handleLinkClick}
                   >
                     고객지원
@@ -160,7 +161,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Sidebar */}
+        {/* Mobile Sidebar - 크기 줄임 */}
         <div className="drawer-side">
           <label
             htmlFor="my-drawer-3"
@@ -168,22 +169,22 @@ export default function Navbar() {
             className="drawer-overlay"
           ></label>
           <ul
-            className="menu min-h-full w-80 p-4"
+            className="menu min-h-full w-72 p-4"
             style={{
               background: "rgba(72, 72, 72, 0.34)",
               backdropFilter: "blur(2px)",
             }}
           >
-            <li className="mb-4">
+            <li className="mb-3">
               <details ref={mobileDetailsRef}>
-                <summary className="text-white font-nanum-human text-2xl font-bold leading-normal flex items-center">
+                <summary className="text-white font-nanum-human text-xl font-bold leading-normal flex items-center">
                   사업영역
                 </summary>
                 <ul className="p-2">
                   <li className="mb-2">
                     <Link
                       href="/viral-marketing"
-                      className="text-white text-center font-nanum-human text-lg font-medium"
+                      className="text-white text-center font-nanum-human text-base font-medium"
                       onClick={handleLinkClick}
                     >
                       바이럴 마케팅
@@ -192,7 +193,7 @@ export default function Navbar() {
                   <li className="mb-2">
                     <Link
                       href="/web-app-dev"
-                      className="text-white text-center font-nanum-human text-lg font-medium"
+                      className="text-white text-center font-nanum-human text-base font-medium"
                       onClick={handleLinkClick}
                     >
                       Web/App 개발
@@ -201,19 +202,19 @@ export default function Navbar() {
                 </ul>
               </details>
             </li>
-            <li className="mb-4">
+            <li className="mb-3">
               <Link
                 href="/"
-                className="text-white font-nanum-human text-2xl font-bold leading-normal flex"
+                className="text-white font-nanum-human text-xl font-bold leading-normal flex"
                 onClick={handleLinkClick}
               >
                 자주 묻는 질문
               </Link>
             </li>
-            <li className="mb-4">
+            <li className="mb-3">
               <Link
                 href="/"
-                className="text-white font-nanum-human text-2xl font-bold leading-normal"
+                className="text-white font-nanum-human text-xl font-bold leading-normal"
                 onClick={handleLinkClick}
               >
                 고객지원

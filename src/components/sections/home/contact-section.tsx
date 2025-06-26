@@ -52,7 +52,7 @@ const ContactSection = ({ imageSrc, imageAlt }: ContactSectionProps) => {
       </div>
 
       {/* 악수 이미지 - 전체 너비 */}
-      <div className="relative w-full aspect-[4086/2731] min-h-[400px] md:min-h-[500px] max-h-[1024px] overflow-hidden">
+      <div className="relative w-full h-[40vh] sm:h-[45vh] md:h-[50vh] min-h-[300px] max-h-[600px] overflow-hidden">
         <Image
           src={imageSrc}
           alt={imageAlt}

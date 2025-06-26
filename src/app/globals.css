@@ -168,11 +168,12 @@
   width: 100%;
   max-width: 280px;
   height: 300px; /* 모바일 높이 조정 */
-  background-color: #d9d9d9;
+  background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden; /* overflow: hidden 복원 */
   cursor: pointer;
   transition: all 0.3s ease;
+  border: 1px solid var(--hover-color);
 
   /* CSS 변수 기본값 */
   --hover-color: #0a3cff;
@@ -186,7 +187,7 @@
   right: 0;
   height: 65%;
   transition: height 0.3s ease;
-  background-color: #d9d9d9;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -244,7 +245,6 @@
   text-align: center;
   opacity: 1;
   transition: opacity 0.3s ease;
-  text-transform: uppercase; /* 대문자 변환 */
 }
 
 /* 호버 상태 텍스트 (아래쪽 영역) */

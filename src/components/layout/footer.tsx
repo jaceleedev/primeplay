@@ -4,20 +4,20 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer
-      className="text-white p-10 min-h-72"
+      className="text-white p-8 min-h-64"
       style={{ background: "#3B3B3B" }}
     >
-      <div className="flex flex-col md:flex-row md:items-start gap-12">
-        {/* Logo Section */}
-        <div className="flex flex-col items-start text-left ml-10 md:ml-20 lg:ml-40 xl:ml-60 2xl:ml-80">
+      <div className="flex flex-col md:flex-row md:items-start gap-10">
+        {/* Logo Section - navbar와 마진 맞춤 */}
+        <div className="flex flex-col items-start text-left ml-6 md:ml-12 lg:ml-20 xl:ml-32 2xl:ml-40">
           <Image
             src="/logos/primeplay-footer-logo.svg"
             alt="Primeplay Footer Logo"
-            width={132}
-            height={132}
-            className="mb-4"
+            width={110}
+            height={110}
+            className="mb-3"
           />
-          <p className="text-white font-paperlogy text-xl font-bold leading-normal mb-2">
+          <p className="text-white font-paperlogy text-lg font-bold leading-normal mb-2">
             Prime Play Co., Ltd.
           </p>
           <p className="text-white font-paperlogy text-sm font-bold leading-normal">
@@ -28,10 +28,10 @@ export default function Footer() {
         {/* Spacer - only on medium screens and up */}
         <div className="hidden md:block md:flex-1"></div>
 
-        {/* Menu Group - aligned with logo margin on mobile, right-aligned on desktop */}
-        <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16 xl:gap-20 2xl:gap-24 ml-10 md:ml-0 md:mr-8 lg:mr-10 xl:mr-16 2xl:mr-20">
+        {/* Menu Group - navbar 오른쪽 마진과 맞춤 */}
+        <div className="flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-12 xl:gap-16 2xl:gap-20 ml-6 md:ml-0 md:mr-6 lg:mr-8 xl:mr-12 2xl:mr-16">
           <nav>
-            <h6 className="text-[#9D9D9D] font-paperlogy text-xl font-bold leading-normal uppercase mb-4">
+            <h6 className="text-[#9D9D9D] font-paperlogy text-lg font-bold leading-normal uppercase mb-3">
               SERVICE INFO
             </h6>
             <Link
@@ -61,7 +61,7 @@ export default function Footer() {
           </nav>
 
           <nav>
-            <h6 className="text-[#9D9D9D] font-paperlogy text-xl font-bold leading-normal uppercase mb-4">
+            <h6 className="text-[#9D9D9D] font-paperlogy text-lg font-bold leading-normal uppercase mb-3">
               COMPANY INFO
             </h6>
             <p className="text-white font-paperlogy text-sm font-normal leading-normal mb-2">
