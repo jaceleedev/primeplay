@@ -1,8 +1,17 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+  preload: true,
+});
 
 const nanumHuman = localFont({
   src: [
@@ -221,8 +230,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        <Script
+          src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_APP_KEY}&autoload=false`}
+          strategy="beforeInteractive"
+        />
+      </head>
       <body
-        className={`${nanumHuman.variable} ${nanumMyeongjoYetHangul.variable} ${paperlogy.variable} ${sCoreDream.variable} ${cafe24OhsquareAir.variable} ${giants.variable} antialiased`}
+        className={`${inter.variable} ${nanumHuman.variable} ${nanumMyeongjoYetHangul.variable} ${paperlogy.variable} ${sCoreDream.variable} ${cafe24OhsquareAir.variable} ${giants.variable} antialiased`}
       >
         <Navbar />
         {children}

@@ -169,7 +169,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/support"
                     className="text-white text-center font-nanum-human text-lg font-bold leading-normal hover:bg-transparent"
                     onClick={handleLinkClick}
                   >
@@ -253,7 +253,7 @@ export default function Navbar() {
             </li>
             <li className="mb-3">
               <Link
-                href="/"
+                href="/support"
                 className="text-white font-nanum-human text-xl font-bold leading-normal"
                 onClick={handleLinkClick}
               >
