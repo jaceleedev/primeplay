@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Gothic_A1 } from "next/font/google";
 import localFont from "next/font/local";
 import Script from "next/script";
 import "./globals.css";
@@ -11,6 +11,14 @@ const inter = Inter({
   variable: "--font-inter",
   display: "swap",
   preload: true,
+});
+
+const gothicA1 = Gothic_A1({
+  subsets: ["latin"],
+  variable: "--font-gothic-a1",
+  display: "swap",
+  preload: true,
+  weight: ["700", "800", "900"],
 });
 
 const nanumHuman = localFont({
@@ -237,7 +245,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${nanumHuman.variable} ${nanumMyeongjoYetHangul.variable} ${paperlogy.variable} ${sCoreDream.variable} ${cafe24OhsquareAir.variable} ${giants.variable} antialiased`}
+        className={`${inter.variable} ${gothicA1.variable} ${nanumHuman.variable} ${nanumMyeongjoYetHangul.variable} ${paperlogy.variable} ${sCoreDream.variable} ${cafe24OhsquareAir.variable} ${giants.variable} antialiased`}
       >
         <Navbar />
         {children}
