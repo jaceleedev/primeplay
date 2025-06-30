@@ -41,7 +41,7 @@ export default function Footer() {
               서비스 안내
             </Link>
             <Link
-              href="/"
+              href="/faq"
               className="text-white font-paperlogy text-sm font-normal leading-normal hover:opacity-80 block w-fit mb-2"
             >
               자주 묻는 질문
