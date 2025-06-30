@@ -136,14 +136,13 @@ export default function Navbar() {
                         </Link>
                       </li>
                       <li>
-                        <a
-                          href="https://csi-play.com"
-                          target="_blank"
+                        <Link
+                          href="/csi-play"
                           className="text-white font-nanum-human text-base font-medium rounded-md"
                           onClick={handleLinkClick}
                         >
                           CSI PLAY
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <a
@@ -220,14 +219,13 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <a
-                      href="https://csi-play.com"
-                      target="_blank"
+                    <Link
+                      href="/csi-play"
                       className="text-white text-center font-nanum-human text-base font-medium"
                       onClick={handleLinkClick}
                     >
                       CSI PLAY
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2">
                     <a
