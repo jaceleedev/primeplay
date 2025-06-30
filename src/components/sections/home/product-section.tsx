@@ -15,11 +15,11 @@ const ProductSection = ({ cards }: ProductSectionProps) => {
           <h2
             className="
               font-paperlogy font-bold leading-normal text-black
-              text-[28px] sm:text-[40px] md:text-[56px] lg:text-[72px] xl:text-[86px]
               text-center sm:text-left
               inline-block
             "
             style={{
+              fontSize: "clamp(3rem, 10vw, 5.375rem)", // 48px to 86px
               background: "linear-gradient(90deg, #C60000 0%, #FF6D00 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
@@ -34,17 +34,9 @@ const ProductSection = ({ cards }: ProductSectionProps) => {
         </div>
 
         {/* 카드 그리드 */}
-        <div className="grid gap-x-5 gap-y-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-start">
-          <div className="w-full flex justify-center sm:justify-start">
-            <ProductCard {...cards[0]} />
-          </div>
-          {cards.slice(1).map((card, index) => (
-            <div
-              key={index + 1}
-              className="w-full flex justify-center sm:justify-start"
-            >
-              <ProductCard {...card} />
-            </div>
+        <div className="grid auto-rows-fr grid-cols-1 justify-items-center gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+          {cards.map((card, index) => (
+            <ProductCard key={index} {...card} />
           ))}
         </div>
       </div>

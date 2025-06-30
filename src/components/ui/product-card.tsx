@@ -56,9 +56,9 @@ const ProductCard = ({
   // 내부 링크인 경우 Next.js Link 컴포넌트 사용
   if (!isExternal) {
     return (
-      <Link href={href} className="block">
+      <Link href={href} className="block h-full">
         <div
-          className="product-card cursor-pointer transition-transform duration-200 hover:scale-105"
+          className="product-card cursor-pointer transition-transform duration-200 hover:scale-105 h-full"
           style={gradientStyle}
         >
           <CardContent />
@@ -70,7 +70,7 @@ const ProductCard = ({
   // 외부 링크인 경우 클릭 이벤트 처리
   return (
     <div
-      className="product-card cursor-pointer transition-transform duration-200 hover:scale-105"
+      className="product-card cursor-pointer transition-transform duration-200 hover:scale-105 h-full"
       style={gradientStyle}
       onClick={handleClick}
       role="button"

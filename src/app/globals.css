@@ -15,7 +15,6 @@
 .product-card {
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 3rem 1.5rem 1.5rem 1.5rem; /* 상단 48px, 좌우하 24px */
   overflow: hidden;
