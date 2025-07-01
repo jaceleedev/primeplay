@@ -227,13 +227,6 @@ const CsiScrollFeaturesSection = () => {
                     />
                   ))}
                 </div>
-
-                {/* 모바일 스크롤 힌트 */}
-                <div className="text-center text-gray-500 text-sm">
-                  <p className="font-nanum-human">
-                    스크롤하여 더 많은 기능을 확인하세요
-                  </p>
-                </div>
               </div>
             </div>
           </div>
