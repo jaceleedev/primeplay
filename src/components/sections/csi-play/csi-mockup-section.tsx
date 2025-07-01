@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-const CsiPlayMockupSection = () => {
+const CsiMockupSection = () => {
   return (
     <section className="py-24 sm:py-28 md:py-32 lg:py-36 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
@@ -87,4 +87,4 @@ const CsiPlayMockupSection = () => {
   );
 };
 
-export default CsiPlayMockupSection;
+export default CsiMockupSection;
