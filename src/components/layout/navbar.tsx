@@ -137,22 +137,21 @@ export default function Navbar() {
                       </li>
                       <li>
                         <Link
+                          href="/pg-service"
+                          className="text-white font-nanum-human text-base font-medium rounded-md"
+                          onClick={handleLinkClick}
+                        >
+                          PG 서비스
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
                           href="/csi-play"
                           className="text-white font-nanum-human text-base font-medium rounded-md"
                           onClick={handleLinkClick}
                         >
-                          CSI PLAY
+                          CSI-PLAY
                         </Link>
-                      </li>
-                      <li>
-                        <a
-                          href="https://ty-play.com"
-                          target="_blank"
-                          className="text-white font-nanum-human text-base font-medium rounded-md"
-                          onClick={handleLinkClick}
-                        >
-                          TY PLAY
-                        </a>
                       </li>
                     </ul>
                   </details>
@@ -220,22 +219,21 @@ export default function Navbar() {
                   </li>
                   <li className="mb-2">
                     <Link
+                      href="/pg-service"
+                      className="text-white text-center font-nanum-human text-base font-medium"
+                      onClick={handleLinkClick}
+                    >
+                      PG 서비스
+                    </Link>
+                  </li>
+                  <li className="mb-2">
+                    <Link
                       href="/csi-play"
                       className="text-white text-center font-nanum-human text-base font-medium"
                       onClick={handleLinkClick}
                     >
-                      CSI PLAY
+                      CSI-PLAY
                     </Link>
-                  </li>
-                  <li className="mb-2">
-                    <a
-                      href="https://ty-play.com"
-                      target="_blank"
-                      className="text-white text-center font-nanum-human text-base font-medium"
-                      onClick={handleLinkClick}
-                    >
-                      TY PLAY
-                    </a>
                   </li>
                 </ul>
               </details>
