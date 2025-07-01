@@ -1,5 +1,7 @@
 import VideoSection from "@/components/sections/home/video-section";
-import CsiPlayMockupSection from "@/components/sections/csi-play/CsiPlayMockupSection";
+import CsiMockupSection from "@/components/sections/csi-play/csi-mockup-section";
+import CsiScrollFeaturesSection from "@/components/sections/csi-play/csi-scroll-features-section";
+
 const CsiPlayPage = () => {
   return (
     <main>
@@ -15,7 +17,8 @@ const CsiPlayPage = () => {
           ),
         }}
       />
-      <CsiPlayMockupSection />
+      <CsiMockupSection />
+      <CsiScrollFeaturesSection />
     </main>
   );
 };
