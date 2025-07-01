@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import axios from "axios";
-import Modal from "@/components/ui/Modal"; // Modal 추가
+import Modal from "@/components/ui/modal";
 
 const ContactUsSection = () => {
   const [form, setForm] = useState({
