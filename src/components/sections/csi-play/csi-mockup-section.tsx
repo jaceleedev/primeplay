@@ -39,7 +39,7 @@ const CsiMockupSection = () => {
             <div className="absolute z-20 w-[80%] h-[86%] top-[6%] left-1/2 -translate-x-1/2">
               <div className="relative w-full h-full overflow-hidden">
                 <Image
-                  src="/images/macbook-website-screen.webp"
+                  src="/images/csi-macbook-screen.webp"
                   alt="CSI Play on Macbook"
                   fill
                   sizes="(min-width: 1024px) 820px, 80vw"
@@ -71,7 +71,7 @@ const CsiMockupSection = () => {
               >
                 <div className="relative w-full h-full">
                   <Image
-                    src="/images/iphone-website-screen.webp"
+                    src="/images/csi-iphone-screen.webp"
                     alt="CSI Play on iPhone"
                     fill
                     sizes="(min-width: 1024px) 166px, 16vw"
