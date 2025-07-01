@@ -1,4 +1,5 @@
 import VideoSection from "@/components/sections/home/video-section";
+import PgServiceMockupSection from "@/components/sections/pg-service/pg-service-mockup-section";
 
 const PGServicePage = () => {
   return (
@@ -15,6 +16,7 @@ const PGServicePage = () => {
           ),
         }}
       />
+      <PgServiceMockupSection />
     </main>
   );
 };
