@@ -73,7 +73,7 @@ export default function VideoSection({
         Your browser does not support the video tag.
       </video>
 
-      <div className="relative z-20 flex flex-col items-center justify-center h-full">
+      <div className="relative z-20 flex flex-col items-center justify-center h-full bg-gray-600/28">
         <h1
           className={`
             text-white text-center font-nanum-human text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl
