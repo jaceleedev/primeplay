@@ -4,6 +4,7 @@ import PgServiceBackgroundSection from "@/components/sections/pg-service/pg-serv
 import { pgServiceSections } from "@/data/pg-service-sections";
 import PgServiceFeaturesSection from "@/components/sections/pg-service/pg-service-features-section";
 import PgServiceJourneySection from "@/components/sections/pg-service/pg-service-journey-section";
+import PgServiceAdvantagesSection from "@/components/sections/pg-service/pg-service-advantage-section";
 
 const PGServicePage = () => {
   return (
@@ -33,6 +34,7 @@ const PGServicePage = () => {
           secondLine={section.secondLine}
         />
       ))}
+      <PgServiceAdvantagesSection />
     </main>
   );
 };
