@@ -5,6 +5,7 @@ import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
+import ScrollToTopButton from "@/components/ui/scroll-to-top-button";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -250,6 +251,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <ScrollToTopButton />
       </body>
     </html>
   );
