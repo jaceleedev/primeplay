@@ -3,6 +3,7 @@ import PgServiceMockupSection from "@/components/sections/pg-service/pg-service-
 import PgServiceBackgroundSection from "@/components/sections/pg-service/pg-service-background-section";
 import { pgServiceSections } from "@/data/pg-service-sections";
 import PgServiceFeaturesSection from "@/components/sections/pg-service/pg-service-features-section";
+import PgServiceJourneySection from "@/components/sections/pg-service/pg-service-journey-section";
 
 const PGServicePage = () => {
   return (
@@ -21,6 +22,7 @@ const PGServicePage = () => {
       />
       <PgServiceMockupSection />
       <PgServiceFeaturesSection />
+      <PgServiceJourneySection />
 
       {/* PG 서비스 배경 이미지 섹션들 */}
       {pgServiceSections.map((section) => (
