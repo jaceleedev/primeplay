@@ -141,7 +141,7 @@ const FAQSection = () => {
             </div>
 
             {/* FAQ 아코디언 */}
-            <div className="space-y-4">
+            <div key={selectedCategory} className="space-y-4">
               {currentItems.map((item, index) => (
                 <div
                   key={item.id}
