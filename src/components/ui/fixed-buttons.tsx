@@ -80,19 +80,24 @@ export default function FixedButtons({
     <AnimatePresence>
       {showButtons && (
         <motion.div
-          initial={{ opacity: 0, y: 20 }} // 초기 상태: 투명하고 살짝 아래에 위치
-          animate={{ opacity: 1, y: 0 }} // 최종 상태: 불투명하고 제자리로
-          exit={{ opacity: 0, y: 20 }} // 사라질 때의 상태
-          transition={{ duration: 0.3, ease: "easeInOut" }} // 0.3초 동안 부드럽게
-          className={`fixed ${positionClass} left-0 right-0 flex justify-center z-50 px-4`}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          // 👇 className 수정: flex와 정렬 클래스 제거
+          className={`fixed ${positionClass} left-0 right-0 z-50 px-4`}
         >
-          <div className={`flex flex-col sm:flex-row ${buttonSpacing}`}>
+          {/* 👇 버튼들을 감싸는 div에 mx-auto를 주어 수평 중앙 정렬 */}
+          <div
+            className={`mx-auto flex w-fit flex-col sm:flex-row ${buttonSpacing}`}
+          >
             {buttons.map((button, index) => (
               <button
                 key={index}
-                className="cursor-pointer flex items-center gap-4 px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-5 
-                           bg-white rounded-[60px] hover:scale-105 transition-all duration-300 mb-2 sm:mb-0
+                className="cursor-pointer flex items-center gap-4 px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-5
+                           bg-white rounded-[60px] hover:scale-105 transition-all duration-300
                            min-w-max"
+                // 👇 mb-2 sm:mb-0 클래스 제거
                 style={{
                   boxShadow: "0px 3.5px 9.5px 5px rgba(0, 0, 0, 0.15)",
                 }}
