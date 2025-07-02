@@ -9,6 +9,9 @@ const MetricCard = ({
   hoverText,
   hoverColor,
 }: MetricCardProps) => {
+  const firstChar = defaultText.charAt(0);
+  const restOfText = defaultText.slice(1);
+
   return (
     <div
       className="metric-card"
@@ -16,7 +19,10 @@ const MetricCard = ({
     >
       <div className="metric-top-card">
         <div className="metric-default-content">
-          <span className="metric-default-text">{defaultText}</span>
+          <span className="metric-default-text">
+            <span style={{ color: hoverColor }}>{firstChar}</span>
+            {restOfText}
+          </span>
         </div>
       </div>
       <div className="metric-bottom-card">
