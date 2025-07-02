@@ -55,6 +55,7 @@ export const SNSPlayIcon = () => (
       width: "128px",
       height: "128px",
     }}
+    priority={false}
   />
 );
 
@@ -66,8 +67,8 @@ export const CSIPlayIcon = () => (
     height={141}
     className={iconClassName}
     style={{
-      width: "128px",
-      height: "128px",
+      width: "auto",
+      height: "100%",
     }}
   />
 );

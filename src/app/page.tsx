@@ -69,10 +69,7 @@ export default function Home() {
       />
       <ProductSection cards={productCards} />
       <PlayToPSection cards={metricCards} />
-      <ContactSection
-        imageSrc="/images/handshake.webp"
-        imageAlt="전문가들의 협력을 상징하는 악수 이미지"
-      />
+      <ContactSection />
     </main>
   );
 }
