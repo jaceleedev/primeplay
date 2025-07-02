@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { TextReveal } from "@/components/magicui/text-reveal";
 
 interface ContactSectionProps {
   imageSrc: string;
@@ -25,13 +26,12 @@ const ContactSection = ({ imageSrc, imageAlt }: ContactSectionProps) => {
           </div>
 
           {/* 두 번째 텍스트 */}
-          <div className="text-center mb-52 sm:mb-56 md:mb-60 lg:mb-64">
-            <p className="font-paperlogy font-medium text-black leading-normal text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] tracking-[8px] sm:tracking-[12px] md:tracking-[14px] lg:tracking-[16px]">
-              가장 중요한 것은
-              <br />
-              PLAY!
-            </p>
-          </div>
+          <TextReveal
+            className="text-center mb-52 sm:mb-56 md:mb-60 lg:mb-64"
+            textClassName="font-paperlogy font-medium text-black leading-normal text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] tracking-[8px] sm:tracking-[12px] md:tracking-[14px] lg:tracking-[16px]"
+          >
+            가장 중요한 것은 PLAY!
+          </TextReveal>
 
           {/* 세 번째 텍스트 */}
           <div className="text-center mb-10 sm:mb-12 md:mb-16">
