@@ -23,9 +23,9 @@ const PgServiceJourneySection = () => {
         }}
       />
 
-      {/* 텍스트 컨테이너 - 왼쪽에 붙도록 */}
+      {/* 텍스트 컨테이너 - 왼쪽 간격 증가 */}
       <div className="relative z-10 h-full flex items-start justify-start">
-        <div className="w-full px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 md:pt-16 lg:pt-24 xl:pt-40">
+        <div className="w-full px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 pt-8 sm:pt-12 md:pt-16 lg:pt-24 xl:pt-40">
           <div className="max-w-2xl lg:max-w-3xl xl:max-w-4xl">
             <h2 className="font-paperlogy font-semibold text-black mb-4 sm:mb-6 md:mb-10 lg:mb-14 xl:mb-18">
               <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">

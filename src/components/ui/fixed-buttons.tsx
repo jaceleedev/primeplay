@@ -2,12 +2,14 @@
 
 import { useEffect, useState, RefObject } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 interface ButtonConfig {
   logo: string;
   text: string;
   url: string;
   alt?: string;
+  isExternal?: boolean; // 외부 링크 여부를 명시적으로 지정
 }
 
 interface FixedButtonsProps {
@@ -24,6 +26,7 @@ export default function FixedButtons({
   threshold = 0.1,
 }: FixedButtonsProps) {
   const [sectionsVisible, setSectionsVisible] = useState<boolean[]>([]);
+  const router = useRouter();
 
   // 하나라도 보이면 버튼들 표시
   const showButtons = sectionsVisible.some((visible) => visible);
@@ -55,6 +58,18 @@ export default function FixedButtons({
     };
   }, [observeRefs, threshold]);
 
+  const handleButtonClick = (button: ButtonConfig) => {
+    // isExternal이 명시적으로 false이거나, URL이 /로 시작하는 경우 내부 링크로 처리
+    const isInternalLink =
+      button.isExternal === false || button.url.startsWith("/");
+
+    if (isInternalLink) {
+      router.push(button.url);
+    } else {
+      window.open(button.url, "_blank", "noopener,noreferrer");
+    }
+  };
+
   if (!showButtons) return null;
 
   const positionClass = position === "bottom" ? "bottom-6" : "top-6";
@@ -64,25 +79,26 @@ export default function FixedButtons({
     <div
       className={`fixed ${positionClass} left-0 right-0 flex justify-center z-50 px-4`}
     >
-      <div className={`flex ${buttonSpacing}`}>
+      <div className={`flex flex-col sm:flex-row ${buttonSpacing}`}>
         {buttons.map((button, index) => (
           <button
             key={index}
-            className="cursor-pointer flex items-center gap-4 px-8 py-4 md:px-10 md:py-5 lg:px-12 lg:py-6 
-                       bg-white rounded-[60px] hover:scale-105 transition-all duration-300"
+            className="cursor-pointer flex items-center gap-4 px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-5 
+                       bg-white rounded-[60px] hover:scale-105 transition-all duration-300 mb-2 sm:mb-0
+                       min-w-max"
             style={{
               boxShadow: "0px 3.5px 9.5px 5px rgba(0, 0, 0, 0.15)",
             }}
-            onClick={() => window.open(button.url, "_blank")}
+            onClick={() => handleButtonClick(button)}
           >
             <Image
               src={button.logo}
               alt={button.alt || button.text}
               width={32}
               height={32}
-              className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
+              className="w-5 h-5 md:w-6 md:h-6 lg:w-8 lg:h-8 flex-shrink-0"
             />
-            <span className="text-black font-nanum-human font-normal text-lg md:text-xl lg:text-2xl">
+            <span className="text-black font-nanum-human font-normal text-sm md:text-base lg:text-lg xl:text-xl whitespace-nowrap">
               {button.text}
             </span>
           </button>
