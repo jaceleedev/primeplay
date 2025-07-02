@@ -1,6 +1,6 @@
 const PgServiceJourneySection = () => {
   return (
-    <section className="relative w-full min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-[800px] xl:min-h-[900px] overflow-hidden bg-white">
+    <section className="relative w-full min-h-[400px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-[800px] xl:min-h-[900px] overflow-hidden bg-white">
       {/* 모바일 배경 이미지 */}
       <div
         className="absolute inset-0 block md:hidden"
