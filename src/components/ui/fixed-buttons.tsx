@@ -3,6 +3,7 @@
 import { useEffect, useState, RefObject } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { motion, AnimatePresence } from "motion/react";
 
 interface ButtonConfig {
   logo: string;
@@ -76,34 +77,42 @@ export default function FixedButtons({
   const buttonSpacing = buttons.length > 1 ? "gap-4" : "";
 
   return (
-    <div
-      className={`fixed ${positionClass} left-0 right-0 flex justify-center z-50 px-4`}
-    >
-      <div className={`flex flex-col sm:flex-row ${buttonSpacing}`}>
-        {buttons.map((button, index) => (
-          <button
-            key={index}
-            className="cursor-pointer flex items-center gap-4 px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-5 
-                       bg-white rounded-[60px] hover:scale-105 transition-all duration-300 mb-2 sm:mb-0
-                       min-w-max"
-            style={{
-              boxShadow: "0px 3.5px 9.5px 5px rgba(0, 0, 0, 0.15)",
-            }}
-            onClick={() => handleButtonClick(button)}
-          >
-            <Image
-              src={button.logo}
-              alt={button.alt || button.text}
-              width={32}
-              height={32}
-              className="w-5 h-5 md:w-6 md:h-6 lg:w-8 lg:h-8 flex-shrink-0"
-            />
-            <span className="text-black font-nanum-human font-normal text-sm md:text-base lg:text-lg xl:text-xl whitespace-nowrap">
-              {button.text}
-            </span>
-          </button>
-        ))}
-      </div>
-    </div>
+    <AnimatePresence>
+      {showButtons && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }} // 초기 상태: 투명하고 살짝 아래에 위치
+          animate={{ opacity: 1, y: 0 }} // 최종 상태: 불투명하고 제자리로
+          exit={{ opacity: 0, y: 20 }} // 사라질 때의 상태
+          transition={{ duration: 0.3, ease: "easeInOut" }} // 0.3초 동안 부드럽게
+          className={`fixed ${positionClass} left-0 right-0 flex justify-center z-50 px-4`}
+        >
+          <div className={`flex flex-col sm:flex-row ${buttonSpacing}`}>
+            {buttons.map((button, index) => (
+              <button
+                key={index}
+                className="cursor-pointer flex items-center gap-4 px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-5 
+                           bg-white rounded-[60px] hover:scale-105 transition-all duration-300 mb-2 sm:mb-0
+                           min-w-max"
+                style={{
+                  boxShadow: "0px 3.5px 9.5px 5px rgba(0, 0, 0, 0.15)",
+                }}
+                onClick={() => handleButtonClick(button)}
+              >
+                <Image
+                  src={button.logo}
+                  alt={button.alt || button.text}
+                  width={32}
+                  height={32}
+                  className="w-5 h-5 md:w-6 md:h-6 lg:w-8 lg:h-8 flex-shrink-0"
+                />
+                <span className="text-black font-nanum-human font-normal text-sm md:text-base lg:text-lg xl:text-xl whitespace-nowrap">
+                  {button.text}
+                </span>
+              </button>
+            ))}
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
