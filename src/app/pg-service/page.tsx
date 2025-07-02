@@ -1,5 +1,7 @@
 import VideoSection from "@/components/sections/home/video-section";
 import PgServiceMockupSection from "@/components/sections/pg-service/pg-service-mockup-section";
+import PgServiceBackgroundSection from "@/components/sections/pg-service/pg-service-background-section";
+import { pgServiceSections } from "@/data/pg-service-sections";
 
 const PGServicePage = () => {
   return (
@@ -17,6 +19,16 @@ const PGServicePage = () => {
         }}
       />
       <PgServiceMockupSection />
+
+      {/* PG 서비스 배경 이미지 섹션들 */}
+      {pgServiceSections.map((section) => (
+        <PgServiceBackgroundSection
+          key={section.id}
+          imageSrc={section.imageSrc}
+          firstLine={section.firstLine}
+          secondLine={section.secondLine}
+        />
+      ))}
     </main>
   );
 };
