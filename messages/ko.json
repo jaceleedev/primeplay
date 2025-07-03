@@ -156,6 +156,16 @@
     }
   },
   "WebAppDevPage": {
+    "MoreThanSolutionsSection": {
+      "title": "More than solutions",
+      "subtitle": "단순한 개발을 넘어 비즈니스 성공까지 함께합니다",
+      "services": [
+        "모바일 앱 개발",
+        "웹 서비스 개발",
+        "UX/UI 디자인",
+        "서비스 기획"
+      ]
+    },
     "BlockchainServiceSection": {
       "title": "Block Chain Service",
       "subtitle": "어디서도 볼 수 없는 Prime Play의 자체 제작 서비스",

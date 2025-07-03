@@ -156,6 +156,16 @@
     }
   },
   "WebAppDevPage": {
+    "MoreThanSolutionsSection": {
+      "title": "More than solutions",
+      "subtitle": "Beyond development - integrated services for business success",
+      "services": [
+        "Mobile App Dev",
+        "Web Service Dev",
+        "UX/UI Design",
+        "Service Planning"
+      ]
+    },
     "BlockchainServiceSection": {
       "title": "Block Chain Service",
       "subtitle": "Prime Play's exclusive in-house services",
