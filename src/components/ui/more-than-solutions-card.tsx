@@ -36,7 +36,7 @@ const MoreThanSolutionsCard = ({
       "
     >
       {/* 아이콘 영역 - 작은 뷰포트에서 상단 패딩 대폭 증가 */}
-      <div className="flex items-center justify-center pt-8 sm:pt-8 md:pt-8 lg:pt-10 pb-6 sm:pb-4 md:pb-3 lg:pb-4">
+      <div className="flex items-center justify-center pt-10 sm:pt-10 md:pt-12 lg:pt-14 pb-6 sm:pb-4 md:pb-3 lg:pb-4">
         <div
           className="
             w-[72px] h-[72px] 
