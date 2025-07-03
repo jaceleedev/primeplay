@@ -21,5 +21,15 @@
     "phoneNumber": "02-6095-2685",
     "addressLine1": "서울특별시 강서구 강서로 466,",
     "addressLine2": "7층 702호(등촌동, 우리벤처타운)"
+  },
+  "ContactSection": {
+    "expertCollaborationLine1": "다양한 분야의 전문가들이",
+    "expertCollaborationLine2": "함께 머리를 맞대고 아이디어를 내며",
+    "expertCollaborationLine3": "서로 소통하고 의견을 존중합니다.",
+    "playImportance": "가장 중요한 것은 PLAY!",
+    "contactUsTitle": "Contact Us",
+    "contactDescriptionLine1": "궁금하신 내용은 언제든 문의주세요.",
+    "contactDescriptionLine2": "고객의 입장에서 생각하는 파트너가 되어드립니다.",
+    "inquireButton": "문의하기"
   }
 }

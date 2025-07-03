@@ -2,9 +2,12 @@
 
 import Image from "next/image";
 import { TextReveal } from "@/components/magicui/text-reveal";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 const ContactSection = () => {
+  const t = useTranslations("ContactSection");
+
   return (
     <section className="relative w-full pt-16 sm:pt-20 md:pt-24 lg:pt-32 bg-white">
       {/* 텍스트 컨텐츠 */}
@@ -13,11 +16,11 @@ const ContactSection = () => {
           {/* 첫 번째 텍스트 */}
           <div className="text-center mb-52 sm:mb-56 md:mb-60 lg:mb-64">
             <p className="font-paperlogy font-medium text-black leading-normal text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px]">
-              다양한 분야의 전문가들이
+              {t("expertCollaborationLine1")}
               <br />
-              함께 머리를 맞대고 아이디어를 내며
+              {t("expertCollaborationLine2")}
               <br />
-              서로 소통하고 의견을 존중합니다.
+              {t("expertCollaborationLine3")}
             </p>
           </div>
 
@@ -27,23 +30,23 @@ const ContactSection = () => {
               className="text-center mb-52 sm:mb-56 md:mb-60 lg:mb-64"
               textClassName="font-paperlogy font-medium text-black leading-normal text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] tracking-[8px] sm:tracking-[12px] md:tracking-[14px] lg:tracking-[16px]"
             >
-              가장 중요한 것은 PLAY!
+              {t("playImportance")}
             </TextReveal>
           </div>
 
           {/* 세 번째 텍스트 */}
           <div className="text-center mb-10 sm:mb-12 md:mb-16">
             <h2 className="font-giants font-bold text-black leading-normal text-2xl sm:text-3xl md:text-4xl lg:text-[44px]">
-              Contact Us
+              {t("contactUsTitle")}
             </h2>
           </div>
 
           {/* 네 번째 텍스트 */}
           <div className="text-center mb-20 sm:mb-24 md:mb-28 lg:mb-32">
             <p className="font-cafe24-ohsquare-air font-light text-black leading-normal text-base sm:text-lg md:text-xl lg:text-2xl">
-              궁금하신 내용은 언제든 문의주세요.
+              {t("contactDescriptionLine1")}
               <br />
-              고객의 입장에서 생각하는 파트너가 되어드립니다.
+              {t("contactDescriptionLine2")}
             </p>
           </div>
         </div>
@@ -75,7 +78,7 @@ const ContactSection = () => {
               color: "#FFFFFF",
             }}
           >
-            <span>문의하기</span>
+            <span>{t("inquireButton")}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="42"

@@ -21,5 +21,15 @@
     "phoneNumber": "02-6095-2685",
     "addressLine1": "466, Gangseo-ro, Gangseo-gu,",
     "addressLine2": "Seoul, 7th Floor, 702 (Deungchon-dong, Woori Venture Town)"
+  },
+  "ContactSection": {
+    "expertCollaborationLine1": "Experts from various fields come together",
+    "expertCollaborationLine2": "to brainstorm ideas, communicate with each other,",
+    "expertCollaborationLine3": "and respect each other's opinions.",
+    "playImportance": "The most important thing is PLAY!",
+    "contactUsTitle": "Contact Us",
+    "contactDescriptionLine1": "Please feel free to contact us with any questions.",
+    "contactDescriptionLine2": "We will be a partner who thinks from the customer's perspective.",
+    "inquireButton": "Contact Us"
   }
 }
