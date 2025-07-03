@@ -98,5 +98,10 @@
     "line2": "작은 부분에서부터 큰 부분까지",
     "line3": "우리는 모든 것에서 즐거움을 찾아갑니다",
     "imageAlt": "세심한 디테일을 표현하는 배경 이미지"
+  },
+  "ViralMarketingPage": {
+    "ChannelSection": {
+      "title": "다양한 채널과 함께합니다"
+    }
   }
 }
