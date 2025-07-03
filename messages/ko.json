@@ -7,5 +7,19 @@
     "csiPlay": "CSI-PLAY",
     "faq": "자주 묻는 질문",
     "support": "고객지원"
+  },
+  "Footer": {
+    "companyName": "Prime Play Co., Ltd.",
+    "copyright": "© 2022 PRIMEPLAY. All rights reserved.",
+    "serviceInfo": "SERVICE INFO",
+    "companyInfo": "COMPANY INFO",
+    "serviceGuide": "서비스 안내",
+    "faq": "자주 묻는 질문",
+    "support": "고객지원",
+    "privacyPolicy": "개인정보처리방침",
+    "businessNumber": "357-86-00725",
+    "phoneNumber": "02-6095-2685",
+    "addressLine1": "서울특별시 강서구 강서로 466,",
+    "addressLine2": "7층 702호(등촌동, 우리벤처타운)"
   }
 }

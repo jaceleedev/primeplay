@@ -1,7 +1,12 @@
-import Link from "next/link";
+"use client";
+
+import { Link } from "@/i18n/navigation";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("Footer");
+
   return (
     <footer
       className="text-white p-8 min-h-64"
@@ -18,10 +23,10 @@ export default function Footer() {
             className="mb-3"
           />
           <p className="text-white font-paperlogy text-lg font-bold leading-normal mb-2">
-            Prime Play Co., Ltd.
+            {t("companyName")}
           </p>
           <p className="text-white font-paperlogy text-sm font-bold leading-normal">
-            © 2022 PRIMEPLAY. All rights reserved.
+            {t("copyright")}
           </p>
         </div>
 
@@ -32,49 +37,49 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-12 xl:gap-16 2xl:gap-20 ml-6 md:ml-0 md:mr-6 lg:mr-8 xl:mr-12 2xl:mr-16">
           <nav>
             <h6 className="text-[#9D9D9D] font-paperlogy text-lg font-bold leading-normal uppercase mb-3">
-              SERVICE INFO
+              {t("serviceInfo")}
             </h6>
             <Link
               href="/"
               className="text-white font-paperlogy text-sm font-normal leading-normal hover:opacity-80 block w-fit mb-2"
             >
-              서비스 안내
+              {t("serviceGuide")}
             </Link>
             <Link
               href="/faq"
               className="text-white font-paperlogy text-sm font-normal leading-normal hover:opacity-80 block w-fit mb-2"
             >
-              자주 묻는 질문
+              {t("faq")}
             </Link>
             <Link
               href="/support"
               className="text-white font-paperlogy text-sm font-normal leading-normal hover:opacity-80 block w-fit mb-2"
             >
-              고객지원
+              {t("support")}
             </Link>
             <Link
               href="/"
               className="text-white font-paperlogy text-sm font-normal leading-normal hover:opacity-80 block w-fit"
             >
-              개인정보처리방침
+              {t("privacyPolicy")}
             </Link>
           </nav>
 
           <nav>
             <h6 className="text-[#9D9D9D] font-paperlogy text-lg font-bold leading-normal uppercase mb-3">
-              COMPANY INFO
+              {t("companyInfo")}
             </h6>
             <p className="text-white font-paperlogy text-sm font-normal leading-normal mb-2">
-              357-86-00725
+              {t("businessNumber")}
             </p>
             <p className="text-white font-paperlogy text-sm font-normal leading-normal mb-2">
-              02-6095-2685
+              {t("phoneNumber")}
             </p>
             <p className="text-white font-paperlogy text-sm font-normal leading-normal mb-1">
-              서울특별시 강서구 강서로 466,
+              {t("addressLine1")}
             </p>
             <p className="text-white font-paperlogy text-sm font-normal leading-normal">
-              7층 702호(등촌동, 우리벤처타운)
+              {t("addressLine2")}
             </p>
           </nav>
         </div>
