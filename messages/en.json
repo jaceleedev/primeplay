@@ -154,5 +154,31 @@
     "ChannelSection": {
       "title": "We are with various channels"
     }
+  },
+  "WebAppDevPage": {
+    "BlockchainServiceSection": {
+      "title": "Block Chain Service",
+      "subtitle": "Prime Play's exclusive in-house services",
+      "cards": [
+        {
+          "title": "Coin Wallet Platform",
+          "description": [
+            "Private key self-custody",
+            "Secure recovery anytime",
+            "Custom feature support",
+            "DAPP-based payment compatible"
+          ]
+        },
+        {
+          "title": "Over The Counter Dev",
+          "description": [
+            "Systematic KYC & PoC management",
+            "Pre-verified secure trading",
+            "Direct bid/ask for better FX",
+            "Escrow security system"
+          ]
+        }
+      ]
+    }
   }
 }
