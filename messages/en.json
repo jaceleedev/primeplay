@@ -156,6 +156,45 @@
     }
   },
   "WebAppDevPage": {
+    "SolutionSection": {
+      "slides": [
+        {
+          "title": "E-commerce",
+          "listItems": [
+            "Standalone e-commerce platform",
+            "Point-based payments & shipping",
+            "My Office member integration"
+          ]
+        },
+        {
+          "title": "Payment Module",
+          "listItems": [
+            "1:1 support with virtual accounts",
+            "PG and card company integration",
+            "Card, cash, and NFT payments",
+            "Provides payment history and data"
+          ]
+        },
+        {
+          "title": "My Office",
+          "listItems": [
+            "Automated settlement program creation",
+            "Member genealogy & management",
+            "Network marketing settlement solution",
+            "Conditional e-commerce & NFT site support"
+          ]
+        },
+        {
+          "title": "Coin Wallet",
+          "listItems": [
+            "NFT & coin creation, bulk transfers, wallet management",
+            "NFT payment enabled",
+            "Custom wallet for allowances & quantities",
+            "Bulk transfer for coin allowance payouts"
+          ]
+        }
+      ]
+    },
     "MoreThanSolutionsSection": {
       "title": "More than solutions",
       "subtitle": "Beyond development - integrated services for business success",
