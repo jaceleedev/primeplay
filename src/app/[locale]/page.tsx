@@ -27,15 +27,7 @@ export default function Home() {
           </>
         }
       />
-      <DetailSection
-        lines={[
-          "사소한 것부터 세심하게",
-          "작은 부분에서부터 큰 부분까지",
-          "우리는 모든 것에서 즐거움을 찾아갑니다",
-        ]}
-        imageSrc="/images/detail-background.webp"
-        imageAlt="세심한 디테일을 표현하는 배경 이미지"
-      />
+      <DetailSection />
       <BusinessSolutionSection />
       <ProductSection />
       <PlayToPSection />

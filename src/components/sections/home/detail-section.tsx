@@ -1,22 +1,16 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import "@/components/ui/animations.css";
 
 interface DetailSectionProps {
-  lines: string[];
-  imageSrc: string;
-  imageAlt: string;
-  overlay?: string;
+  className?: string;
 }
 
-const DetailSection = ({
-  lines,
-  imageSrc,
-  imageAlt,
-  overlay = "rgba(0, 0, 0, 0.39)",
-}: DetailSectionProps) => {
+const DetailSection = ({ className = "" }: DetailSectionProps) => {
+  const t = useTranslations("DetailSection");
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -64,13 +58,15 @@ const DetailSection = ({
     });
   };
 
+  const lines = [t("line1"), t("line2"), t("line3")];
+
   return (
-    <section ref={sectionRef} className="relative w-full">
+    <section ref={sectionRef} className={`relative w-full ${className}`}>
       {/* 배경 이미지 컨테이너 - 개선된 반응형 높이 설정 */}
       <div className="relative w-full h-[70vh] sm:h-[65vh] md:h-[60vh] lg:h-[70vh] xl:h-[65vh] min-h-[500px] max-h-[800px] overflow-hidden">
         <Image
-          src={imageSrc}
-          alt={imageAlt}
+          src="/images/detail-background.webp"
+          alt={t("imageAlt")}
           fill
           className="object-cover object-center"
           priority
@@ -78,7 +74,10 @@ const DetailSection = ({
         />
 
         {/* 반투명 오버레이 */}
-        <div className="absolute inset-0" style={{ background: overlay }} />
+        <div
+          className="absolute inset-0"
+          style={{ background: "rgba(0, 0, 0, 0.39)" }}
+        />
 
         {/* 텍스트 오버레이 */}
         <div className="absolute inset-0 flex items-center justify-center">
@@ -90,7 +89,7 @@ const DetailSection = ({
                   font-paperlogy font-bold last:mb-0
                   ${
                     lineIndex === 0
-                      ? "text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-[4px] sm:tracking-[6px] md:tracking-[8px] lg:tracking-[10px] xl:tracking-[12px] mb-4 sm:mb-6 md:mb-8 lg:mb-10"
+                      ? "text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 sm:mb-6 md:mb-8 lg:mb-10"
                       : "text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 sm:mb-6 md:mb-8 lg:mb-10"
                   }
                   ${isVisible ? "text-scale-animation" : "opacity-0"}
