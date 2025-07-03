@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { ReactNode, CSSProperties } from "react";
 
 export interface ProductCardProps {
@@ -13,6 +13,7 @@ export interface ProductCardProps {
     from: string;
     to: string;
   };
+  buttonText?: string; // 버튼 텍스트를 prop으로 받도록 추가
 }
 
 const ProductCard = ({
@@ -22,6 +23,7 @@ const ProductCard = ({
   href,
   isExternal,
   gradientColors = { from: "#c60000", to: "#ff6d00" },
+  buttonText = "상세보기", // 기본값 설정 (하위 호환성)
 }: ProductCardProps) => {
   const gradientStyle = {
     "--gradient-from": gradientColors.from,
@@ -34,10 +36,10 @@ const ProductCard = ({
 
   const buttonContent = (
     <button
-      className="font-paperlogy text-white py-2 px-6 rounded-[10px] cursor-pointer"
+      className="font-paperlogy text-white py-2 px-6 rounded-[10px] cursor-pointer transition-all duration-200 hover:shadow-lg"
       style={buttonGradientStyle}
     >
-      상세보기
+      {buttonText}
     </button>
   );
 
@@ -63,11 +65,16 @@ const ProductCard = ({
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block"
+              aria-label={`${title} - ${buttonText}`}
             >
               {buttonContent}
             </a>
           ) : (
-            <Link href={href} className="inline-block">
+            <Link
+              href={href}
+              className="inline-block"
+              aria-label={`${title} - ${buttonText}`}
+            >
               {buttonContent}
             </Link>
           )}

@@ -55,5 +55,35 @@
       "hoverTextLine2": "through continuous improvement",
       "hoverTextLine3": "and innovation"
     }
+  },
+  "ProductSection": {
+    "title": "OUR\nPRODUCT",
+    "products": {
+      "pgPayment": {
+        "title": "PG Payment Service",
+        "description": "We provide fast settlement\nand stable service through\npayment gateway (PG) companies."
+      },
+      "viralMarketing": {
+        "title": "Viral Marketing",
+        "description": "Build high trust through\ninformation sharing based\non real-world experience."
+      },
+      "webAppDev": {
+        "title": "Web/App Development",
+        "description": "We provide high-quality\nservices based on the latest\ntechnology and know-how."
+      },
+      "snsPlay": {
+        "title": "SNS PLAY",
+        "description": "We provide specialized\nmarketing programs\napplicable to SNS\nplatforms."
+      },
+      "csiPlay": {
+        "title": "CSI PLAY",
+        "description": "A community site where\ninvestors share and\ncommunicate stock and\ncoin information."
+      },
+      "tyPlay": {
+        "title": "TY PLAY",
+        "description": "Comprehensive payment\nPG solution available\nfor both businesses\nand individuals."
+      }
+    },
+    "viewDetails": "View Details"
   }
 }
