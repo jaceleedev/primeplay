@@ -4,7 +4,6 @@ import BusinessSolutionSection from "@/components/sections/home/business-solutio
 import ProductSection from "@/components/sections/home/product-section";
 import { productCards } from "@/data/product-cards";
 import PlayToPSection from "@/components/sections/home/play-to-p-section";
-import { metricCards } from "@/data/metric-cards";
 import ContactSection from "@/components/sections/home/contact-section";
 
 export default function Home() {
@@ -51,7 +50,7 @@ export default function Home() {
         imageAlt="비즈니스 네트워크를 표현하는 기하학적 패턴"
       />
       <ProductSection cards={productCards} />
-      <PlayToPSection cards={metricCards} />
+      <PlayToPSection />
       <ContactSection />
     </main>
   );

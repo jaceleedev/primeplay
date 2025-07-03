@@ -31,5 +31,29 @@
     "contactDescriptionLine1": "Please feel free to contact us with any questions.",
     "contactDescriptionLine2": "We will be a partner who thinks from the customer's perspective.",
     "inquireButton": "Contact Us"
+  },
+  "PlayToPSection": {
+    "title": "Play to P",
+    "subtitle": "Core Metrics of Prime Play",
+    "people": {
+      "hoverTextLine1": "Customer experience",
+      "hoverTextLine2": "as top priority",
+      "hoverTextLine3": ""
+    },
+    "performance": {
+      "hoverTextLine1": "Clear goal setting and",
+      "hoverTextLine2": "quality management",
+      "hoverTextLine3": ""
+    },
+    "partnership": {
+      "hoverTextLine1": "Collaborative relationships",
+      "hoverTextLine2": "considering",
+      "hoverTextLine3": "mutual benefits"
+    },
+    "progress": {
+      "hoverTextLine1": "Maximizing growth potential",
+      "hoverTextLine2": "through continuous improvement",
+      "hoverTextLine3": "and innovation"
+    }
   }
 }

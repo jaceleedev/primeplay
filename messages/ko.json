@@ -31,5 +31,29 @@
     "contactDescriptionLine1": "궁금하신 내용은 언제든 문의주세요.",
     "contactDescriptionLine2": "고객의 입장에서 생각하는 파트너가 되어드립니다.",
     "inquireButton": "문의하기"
+  },
+  "PlayToPSection": {
+    "title": "Play to P",
+    "subtitle": "프라임 플레이의 핵심 지표",
+    "people": {
+      "hoverTextLine1": "고객 경험을",
+      "hoverTextLine2": "최우선으로",
+      "hoverTextLine3": ""
+    },
+    "performance": {
+      "hoverTextLine1": "명확한 목표 설정과",
+      "hoverTextLine2": "품질 관리",
+      "hoverTextLine3": ""
+    },
+    "partnership": {
+      "hoverTextLine1": "상호 이익을",
+      "hoverTextLine2": "고려하는",
+      "hoverTextLine3": "협력 관계"
+    },
+    "progress": {
+      "hoverTextLine1": "지속적인 개선과",
+      "hoverTextLine2": "혁신을 통해",
+      "hoverTextLine3": "성장 가능성 극대화"
+    }
   }
 }
