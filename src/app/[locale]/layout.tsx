@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import { Inter, Gothic_A1 } from "next/font/google";
 import localFont from "next/font/local";
 import Script from "next/script";
-import "./globals.css";
+import "../globals.css";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import ScrollToTopButton from "@/components/ui/scroll-to-top-button";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,48 +25,17 @@ const gothicA1 = Gothic_A1({
   weight: ["700", "800", "900"],
 });
 
-const nanumHuman = localFont({
-  src: [
-    {
-      path: "../../public/fonts/NanumHuman/NanumHumanEL.woff",
-      weight: "200",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/NanumHuman/NanumHumanLight.woff",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/NanumHuman/NanumHumanRegular.woff",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/NanumHuman/NanumHumanBold.woff",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/NanumHuman/NanumHumanEB.woff",
-      weight: "800",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/NanumHuman/NanumHumanHeavy.woff",
-      weight: "900",
-      style: "normal",
-    },
-  ],
-  variable: "--font-nanum-human",
+const pretendard = localFont({
+  src: "../../../public/fonts/Pretendard/PretendardVariable.woff2",
   display: "swap",
-  preload: true,
+  variable: "--font-pretendard",
+  weight: "45 920",
 });
 
 const nanumMyeongjoYetHangul = localFont({
   src: [
     {
-      path: "../../public/fonts/NanumMyeongjoYetHangul/NanumMyeongjo-YetHangul.woff2",
+      path: "../../../public/fonts/NanumMyeongjoYetHangul/NanumMyeongjo-YetHangul.woff2",
       weight: "400",
       style: "normal",
     },
@@ -76,47 +48,47 @@ const nanumMyeongjoYetHangul = localFont({
 const paperlogy = localFont({
   src: [
     {
-      path: "../../public/fonts/Paperlogy/Paperlogy-1Thin.ttf",
+      path: "../../../public/fonts/Paperlogy/Paperlogy-1Thin.ttf",
       weight: "100",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Paperlogy/Paperlogy-2ExtraLight.ttf",
+      path: "../../../public/fonts/Paperlogy/Paperlogy-2ExtraLight.ttf",
       weight: "200",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Paperlogy/Paperlogy-3Light.ttf",
+      path: "../../../public/fonts/Paperlogy/Paperlogy-3Light.ttf",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Paperlogy/Paperlogy-4Regular.ttf",
+      path: "../../../public/fonts/Paperlogy/Paperlogy-4Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Paperlogy/Paperlogy-5Medium.ttf",
+      path: "../../../public/fonts/Paperlogy/Paperlogy-5Medium.ttf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Paperlogy/Paperlogy-6SemiBold.ttf",
+      path: "../../../public/fonts/Paperlogy/Paperlogy-6SemiBold.ttf",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Paperlogy/Paperlogy-7Bold.ttf",
+      path: "../../../public/fonts/Paperlogy/Paperlogy-7Bold.ttf",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Paperlogy/Paperlogy-8ExtraBold.ttf",
+      path: "../../../public/fonts/Paperlogy/Paperlogy-8ExtraBold.ttf",
       weight: "800",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Paperlogy/Paperlogy-9Black.ttf",
+      path: "../../../public/fonts/Paperlogy/Paperlogy-9Black.ttf",
       weight: "900",
       style: "normal",
     },
@@ -129,47 +101,47 @@ const paperlogy = localFont({
 const sCoreDream = localFont({
   src: [
     {
-      path: "../../public/fonts/S-Core_Dream/SCDream1.otf",
+      path: "../../../public/fonts/S-Core_Dream/SCDream1.otf",
       weight: "100",
       style: "normal",
     },
     {
-      path: "../../public/fonts/S-Core_Dream/SCDream2.otf",
+      path: "../../../public/fonts/S-Core_Dream/SCDream2.otf",
       weight: "200",
       style: "normal",
     },
     {
-      path: "../../public/fonts/S-Core_Dream/SCDream3.otf",
+      path: "../../../public/fonts/S-Core_Dream/SCDream3.otf",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../../public/fonts/S-Core_Dream/SCDream4.otf",
+      path: "../../../public/fonts/S-Core_Dream/SCDream4.otf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/fonts/S-Core_Dream/SCDream5.otf",
+      path: "../../../public/fonts/S-Core_Dream/SCDream5.otf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../../public/fonts/S-Core_Dream/SCDream6.otf",
+      path: "../../../public/fonts/S-Core_Dream/SCDream6.otf",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../../public/fonts/S-Core_Dream/SCDream7.otf",
+      path: "../../../public/fonts/S-Core_Dream/SCDream7.otf",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../../public/fonts/S-Core_Dream/SCDream8.otf",
+      path: "../../../public/fonts/S-Core_Dream/SCDream8.otf",
       weight: "800",
       style: "normal",
     },
     {
-      path: "../../public/fonts/S-Core_Dream/SCDream9.otf",
+      path: "../../../public/fonts/S-Core_Dream/SCDream9.otf",
       weight: "900",
       style: "normal",
     },
@@ -182,7 +154,7 @@ const sCoreDream = localFont({
 const cafe24OhsquareAir = localFont({
   src: [
     {
-      path: "../../public/fonts/Cafe24OhsquareAir/Cafe24OhsquareAir-v2.0.woff2",
+      path: "../../../public/fonts/Cafe24OhsquareAir/Cafe24OhsquareAir-v2.0.woff2",
       weight: "normal",
       style: "normal",
     },
@@ -195,12 +167,12 @@ const cafe24OhsquareAir = localFont({
 const giants = localFont({
   src: [
     {
-      path: "../../public/fonts/Giants/Giants-Regular.otf",
+      path: "../../../public/fonts/Giants/Giants-Regular.otf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Giants/Giants-Bold.otf",
+      path: "../../../public/fonts/Giants/Giants-Bold.otf",
       weight: "700",
       style: "normal",
     },
@@ -232,13 +204,21 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  // Ensure that the incoming `locale` is valid
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
   return (
-    <html lang="ko">
+    <html lang={locale}>
       <head>
         <Script
           src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_APP_KEY}&autoload=false`}
@@ -246,12 +226,14 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${gothicA1.variable} ${nanumHuman.variable} ${nanumMyeongjoYetHangul.variable} ${paperlogy.variable} ${sCoreDream.variable} ${cafe24OhsquareAir.variable} ${giants.variable} antialiased`}
+        className={`${inter.variable} ${gothicA1.variable} ${pretendard.variable} ${nanumMyeongjoYetHangul.variable} ${paperlogy.variable} ${sCoreDream.variable} ${cafe24OhsquareAir.variable} ${giants.variable} antialiased`}
       >
-        <Navbar />
-        {children}
-        <Footer />
-        <ScrollToTopButton />
+        <NextIntlClientProvider>
+          <Navbar />
+          {children}
+          <Footer />
+          <ScrollToTopButton />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

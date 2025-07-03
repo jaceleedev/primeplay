@@ -51,7 +51,7 @@ const FAQSection = () => {
         {/* 페이지 제목 */}
         <div className="text-center mb-12 sm:mb-16 md:mb-20">
           <h1
-            className="font-nanum-human text-black text-center font-bold leading-normal"
+            className="font-pretendard text-black text-center font-bold leading-normal"
             style={{ fontSize: "clamp(2.5rem, 6vw, 5rem)" }}
           >
             자주 묻는 질문
@@ -67,7 +67,7 @@ const FAQSection = () => {
                   <li key={category.id}>
                     <button
                       onClick={() => handleCategoryChange(category.id)}
-                      className={`w-full text-left px-4 py-3 rounded-md transition-colors font-nanum-human cursor-pointer ${
+                      className={`w-full text-left px-4 py-3 rounded-md transition-colors font-pretendard cursor-pointer ${
                         selectedCategory === category.id
                           ? "bg-[#FF6D00] text-white font-semibold"
                           : "text-gray-700 hover:bg-gray-100"
@@ -87,7 +87,7 @@ const FAQSection = () => {
             <div className="md:hidden mb-6">
               <button
                 onClick={() => setIsCategoryModalOpen(true)}
-                className="w-full flex items-center px-4 py-4 bg-transparent font-nanum-human font-semibold text-xl text-gray-900 hover:bg-gray-50 transition-colors rounded-lg cursor-pointer"
+                className="w-full flex items-center px-4 py-4 bg-transparent font-pretendard font-semibold text-xl text-gray-900 hover:bg-gray-50 transition-colors rounded-lg cursor-pointer"
               >
                 <span>{currentCategoryData.name}</span>
                 <svg
@@ -106,7 +106,7 @@ const FAQSection = () => {
             <div className={`modal ${isCategoryModalOpen ? "modal-open" : ""}`}>
               <div className="modal-box absolute bottom-0 left-0 right-0 mx-auto mb-0 w-11/12 max-w-md rounded-t-xl rounded-b-none">
                 <div className="flex items-center justify-between mb-6">
-                  <h3 className="font-nanum-human font-semibold text-lg text-black">
+                  <h3 className="font-pretendard font-semibold text-lg text-black">
                     카테고리 선택
                   </h3>
                   <button
@@ -121,7 +121,7 @@ const FAQSection = () => {
                     <button
                       key={category.id}
                       onClick={() => handleCategoryChange(category.id)}
-                      className={`w-full text-left px-4 py-4 rounded-lg transition-colors font-nanum-human font-medium ${
+                      className={`w-full text-left px-4 py-4 rounded-lg transition-colors font-pretendard font-medium ${
                         selectedCategory === category.id
                           ? "bg-[#FF6D00] text-white"
                           : "text-gray-700 hover:bg-gray-100 bg-gray-50"
@@ -148,10 +148,10 @@ const FAQSection = () => {
                   className="collapse collapse-arrow bg-white border border-gray-200"
                 >
                   <input type="checkbox" defaultChecked={index === 0} />
-                  <div className="collapse-title font-semibold font-nanum-human text-base sm:text-lg">
+                  <div className="collapse-title font-semibold font-pretendard text-base sm:text-lg">
                     {item.question}
                   </div>
-                  <div className="collapse-content font-nanum-human text-sm sm:text-base text-gray-700">
+                  <div className="collapse-content font-pretendard text-sm sm:text-base text-gray-700">
                     <p className="whitespace-pre-line">{item.answer}</p>
                   </div>
                 </div>

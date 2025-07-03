@@ -1,0 +1,11 @@
+{
+  "Navbar": {
+    "businessArea": "Business Area",
+    "viralMarketing": "Viral Marketing",
+    "webAppDev": "Web/App Dev",
+    "pgService": "PG Service",
+    "csiPlay": "CSI-PLAY",
+    "faq": "FAQ",
+    "support": "Support"
+  }
+}

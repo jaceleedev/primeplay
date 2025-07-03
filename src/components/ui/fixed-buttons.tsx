@@ -110,7 +110,7 @@ export default function FixedButtons({
                   height={32}
                   className="w-5 h-5 md:w-6 md:h-6 lg:w-8 lg:h-8 flex-shrink-0"
                 />
-                <span className="text-black font-nanum-human font-normal text-sm md:text-base lg:text-lg xl:text-xl whitespace-nowrap">
+                <span className="text-black font-pretendard font-normal text-sm md:text-base lg:text-lg xl:text-xl whitespace-nowrap">
                   {button.text}
                 </span>
               </button>

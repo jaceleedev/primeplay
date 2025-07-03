@@ -1,0 +1,11 @@
+{
+  "Navbar": {
+    "businessArea": "사업영역",
+    "viralMarketing": "바이럴 마케팅",
+    "webAppDev": "Web/App 개발",
+    "pgService": "PG 서비스",
+    "csiPlay": "CSI-PLAY",
+    "faq": "자주 묻는 질문",
+    "support": "고객지원"
+  }
+}

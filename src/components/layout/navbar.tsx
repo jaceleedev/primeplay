@@ -1,10 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export default function Navbar() {
+  const t = useTranslations("Navbar");
   const detailsRef = useRef<HTMLDetailsElement>(null);
   const mobileDetailsRef = useRef<HTMLDetailsElement>(null);
 
@@ -106,8 +108,8 @@ export default function Navbar() {
               <ul className="menu menu-horizontal space-x-4 md:space-x-6 lg:space-x-8 xl:space-x-12 2xl:space-x-16">
                 <li>
                   <details ref={detailsRef}>
-                    <summary className="text-white text-center font-nanum-human text-lg font-bold leading-normal hover:bg-transparent flex items-center">
-                      사업영역
+                    <summary className="text-white text-center font-pretendard text-lg font-bold leading-normal hover:bg-transparent flex items-center">
+                      {t("businessArea")}
                     </summary>
                     <ul
                       className="menu rounded-box z-[1] w-44 p-2 shadow-lg mt-3"
@@ -120,37 +122,37 @@ export default function Navbar() {
                       <li>
                         <Link
                           href="/viral-marketing"
-                          className="text-white font-nanum-human text-base font-medium rounded-md"
+                          className="text-white font-pretendard text-base font-medium rounded-md"
                           onClick={handleLinkClick}
                         >
-                          바이럴 마케팅
+                          {t("viralMarketing")}
                         </Link>
                       </li>
                       <li>
                         <Link
                           href="/web-app-dev"
-                          className="text-white font-nanum-human text-base font-medium rounded-md"
+                          className="text-white font-pretendard text-base font-medium rounded-md"
                           onClick={handleLinkClick}
                         >
-                          Web/App 개발
+                          {t("webAppDev")}
                         </Link>
                       </li>
                       <li>
                         <Link
                           href="/pg-service"
-                          className="text-white font-nanum-human text-base font-medium rounded-md"
+                          className="text-white font-pretendard text-base font-medium rounded-md"
                           onClick={handleLinkClick}
                         >
-                          PG 서비스
+                          {t("pgService")}
                         </Link>
                       </li>
                       <li>
                         <Link
                           href="/csi-play"
-                          className="text-white font-nanum-human text-base font-medium rounded-md"
+                          className="text-white font-pretendard text-base font-medium rounded-md"
                           onClick={handleLinkClick}
                         >
-                          CSI-PLAY
+                          {t("csiPlay")}
                         </Link>
                       </li>
                     </ul>
@@ -159,19 +161,19 @@ export default function Navbar() {
                 <li>
                   <Link
                     href="/faq"
-                    className="text-white text-center font-nanum-human text-lg font-bold leading-normal hover:bg-transparent"
+                    className="text-white text-center font-pretendard text-lg font-bold leading-normal hover:bg-transparent"
                     onClick={handleLinkClick}
                   >
-                    자주 묻는 질문
+                    {t("faq")}
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/support"
-                    className="text-white text-center font-nanum-human text-lg font-bold leading-normal hover:bg-transparent"
+                    className="text-white text-center font-pretendard text-lg font-bold leading-normal hover:bg-transparent"
                     onClick={handleLinkClick}
                   >
-                    고객지원
+                    {t("support")}
                   </Link>
                 </li>
               </ul>
@@ -195,44 +197,44 @@ export default function Navbar() {
           >
             <li className="mb-3">
               <details ref={mobileDetailsRef}>
-                <summary className="text-white font-nanum-human text-xl font-bold leading-normal flex items-center">
-                  사업영역
+                <summary className="text-white font-pretendard text-xl font-bold leading-normal flex items-center">
+                  {t("businessArea")}
                 </summary>
                 <ul className="p-2">
                   <li className="mb-2">
                     <Link
                       href="/viral-marketing"
-                      className="text-white text-center font-nanum-human text-base font-medium"
+                      className="text-white text-center font-pretendard text-base font-medium"
                       onClick={handleLinkClick}
                     >
-                      바이럴 마케팅
+                      {t("viralMarketing")}
                     </Link>
                   </li>
                   <li className="mb-2">
                     <Link
                       href="/web-app-dev"
-                      className="text-white text-center font-nanum-human text-base font-medium"
+                      className="text-white text-center font-pretendard text-base font-medium"
                       onClick={handleLinkClick}
                     >
-                      Web/App 개발
+                      {t("webAppDev")}
                     </Link>
                   </li>
                   <li className="mb-2">
                     <Link
                       href="/pg-service"
-                      className="text-white text-center font-nanum-human text-base font-medium"
+                      className="text-white text-center font-pretendard text-base font-medium"
                       onClick={handleLinkClick}
                     >
-                      PG 서비스
+                      {t("pgService")}
                     </Link>
                   </li>
                   <li className="mb-2">
                     <Link
                       href="/csi-play"
-                      className="text-white text-center font-nanum-human text-base font-medium"
+                      className="text-white text-center font-pretendard text-base font-medium"
                       onClick={handleLinkClick}
                     >
-                      CSI-PLAY
+                      {t("csiPlay")}
                     </Link>
                   </li>
                 </ul>
@@ -241,19 +243,19 @@ export default function Navbar() {
             <li className="mb-3">
               <Link
                 href="/faq"
-                className="text-white font-nanum-human text-xl font-bold leading-normal flex"
+                className="text-white font-pretendard text-xl font-bold leading-normal flex"
                 onClick={handleLinkClick}
               >
-                자주 묻는 질문
+                {t("faq")}
               </Link>
             </li>
             <li className="mb-3">
               <Link
                 href="/support"
-                className="text-white font-nanum-human text-xl font-bold leading-normal"
+                className="text-white font-pretendard text-xl font-bold leading-normal"
                 onClick={handleLinkClick}
               >
-                고객지원
+                {t("support")}
               </Link>
             </li>
           </ul>

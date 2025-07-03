@@ -76,7 +76,7 @@ export default function VideoSection({
       <div className="relative z-20 flex flex-col items-center justify-center h-full bg-gray-600/28">
         <h1
           className={`
-            text-white text-center font-nanum-human text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl
+            text-white text-center font-pretendard text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl
             font-extrabold leading-tight mb-16 sm:mb-20 md:mb-28 lg:mb-36
             ${isVisible ? "fade-in-down" : "opacity-0"}
           `}
@@ -101,7 +101,7 @@ export default function VideoSection({
             } as React.CSSProperties
           }
         >
-          <div className="text-white text-center font-nanum-human text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight space-y-2">
+          <div className="text-white text-center font-pretendard text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight space-y-2">
             {subTexts.korean}
           </div>
 

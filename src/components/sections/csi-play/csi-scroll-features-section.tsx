@@ -138,10 +138,10 @@ const CsiScrollFeaturesSection = () => {
                       pointerEvents: opacity > 0.5 ? "auto" : "none",
                     }}
                   >
-                    <h3 className="font-nanum-human text-black text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 leading-tight">
+                    <h3 className="font-pretendard text-black text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 leading-tight">
                       {group.title}
                     </h3>
-                    <p className="font-nanum-human text-black text-lg lg:text-xl xl:text-2xl leading-relaxed whitespace-pre-line">
+                    <p className="font-pretendard text-black text-lg lg:text-xl xl:text-2xl leading-relaxed whitespace-pre-line">
                       {group.description}
                     </p>
                   </div>
@@ -185,10 +185,10 @@ const CsiScrollFeaturesSection = () => {
               }}
             >
               <div className="text-center mb-6 w-full">
-                <h3 className="font-nanum-human text-black text-2xl md:text-3xl font-bold mb-4 leading-tight">
+                <h3 className="font-pretendard text-black text-2xl md:text-3xl font-bold mb-4 leading-tight">
                   {csiFeatureGroups[currentGroup]?.title}
                 </h3>
-                <p className="font-nanum-human text-black text-lg md:text-xl leading-relaxed whitespace-pre-line">
+                <p className="font-pretendard text-black text-lg md:text-xl leading-relaxed whitespace-pre-line">
                   {csiFeatureGroups[currentGroup]?.description}
                 </p>
               </div>
