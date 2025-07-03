@@ -345,28 +345,6 @@
   }
 }
 
-/* Work Process Section Arrow Logic */
-/* 2 columns layout */
-@media (min-width: 640px) and (max-width: 1023px) {
-  .work-process-item:nth-child(2n) .arrow-container {
-    display: none;
-  }
-}
-
-/* 3 columns layout */
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .work-process-item:nth-child(3n) .arrow-container {
-    display: none;
-  }
-}
-
-/* 5 columns layout */
-@media (min-width: 1280px) {
-  .work-process-item:nth-child(5n) .arrow-container {
-    display: none;
-  }
-}
-
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

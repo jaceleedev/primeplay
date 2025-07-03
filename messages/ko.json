@@ -156,6 +156,32 @@
     }
   },
   "WebAppDevPage": {
+    "WorkProcessSection": {
+      "title": "Work Process",
+      "subtitle": "프로젝트의 진행 단계에 상관없이 구현합니다.",
+      "steps": [
+        {
+          "key": "consulting",
+          "title": "컨설팅"
+        },
+        {
+          "key": "planning",
+          "title": "기획"
+        },
+        {
+          "key": "design",
+          "title": "디자인"
+        },
+        {
+          "key": "development",
+          "title": "개발"
+        },
+        {
+          "key": "maintenance",
+          "title": "유지보수"
+        }
+      ]
+    },
     "SolutionSection": {
       "slides": [
         {

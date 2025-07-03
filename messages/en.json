@@ -156,6 +156,32 @@
     }
   },
   "WebAppDevPage": {
+    "WorkProcessSection": {
+      "title": "Work Process",
+      "subtitle": "We implement regardless of the project's progress stage.",
+      "steps": [
+        {
+          "key": "consulting",
+          "title": "Consulting"
+        },
+        {
+          "key": "planning",
+          "title": "Planning"
+        },
+        {
+          "key": "design",
+          "title": "Design"
+        },
+        {
+          "key": "development",
+          "title": "Development"
+        },
+        {
+          "key": "maintenance",
+          "title": "Maintenance"
+        }
+      ]
+    },
     "SolutionSection": {
       "slides": [
         {
