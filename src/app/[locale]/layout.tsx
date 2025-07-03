@@ -32,19 +32,6 @@ const pretendard = localFont({
   weight: "45 920",
 });
 
-const nanumMyeongjoYetHangul = localFont({
-  src: [
-    {
-      path: "../../../public/fonts/NanumMyeongjoYetHangul/NanumMyeongjo-YetHangul.woff2",
-      weight: "400",
-      style: "normal",
-    },
-  ],
-  variable: "--font-nanum-myeongjo-yet-hangul",
-  display: "swap",
-  preload: true,
-});
-
 const paperlogy = localFont({
   src: [
     {
@@ -226,7 +213,7 @@ export default async function LocaleLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${gothicA1.variable} ${pretendard.variable} ${nanumMyeongjoYetHangul.variable} ${paperlogy.variable} ${sCoreDream.variable} ${cafe24OhsquareAir.variable} ${giants.variable} antialiased`}
+        className={`${inter.variable} ${gothicA1.variable} ${pretendard.variable} ${paperlogy.variable} ${sCoreDream.variable} ${cafe24OhsquareAir.variable} ${giants.variable} antialiased`}
       >
         <NextIntlClientProvider>
           <Navbar />

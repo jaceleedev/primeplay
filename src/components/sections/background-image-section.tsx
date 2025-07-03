@@ -7,17 +7,13 @@ import "@/components/ui/animations.css";
 interface BackgroundImageSectionProps {
   imageSrc: string;
   mainTitle: React.ReactNode;
-  subTexts: {
-    korean: React.ReactNode;
-    english?: React.ReactNode;
-    author?: React.ReactNode;
-  };
+  subText: React.ReactNode;
 }
 
 export default function BackgroundImageSection({
   imageSrc,
   mainTitle,
-  subTexts,
+  subText,
 }: BackgroundImageSectionProps) {
   const [isVisible, setIsVisible] = useState(false);
   const [subtextVisible, setSubtextVisible] = useState(false);
@@ -53,7 +49,7 @@ export default function BackgroundImageSection({
         </h1>
 
         <div
-          className={`text-center space-y-4 ${
+          className={`text-center ${
             subtextVisible ? "fade-in-down" : "opacity-0"
           }`}
           style={
@@ -64,20 +60,8 @@ export default function BackgroundImageSection({
           }
         >
           <div className="text-white text-center font-pretendard text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight space-y-2">
-            {subTexts.korean}
+            {subText}
           </div>
-
-          {subTexts.english && (
-            <div className="text-white text-center font-nanum-myeongjo-yet-hangul text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-normal leading-tight pt-6 sm:pt-8 space-y-2">
-              {subTexts.english}
-            </div>
-          )}
-
-          {subTexts.author && (
-            <div className="text-white text-center font-nanum-myeongjo-yet-hangul text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-normal leading-tight pt-3 sm:pt-4">
-              {subTexts.author}
-            </div>
-          )}
         </div>
       </div>
       <ScrollIndicator />

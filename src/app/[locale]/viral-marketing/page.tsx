@@ -14,14 +14,12 @@ const ViralMarketingPage = () => {
             마케팅
           </>
         }
-        subTexts={{
-          korean: (
-            <>
-              <p>수많은 성공 사례를 통해 입증된 전문가 그룹이</p>
-              <p>가장 효과적인 마케팅 전략을 제시합니다.</p>
-            </>
-          ),
-        }}
+        subText={
+          <>
+            <p>수많은 성공 사례를 통해 입증된 전문가 그룹이</p>
+            <p>가장 효과적인 마케팅 전략을 제시합니다.</p>
+          </>
+        }
       />
       <ServicesSection />
       <BackgroundImageSection imageSrc="/images/channel-growth-background.webp">

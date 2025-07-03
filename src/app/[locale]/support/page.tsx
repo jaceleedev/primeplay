@@ -8,14 +8,12 @@ const SupportPage = () => {
       <BackgroundImageSection
         imageSrc="/images/customer-support-background.webp"
         mainTitle={<>고객지원</>}
-        subTexts={{
-          korean: (
-            <>
-              <p>궁금한 사항이 있으신가요?</p>
-              <p>다양한 문의 내용을 남겨주세요</p>
-            </>
-          ),
-        }}
+        subText={
+          <>
+            <p>궁금한 사항이 있으신가요?</p>
+            <p>다양한 문의 내용을 남겨주세요</p>
+          </>
+        }
       />
       <ContactUsSection />
       <LocationSection />
