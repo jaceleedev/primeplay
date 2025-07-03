@@ -100,6 +100,57 @@
     "imageAlt": "Background image representing meticulous attention to detail"
   },
   "ViralMarketingPage": {
+    "ServicesSection": {
+      "title": "OUR SERVICES",
+      "subtitle": "Complete digital marketing solutions",
+      "cards": [
+        {
+          "key": "sns-social",
+          "title": "SNS Social Marketing",
+          "description": "Boost brand awareness and engagement through strategic social media advertising."
+        },
+        {
+          "key": "channel-story",
+          "title": "Channel & Story & DDN",
+          "description": "Customer management and service promotion via Kakao Channel and other platforms."
+        },
+        {
+          "key": "naver-marketing",
+          "title": "Naver Marketing",
+          "description": "Maximize visibility across Naver's ecosystem - keywords, blogs, images, and local search."
+        },
+        {
+          "key": "brand-blog",
+          "title": "Brand Blog",
+          "description": "Professional blog creation and content strategy for your brand."
+        },
+        {
+          "key": "keyword-uac",
+          "title": "Keyword & UAC & GDN",
+          "description": "Drive brand awareness with Google Ads, display campaigns, and app promotions."
+        },
+        {
+          "key": "experiential",
+          "title": "Experiential & Proposal Marketing",
+          "description": "Amplify your brand through influencer and YouTuber partnerships."
+        },
+        {
+          "key": "digital-keyword",
+          "title": "Digital Keyword & Integrated Search",
+          "description": "Increase conversions with targeted online media campaigns."
+        },
+        {
+          "key": "instagram-marketing",
+          "title": "Instagram Marketing",
+          "description": "Complete Instagram growth - account setup, optimization, and management."
+        },
+        {
+          "key": "news-media",
+          "title": "News & Media PR Marketing",
+          "description": "Build credibility through strategic press coverage and media relations."
+        }
+      ]
+    },
     "ChannelSection": {
       "title": "We are with various channels"
     }
