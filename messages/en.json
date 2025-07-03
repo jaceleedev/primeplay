@@ -85,5 +85,12 @@
       }
     },
     "viewDetails": "View Details"
+  },
+  "BusinessSolutionSection": {
+    "mainTitleLine1": "Comprehensive solution agency",
+    "mainTitleLine2": "for efficient business",
+    "descriptionLine1": "Innovative digital strategies",
+    "descriptionLine2": "for successful business growth.",
+    "imageAlt": "Business network pattern"
   }
 }

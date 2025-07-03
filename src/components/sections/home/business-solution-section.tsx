@@ -1,30 +1,31 @@
 "use client";
 
 import { useEffect, useRef, useState, CSSProperties } from "react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import "@/components/ui/animations.css";
 
 interface BusinessSolutionSectionProps {
-  mainTitle: {
-    line1: string;
-    line2: string;
-  };
-  description: {
-    line1: string;
-    line2: string;
-  };
-  imageSrc: string;
-  imageAlt: string;
+  /**
+   * 배경 이미지 경로 (선택사항, 기본값 제공)
+   */
+  imageSrc?: string;
+  /**
+   * 배경 그라디언트 (선택사항, 기본값 제공)
+   */
   background?: string;
+  /**
+   * 추가 CSS 클래스명
+   */
+  className?: string;
 }
 
 const BusinessSolutionSection = ({
-  mainTitle,
-  description,
-  imageSrc,
-  imageAlt,
+  imageSrc = "/images/business-network.webp",
   background = "linear-gradient(270deg, #FFF 0%, rgba(248, 219, 219, 0.74) 100%)",
+  className = "",
 }: BusinessSolutionSectionProps) => {
+  const t = useTranslations("BusinessSolutionSection");
   const [titleVisible, setTitleVisible] = useState(false);
   const [descriptionVisible, setDescriptionVisible] = useState(false);
   const titleRef = useRef<HTMLDivElement>(null);
@@ -50,7 +51,7 @@ const BusinessSolutionSection = ({
         observer.unobserve(titleRef.current);
       }
     };
-  }, []);
+  }, [titleVisible]);
 
   // 두 번째 텍스트 그룹 Intersection Observer
   useEffect(() => {
@@ -72,11 +73,11 @@ const BusinessSolutionSection = ({
         observer.unobserve(descriptionRef.current);
       }
     };
-  }, []);
+  }, [descriptionVisible]);
 
   return (
     <section
-      className="relative w-full h-[75vh] sm:h-[70vh] md:h-[65vh] lg:h-[75vh] xl:h-[70vh] min-h-[550px] max-h-[850px] overflow-hidden"
+      className={`relative w-full h-[75vh] sm:h-[70vh] md:h-[65vh] lg:h-[75vh] xl:h-[70vh] min-h-[550px] max-h-[850px] overflow-hidden ${className}`}
       style={{
         background: background,
       }}
@@ -97,10 +98,10 @@ const BusinessSolutionSection = ({
           >
             <h2 className="font-s-core-dream font-bold text-black leading-tight">
               <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
-                {mainTitle.line1}
+                {t("mainTitleLine1")}
               </span>
               <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight mt-2 sm:mt-3 md:mt-4">
-                {mainTitle.line2}
+                {t("mainTitleLine2")}
               </span>
             </h2>
           </div>
@@ -121,10 +122,10 @@ const BusinessSolutionSection = ({
           >
             <div className="space-y-1 sm:space-y-2">
               <p className="font-s-core-dream text-black leading-relaxed text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
-                {description.line1}
+                {t("descriptionLine1")}
               </p>
               <p className="font-s-core-dream text-black leading-relaxed text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
-                {description.line2}
+                {t("descriptionLine2")}
               </p>
             </div>
           </div>
@@ -135,7 +136,7 @@ const BusinessSolutionSection = ({
       <div className="absolute bottom-0 left-0 w-full h-[40%] sm:h-[45%] md:h-[50%] z-5">
         <Image
           src={imageSrc}
-          alt={imageAlt}
+          alt={t("imageAlt")}
           fill
           className="object-cover object-bottom"
           priority={false}
