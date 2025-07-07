@@ -45,13 +45,7 @@ const PGServicePage = () => {
     <main>
       <VideoSection
         videoSrc="/videos/pg-service-background.webm"
-        mainTitle={<>PG 서비스</>}
-        subText={
-          <>
-            <p>비사업자 단말기, 수기 결제용 어플 등</p>
-            <p>다양한 서비스를 지원하는 결제 대행사</p>
-          </>
-        }
+        translationKey="VideoSections.pgService"
       />
       <div ref={mockupSectionRef}>
         <PgServiceMockupSection />

@@ -22,6 +22,38 @@
     "addressLine1": "서울특별시 강서구 강서로 466,",
     "addressLine2": "7층 702호(등촌동, 우리벤처타운)"
   },
+  "VideoSections": {
+    "home": {
+      "mainTitle": "세상에 없던 새로운\n연결고리",
+      "subTextLine1": "자신을 변화시키는 가장 빠른 방법은",
+      "subTextLine2": "이미 되고 싶은 모습을 가진 사람들과",
+      "subTextLine3": "어울리는 것이다."
+    },
+    "viralMarketing": {
+      "mainTitle": "결과로 증명하는\n바이럴 마케팅",
+      "subTextLine1": "수많은 성공 사례를 통해 입증된",
+      "subTextLine2": "전문가 그룹이 가장 효과적인",
+      "subTextLine3": "마케팅 전략을 제시합니다."
+    },
+    "webAppDev": {
+      "mainTitle": "성과로 검증된\nWeb, App 개발 솔루션",
+      "subTextLine1": "기획부터 디자인, 개발까지",
+      "subTextLine2": "아이디어를 한 번에 성공으로 이끄는",
+      "subTextLine3": "가장 확실한 파트너"
+    },
+    "pgService": {
+      "mainTitle": "PG 서비스",
+      "subTextLine1": "비사업자 단말기, 수기 결제용 어플 등",
+      "subTextLine2": "다양한 서비스를 지원하는",
+      "subTextLine3": "결제 대행사"
+    },
+    "csiPlay": {
+      "mainTitle": "CSI PLAY",
+      "subTextLine1": "코인, 주식, 부동산 투자자들이",
+      "subTextLine2": "정보를 교류하고, 실전 경험을",
+      "subTextLine3": "공유하는 투자 커뮤니티"
+    }
+  },
   "ContactSection": {
     "expertCollaborationLine1": "다양한 분야의 전문가들이",
     "expertCollaborationLine2": "함께 머리를 맞대고 아이디어를 내며",

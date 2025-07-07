@@ -22,6 +22,38 @@
     "addressLine1": "466, Gangseo-ro, Gangseo-gu,",
     "addressLine2": "Seoul, 7th Floor, 702 (Deungchon-dong, Woori Venture Town)"
   },
+  "VideoSections": {
+    "home": {
+      "mainTitle": "Revolutionary\nConnections",
+      "subTextLine1": "The fastest way to change yourself",
+      "subTextLine2": "is to hang out with people who",
+      "subTextLine3": "are already the way you want to be."
+    },
+    "viralMarketing": {
+      "mainTitle": "Proven Results in\nViral Marketing",
+      "subTextLine1": "Expert teams with proven success",
+      "subTextLine2": "deliver the most effective",
+      "subTextLine3": "marketing strategies."
+    },
+    "webAppDev": {
+      "mainTitle": "Performance-Proven\nWeb & App Solutions",
+      "subTextLine1": "From planning to development",
+      "subTextLine2": "Your reliable partner",
+      "subTextLine3": "for turning ideas into success"
+    },
+    "pgService": {
+      "mainTitle": "PG Service",
+      "subTextLine1": "Terminals, manual payment apps",
+      "subTextLine2": "and diverse payment services",
+      "subTextLine3": "for all business types"
+    },
+    "csiPlay": {
+      "mainTitle": "CSI PLAY",
+      "subTextLine1": "Investment community where",
+      "subTextLine2": "investors gather to exchange",
+      "subTextLine3": "information and experience"
+    }
+  },
   "ContactSection": {
     "expertCollaborationLine1": "Experts from various fields come together",
     "expertCollaborationLine2": "to brainstorm ideas, communicate with each other,",
