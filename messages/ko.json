@@ -183,6 +183,17 @@
         }
       ]
     },
+    "BackgroundSections": {
+      "channelGrowth": {
+        "text": "효과적으로\n원하는 채널을 성장시키고,"
+      },
+      "casting": {
+        "text": "인플루언서, 연예인, 모델 등\n기획에 필요한 출연진을 섭외하고,"
+      },
+      "videoProduction": {
+        "text": "각종 홍보 영상, 라이브 영상 등\n영상 기획부터 촬영 편집까지."
+      }
+    },
     "ChannelSection": {
       "title": "다양한 채널과 함께합니다"
     }

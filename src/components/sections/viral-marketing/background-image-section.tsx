@@ -1,14 +1,22 @@
-import React from "react";
+"use client";
+
+import { useTranslations } from "next-intl";
 
 interface BackgroundImageSectionProps {
   imageSrc: string;
-  children: React.ReactNode;
+  translationKey: string; // 번역 키를 받아서 해당 섹션의 텍스트를 가져옴
 }
 
 const BackgroundImageSection = ({
   imageSrc,
-  children,
+  translationKey,
 }: BackgroundImageSectionProps) => {
+  const t = useTranslations(translationKey);
+
+  // 텍스트 처리 (줄바꿈 지원)
+  const text = t("text");
+  const textLines = text.split("\n");
+
   return (
     <section className="relative w-full">
       <div
@@ -22,14 +30,19 @@ const BackgroundImageSection = ({
         }}
       >
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center text-white px-4">
+          <div className="text-center text-white">
             <p
-              className="font-paperlogy font-semibold leading-normal text-2xl sm:text-3xl md:text-4xl lg:text-[48px]"
+              className="font-paperlogy font-semibold leading-normal"
               style={{
+                fontSize: "clamp(1.5rem, 5vw, 3rem)", // 1단계 업 (24px ~ 48px)
                 textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
               }}
             >
-              {children}
+              {textLines.map((line, index) => (
+                <span key={index} className="block">
+                  {line}
+                </span>
+              ))}
             </p>
           </div>
         </div>

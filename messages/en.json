@@ -183,6 +183,17 @@
         }
       ]
     },
+    "BackgroundSections": {
+      "channelGrowth": {
+        "text": "Effectively grow\nyour desired channels"
+      },
+      "casting": {
+        "text": "Cast influencers, celebrities,\nmodels for your projects"
+      },
+      "videoProduction": {
+        "text": "Complete video and\nlive content solutions"
+      }
+    },
     "ChannelSection": {
       "title": "We are with various channels"
     }
