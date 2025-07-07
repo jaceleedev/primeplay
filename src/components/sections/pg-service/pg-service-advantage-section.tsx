@@ -28,11 +28,14 @@ const PgServiceAdvantagesSection = () => {
   const advantageCount = 4;
 
   return (
-    <section className="w-full pt-20 sm:pt-24 md:pt-28 lg:pt-36 xl:pt-40 pb-24 sm:pb-28 md:pb-32 lg:pb-40 xl:pb-44 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="w-full pt-20 sm:pt-24 md:pt-28 lg:pt-36 xl:pt-40 pb-24 sm:pb-28 md:pb-32 lg:pb-40 xl:pb-44 px-0 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* 메인 제목 */}
         <div className="text-center mb-16 sm:mb-20 md:mb-24 lg:mb-28 xl:mb-32">
-          <h2 className="font-paperlogy font-semibold text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
+          <h2
+            className="font-paperlogy font-semibold text-black leading-tight"
+            style={{ fontSize: "clamp(1.5rem, 6vw, 4rem)" }}
+          >
             {t("title")}
           </h2>
         </div>
@@ -62,7 +65,10 @@ const PgServiceAdvantagesSection = () => {
                   <div className="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 mt-1">
                     <CheckIcon />
                   </div>
-                  <p className="font-paperlogy text-black text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
+                  <p
+                    className="font-paperlogy text-black leading-relaxed"
+                    style={{ fontSize: "clamp(1rem, 3vw, 1.5rem)" }}
+                  >
                     {t(`advantages.${index}`)}
                   </p>
                 </div>

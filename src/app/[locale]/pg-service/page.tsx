@@ -29,16 +29,12 @@ const PGServicePage = () => {
   const backgroundSectionsRef = useRef<HTMLDivElement>(null);
   const advantagesSectionRef = useRef<HTMLDivElement>(null);
 
-  // 다국어 지원 배경 섹션 데이터 생성
+  // 다국어 지원 배경 섹션 데이터 생성 - br 제거
   const pgServiceSections = backgroundImages.map((imageSrc, index) => ({
     id: index + 1,
     imageSrc,
-    firstLine: t.rich(`${index}.firstLine`, {
-      br: (chunks) => <br className="min-[450px]:hidden block" />,
-    }),
-    secondLine: t.rich(`${index}.secondLine`, {
-      br: (chunks) => <br className="min-[450px]:hidden block" />,
-    }),
+    firstLine: t(`${index}.firstLine`),
+    secondLine: t(`${index}.secondLine`),
   }));
 
   return (

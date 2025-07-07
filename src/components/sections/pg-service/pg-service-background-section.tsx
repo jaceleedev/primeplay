@@ -30,11 +30,17 @@ const PgServiceBackgroundSection = ({
 
         {/* 텍스트 콘텐츠 */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center text-white px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 max-w-7xl mx-auto">
-            <p className="font-paperlogy font-semibold leading-normal text-2xl sm:text-3xl md:text-4xl lg:text-[48px] mb-4">
+          <div className="text-center text-white px-0 sm:px-6 md:px-8 lg:px-12 xl:px-16 max-w-7xl mx-auto">
+            <p
+              className="font-paperlogy font-semibold leading-normal mb-4"
+              style={{ fontSize: "clamp(1.5rem, 5vw, 3rem)" }}
+            >
               {firstLine}
             </p>
-            <p className="font-paperlogy font-semibold leading-normal text-2xl sm:text-3xl md:text-4xl lg:text-[48px]">
+            <p
+              className="font-paperlogy font-semibold leading-normal"
+              style={{ fontSize: "clamp(1.5rem, 5vw, 3rem)" }}
+            >
               {secondLine}
             </p>
           </div>

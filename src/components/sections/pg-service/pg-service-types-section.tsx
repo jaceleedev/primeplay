@@ -10,7 +10,7 @@ const PgServiceTypesSection = () => {
   const t = useTranslations("PGServicePage.TypesSection");
 
   return (
-    <section className="w-full py-20 sm:py-24 md:py-28 lg:py-36 xl:py-40 px-2 sm:px-4 md:px-6 lg:px-8 bg-white">
+    <section className="w-full py-20 sm:py-24 md:py-28 lg:py-36 xl:py-40 px-0 sm:px-4 md:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* 1x2 그리드 레이아웃 - 모바일에서도 2열 유지 */}
         <div className="grid grid-cols-2 gap-2 sm:gap-4 md:gap-8 lg:gap-12 xl:gap-16 mb-16 sm:mb-20 md:mb-24 lg:mb-28">
@@ -23,7 +23,10 @@ const PgServiceTypesSection = () => {
                 className="flex flex-col items-center text-center space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8 px-1 sm:px-4 md:px-6 lg:px-8"
               >
                 {/* 제목 */}
-                <h3 className="font-paperlogy font-semibold text-black text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl leading-tight">
+                <h3
+                  className="font-paperlogy font-semibold text-black text-center leading-tight"
+                  style={{ fontSize: "clamp(1rem, 4vw, 2rem)" }}
+                >
                   {serviceType.title}
                 </h3>
 
@@ -44,7 +47,8 @@ const PgServiceTypesSection = () => {
                     (feature: string, featureIndex: number) => (
                       <p
                         key={featureIndex}
-                        className="font-paperlogy text-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed break-keep"
+                        className="font-paperlogy text-black text-center leading-relaxed break-keep"
+                        style={{ fontSize: "clamp(0.875rem, 3vw, 1.5rem)" }}
                       >
                         {feature}
                       </p>
@@ -58,7 +62,10 @@ const PgServiceTypesSection = () => {
 
         {/* 하단 메인 텍스트 */}
         <div className="text-center">
-          <h2 className="font-paperlogy font-semibold text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
+          <h2
+            className="font-paperlogy font-semibold text-black leading-tight"
+            style={{ fontSize: "clamp(1.5rem, 6vw, 4rem)" }}
+          >
             {t("title")}
           </h2>
         </div>

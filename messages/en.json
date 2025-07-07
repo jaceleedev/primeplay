@@ -588,70 +588,67 @@
   },
   "PGServicePage": {
     "TypesSection": {
-      "title": "Domestic & Global Payment Processing",
+      "title": "Global Payment Solutions",
       "types": [
         {
-          "title": "Domestic Payment Gateway",
-          "features": [
-            "Early Settlement Support",
-            "POS, Terminal, Manual Payment"
-          ]
+          "title": "Domestic Gateway",
+          "features": ["Fast Settlement", "POS & Terminal Support"]
         },
         {
-          "title": "Global Payment Gateway",
-          "features": ["Easy API Integration", "Global Payment Terminal"]
+          "title": "International Gateway",
+          "features": ["Quick API Setup", "Global Terminals"]
         }
       ]
     },
     "JourneySection": {
-      "titleLine1": "From Payments to Growth",
-      "titleLine2": "We guide your journey.",
-      "descriptionLine1": "Access domestic and international",
-      "descriptionLine2": "payment services without multiple vendors."
+      "titleLine1": "Payment to Growth",
+      "titleLine2": "Your trusted partner",
+      "descriptionLine1": "Streamlined payment services",
+      "descriptionLine2": "from a single provider"
     },
     "FeaturesSection": {
-      "title": "Complete Payment Infrastructure Solution",
-      "subtitle": "From PG Consulting to Development & Launch",
+      "title": "All-in-One Payment Platform",
+      "subtitle": "Consulting to Launch Support",
       "features": [
         {
-          "title": "Secure & Fast\nPayment Processing"
+          "title": "Secure & Fast\nProcessing"
         },
         {
-          "title": "Simple Payment Integration"
+          "title": "Easy Integration"
         },
         {
-          "title": "Multiple Payment Methods\n& Services"
+          "title": "Multi-Payment\nOptions"
         },
         {
-          "title": "Online & Offline Integration"
+          "title": "Unified Online\n& Offline"
         }
       ]
     },
     "BackgroundSections": [
       {
-        "firstLine": "Unified payment management",
-        "secondLine": "across web and mobile."
+        "firstLine": "Centralized payment control",
+        "secondLine": "on web and mobile"
       },
       {
-        "firstLine": "Cards, transfers,\naccounts & receipts",
-        "secondLine": "optimized for web, apps\nand payment devices."
+        "firstLine": "Cards, transfers & receipts",
+        "secondLine": "for web, apps & devices"
       },
       {
-        "firstLine": "Integrated online & offline services",
-        "secondLine": "customized for each client."
+        "firstLine": "Tailored payment solutions",
+        "secondLine": "for every business need"
       },
       {
-        "firstLine": "PC and mobile integration guides",
-        "secondLine": "enable seamless payment setup."
+        "firstLine": "Simple integration guides",
+        "secondLine": "for quick setup"
       }
     ],
     "AdvantagesSection": {
-      "title": "Early Settlement Service Benefits",
+      "title": "Fast Settlement Benefits",
       "advantages": [
-        "Receive settlement funds the next day instead of waiting 5-9 days.",
-        "Next-day settlement enables fast and accurate cash flow management.",
-        "Improved cash flow supports smooth merchant operations.",
-        "Industry-lowest rates through partner financial institutions."
+        "Get paid next day vs. waiting 5-9 days",
+        "Better cash flow with daily settlements",
+        "Smoother operations with improved liquidity",
+        "Lowest rates via banking partnerships"
       ]
     },
     "FixedButtons": {

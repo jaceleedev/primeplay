@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const PgServiceMockupSection = () => {
   return (
-    <section className="py-24 sm:py-28 md:py-32 lg:py-36 px-4 sm:px-6 lg:px-8">
+    <section className="py-24 sm:py-28 md:py-32 lg:py-36 px-0 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         {/* 2개의 로고와 타이틀 */}
         <div className="flex flex-col items-center justify-center gap-y-8 sm:gap-y-10 md:gap-y-12 mb-16 sm:mb-20 md:mb-24">
