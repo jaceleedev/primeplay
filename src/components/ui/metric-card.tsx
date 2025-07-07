@@ -9,7 +9,7 @@ export interface MetricCardProps {
 }
 
 const MetricCard = ({ id, defaultText, hoverColor }: MetricCardProps) => {
-  const t = useTranslations("PlayToPSection");
+  const t = useTranslations("HomePage.PlayToPSection");
   const firstChar = defaultText.charAt(0);
   const restOfText = defaultText.slice(1);
 

@@ -4,7 +4,7 @@ import MetricCard from "@/components/ui/metric-card";
 import { useTranslations } from "next-intl";
 
 const PlayToPSection = () => {
-  const t = useTranslations("PlayToPSection");
+  const t = useTranslations("HomePage.PlayToPSection");
 
   // 간단한 데이터를 직접 정의
   const metricCards = [

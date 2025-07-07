@@ -6,7 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 
 const ContactSection = () => {
-  const t = useTranslations("ContactSection");
+  const t = useTranslations("HomePage.ContactSection");
 
   return (
     <section className="relative w-full pt-16 sm:pt-20 md:pt-24 lg:pt-32 bg-white">

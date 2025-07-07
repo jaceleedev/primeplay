@@ -10,7 +10,7 @@ interface DetailSectionProps {
 }
 
 const DetailSection = ({ className = "" }: DetailSectionProps) => {
-  const t = useTranslations("DetailSection");
+  const t = useTranslations("HomePage.DetailSection");
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 

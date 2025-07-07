@@ -54,82 +54,84 @@
       "subTextLine3": "information and experience"
     }
   },
-  "ContactSection": {
-    "expertCollaborationLine1": "Experts from various fields come together",
-    "expertCollaborationLine2": "to brainstorm ideas, communicate with each other,",
-    "expertCollaborationLine3": "and respect each other's opinions.",
-    "playImportance": "The most important thing is PLAY!",
-    "contactUsTitle": "Contact Us",
-    "contactDescriptionLine1": "Please feel free to contact us with any questions.",
-    "contactDescriptionLine2": "We will be a partner who thinks from the customer's perspective.",
-    "inquireButton": "Contact Us"
-  },
-  "PlayToPSection": {
-    "title": "Play to P",
-    "subtitle": "Core Metrics of Prime Play",
-    "people": {
-      "hoverTextLine1": "Customer experience",
-      "hoverTextLine2": "as top priority",
-      "hoverTextLine3": ""
+  "HomePage": {
+    "ContactSection": {
+      "expertCollaborationLine1": "Experts from various fields come together",
+      "expertCollaborationLine2": "to brainstorm ideas, communicate with each other,",
+      "expertCollaborationLine3": "and respect each other's opinions.",
+      "playImportance": "The most important thing is PLAY!",
+      "contactUsTitle": "Contact Us",
+      "contactDescriptionLine1": "Please feel free to contact us with any questions.",
+      "contactDescriptionLine2": "We will be a partner who thinks from the customer's perspective.",
+      "inquireButton": "Contact Us"
     },
-    "performance": {
-      "hoverTextLine1": "Clear goal setting and",
-      "hoverTextLine2": "quality management",
-      "hoverTextLine3": ""
-    },
-    "partnership": {
-      "hoverTextLine1": "Collaborative relationships",
-      "hoverTextLine2": "considering",
-      "hoverTextLine3": "mutual benefits"
-    },
-    "progress": {
-      "hoverTextLine1": "Maximizing growth potential",
-      "hoverTextLine2": "through continuous improvement",
-      "hoverTextLine3": "and innovation"
-    }
-  },
-  "ProductSection": {
-    "title": "OUR\nPRODUCT",
-    "products": {
-      "pgPayment": {
-        "title": "PG Payment Service",
-        "description": "We provide fast settlement\nand stable service through\npayment gateway (PG) companies."
+    "PlayToPSection": {
+      "title": "Play to P",
+      "subtitle": "Core Metrics of Prime Play",
+      "people": {
+        "hoverTextLine1": "Customer experience",
+        "hoverTextLine2": "as top priority",
+        "hoverTextLine3": ""
       },
-      "viralMarketing": {
-        "title": "Viral Marketing",
-        "description": "Build high trust through\ninformation sharing based\non real-world experience."
+      "performance": {
+        "hoverTextLine1": "Clear goal setting and",
+        "hoverTextLine2": "quality management",
+        "hoverTextLine3": ""
       },
-      "webAppDev": {
-        "title": "Web/App Development",
-        "description": "We provide high-quality\nservices based on the latest\ntechnology and know-how."
+      "partnership": {
+        "hoverTextLine1": "Collaborative relationships",
+        "hoverTextLine2": "considering",
+        "hoverTextLine3": "mutual benefits"
       },
-      "snsPlay": {
-        "title": "SNS PLAY",
-        "description": "We provide specialized\nmarketing programs\napplicable to SNS\nplatforms."
-      },
-      "csiPlay": {
-        "title": "CSI PLAY",
-        "description": "A community site where\ninvestors share and\ncommunicate stock and\ncoin information."
-      },
-      "tyPlay": {
-        "title": "TY PLAY",
-        "description": "Comprehensive payment\nPG solution available\nfor both businesses\nand individuals."
+      "progress": {
+        "hoverTextLine1": "Maximizing growth potential",
+        "hoverTextLine2": "through continuous improvement",
+        "hoverTextLine3": "and innovation"
       }
     },
-    "viewDetails": "View Details"
-  },
-  "BusinessSolutionSection": {
-    "mainTitleLine1": "Comprehensive solution agency",
-    "mainTitleLine2": "for efficient business",
-    "descriptionLine1": "Innovative digital strategies",
-    "descriptionLine2": "for successful business growth.",
-    "imageAlt": "Business network pattern"
-  },
-  "DetailSection": {
-    "line1": "Meticulous in every detail",
-    "line2": "From small parts to the bigger picture",
-    "line3": "We find joy in everything we do",
-    "imageAlt": "Background image representing meticulous attention to detail"
+    "ProductSection": {
+      "title": "OUR\nPRODUCT",
+      "products": {
+        "pgPayment": {
+          "title": "PG Payment Service",
+          "description": "We provide fast settlement\nand stable service through\npayment gateway (PG) companies."
+        },
+        "viralMarketing": {
+          "title": "Viral Marketing",
+          "description": "Build high trust through\ninformation sharing based\non real-world experience."
+        },
+        "webAppDev": {
+          "title": "Web/App Development",
+          "description": "We provide high-quality\nservices based on the latest\ntechnology and know-how."
+        },
+        "snsPlay": {
+          "title": "SNS PLAY",
+          "description": "We provide specialized\nmarketing programs\napplicable to SNS\nplatforms."
+        },
+        "csiPlay": {
+          "title": "CSI PLAY",
+          "description": "A community site where\ninvestors share and\ncommunicate stock and\ncoin information."
+        },
+        "tyPlay": {
+          "title": "TY PLAY",
+          "description": "Comprehensive payment\nPG solution available\nfor both businesses\nand individuals."
+        }
+      },
+      "viewDetails": "View Details"
+    },
+    "BusinessSolutionSection": {
+      "mainTitleLine1": "Comprehensive solution agency",
+      "mainTitleLine2": "for efficient business",
+      "descriptionLine1": "Innovative digital strategies",
+      "descriptionLine2": "for successful business growth.",
+      "imageAlt": "Business network pattern"
+    },
+    "DetailSection": {
+      "line1": "Meticulous in every detail",
+      "line2": "From small parts to the bigger picture",
+      "line3": "We find joy in everything we do",
+      "imageAlt": "Background image representing meticulous attention to detail"
+    }
   },
   "ViralMarketingPage": {
     "ServicesSection": {

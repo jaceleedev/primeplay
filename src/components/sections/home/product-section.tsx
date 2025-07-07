@@ -23,7 +23,7 @@ interface ProductData {
 }
 
 const ProductSection = () => {
-  const t = useTranslations("ProductSection");
+  const t = useTranslations("HomePage.ProductSection");
 
   // Static product data that doesn't change between languages
   const productData: ProductData[] = [
