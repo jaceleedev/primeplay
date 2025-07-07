@@ -469,6 +469,12 @@
     }
   },
   "SupportPage": {
+    "BackgroundSection": {
+      "mainTitle": "고객지원",
+      "subTextLine1": "궁금한 사항이 있으신가요?",
+      "subTextLine2": "다양한 문의 내용을 남겨주세요",
+      "subTextLine3": ""
+    },
     "ContactUsSection": {
       "title": "Contact us",
       "subtitle": "문의사항과 요청사항을 작성해주세요.",

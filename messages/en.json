@@ -469,6 +469,12 @@
     }
   },
   "SupportPage": {
+    "BackgroundSection": {
+      "mainTitle": "Customer Support",
+      "subTextLine1": "Do you have any questions?",
+      "subTextLine2": "Please leave us various inquiries",
+      "subTextLine3": ""
+    },
     "ContactUsSection": {
       "title": "Contact us",
       "subtitle": "Please write your inquiries and requests.",
