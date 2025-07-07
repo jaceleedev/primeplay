@@ -495,5 +495,44 @@
     "Modal": {
       "confirm": "OK"
     }
+  },
+  "CsiPlayPage": {
+    "ScrollFeaturesSection": {
+      "features": [
+        {
+          "id": 1,
+          "title": "Community-Centered Information Sharing",
+          "description": "Interactive community boards where users\ncan exchange real-time opinions and share information.",
+          "screenImage": "/images/community-website-screen.webp"
+        },
+        {
+          "id": 2,
+          "title": "Point System & Event Management",
+          "description": "Features roulette events and point accumulation systems,\noffering entertainment alongside information.",
+          "screenImage": "/images/points-website-screen.webp"
+        },
+        {
+          "id": 3,
+          "title": "Diverse Investment Information",
+          "description": "Real-time market data and news across\nstocks, cryptocurrency, real estate, and more.",
+          "screenImage": "/images/real-estate-website-screen.webp"
+        },
+        {
+          "id": 4,
+          "title": "Coin Listing & Price Information",
+          "description": "Integrated information for listed coins from\nmajor exchanges like Upbit, Bithumb, and Binance.",
+          "screenImage": "/images/coin-website-screen.webp"
+        },
+        {
+          "id": 5,
+          "title": "Proprietary Auto-Trading Program",
+          "description": "2nd generation dual AI auto-trading system\nwith 1:1 support and comprehensive guidance.",
+          "screenImage": "/images/csi-bot.webp"
+        }
+      ]
+    },
+    "FixedButtons": {
+      "visitCsiPlay": "Visit CSI-PLAY"
+    }
   }
 }

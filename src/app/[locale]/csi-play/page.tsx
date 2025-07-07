@@ -1,12 +1,14 @@
 "use client";
 
 import { useRef } from "react";
+import { useTranslations } from "next-intl";
 import VideoSection from "@/components/sections/home/video-section";
 import CsiMockupSection from "@/components/sections/csi-play/csi-mockup-section";
 import CsiScrollFeaturesSection from "@/components/sections/csi-play/csi-scroll-features-section";
 import FixedButtons from "@/components/ui/fixed-buttons";
 
 const CsiPlayPage = () => {
+  const t = useTranslations("CsiPlayPage.FixedButtons");
   const mockupSectionRef = useRef<HTMLDivElement>(null);
   const scrollSectionRef = useRef<HTMLDivElement>(null);
 
@@ -35,7 +37,7 @@ const CsiPlayPage = () => {
         buttons={[
           {
             logo: "/logos/csi-play-logo.svg",
-            text: "CSI-PLAY로 이동하기",
+            text: t("visitCsiPlay"),
             url: "https://csi-play.com",
             alt: "CSI PLAY Logo",
           },

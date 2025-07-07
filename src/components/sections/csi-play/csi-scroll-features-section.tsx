@@ -1,12 +1,18 @@
-// src/components/sections/csi-play/csi-scroll-features-section.tsx
-
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import IPhoneMockup from "@/components/ui/iphone-mockup";
-import { csiFeatureGroups } from "@/data/csi-scroll-features";
+
+interface CsiFeatureGroup {
+  id: number;
+  title: string;
+  description: string;
+  screenImage: string;
+}
 
 const CsiScrollFeaturesSection = () => {
+  const t = useTranslations("CsiPlayPage.ScrollFeaturesSection");
   const containerRef = useRef<HTMLDivElement>(null);
   const [currentGroup, setCurrentGroup] = useState(0);
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -16,6 +22,11 @@ const CsiScrollFeaturesSection = () => {
   // 스크롤 이벤트 throttling을 위한 ref
   const rafRef = useRef<number | null>(null);
   const lastScrollTime = useRef<number>(0);
+
+  // JSON에서 features 데이터를 가져옴
+  const csiFeatureGroups: CsiFeatureGroup[] = t.raw(
+    "features"
+  ) as CsiFeatureGroup[];
 
   useEffect(() => {
     // 초기 뷰포트 높이 설정
@@ -74,7 +85,7 @@ const CsiScrollFeaturesSection = () => {
         cancelAnimationFrame(rafRef.current);
       }
     };
-  }, []);
+  }, [csiFeatureGroups.length]);
 
   // 뷰포트 높이에 따른 아이폰 목업 크기 계산 (모바일만)
   const getMobileIPhoneSize = () => {
