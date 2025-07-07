@@ -534,5 +534,75 @@
     "FixedButtons": {
       "visitCsiPlay": "CSI-PLAY로 이동하기"
     }
+  },
+  "PGServicePage": {
+    "TypesSection": {
+      "title": "국내 및 해외 결제 대행까지 한 번에!",
+      "types": [
+        {
+          "title": "국내 결제 대행사",
+          "features": ["선정산 시스템 지원", "포스, 단말기, 수기 결제 지원"]
+        },
+        {
+          "title": "해외 결제 대행사",
+          "features": ["api 연동 간편 지원", "해외 결제 단말기 지원"]
+        }
+      ]
+    },
+    "JourneySection": {
+      "titleLine1": "결제 솔루션부터 사업확장까지",
+      "titleLine2": "모든 여정을 함께합니다.",
+      "descriptionLine1": "여러 업체를 통하지 않아도 국내 및 해외 등",
+      "descriptionLine2": "다양한 결제 서비스를 활용할 수 있습니다."
+    },
+    "FeaturesSection": {
+      "title": "결제 인프라 구축의 고효율 종합 솔루션",
+      "subtitle": "PG 컨설팅부터 개발 및 런칭까지",
+      "features": [
+        {
+          "title": "안전하고 빠른\n결제 및 정산"
+        },
+        {
+          "title": "간단한 결제 연동"
+        },
+        {
+          "title": "다양한 결제 수단 및\n부가 서비스"
+        },
+        {
+          "title": "온·오프라인 통합 결제"
+        }
+      ]
+    },
+    "BackgroundSections": [
+      {
+        "firstLine": "결제, 관리, 정산을",
+        "secondLine": "웹과 모바일에서 통합 관리합니다."
+      },
+      {
+        "firstLine": "신용카드, 계좌이체,\n가상계좌, 현금영수증을",
+        "secondLine": "웹, 앱, 결제 기기에\n최적화하여 제공합니다."
+      },
+      {
+        "firstLine": "온·오프라인 통합 결제 서비스를",
+        "secondLine": "고객 맞춤형으로 제공합니다."
+      },
+      {
+        "firstLine": "PC 웹과 모바일 웹 연동 가이드로",
+        "secondLine": "손쉬운 결제 연동이 가능합니다."
+      }
+    ],
+    "AdvantagesSection": {
+      "title": "선정산 서비스의 장점",
+      "advantages": [
+        "5~9일 걸리던 정산 금액을 매출 발생 다음날에 바로 입금받을 수 있습니다.",
+        "매출 발생 후 익일 정산으로 빠르고 정확한 자금 관리가 가능합니다.",
+        "현금 유동성 증가로 원활한 가맹점 운영을 지원합니다.",
+        "제휴 금융기관을 통한 업계 최저 수수료율을 제공합니다."
+      ]
+    },
+    "FixedButtons": {
+      "visitTyPlay": "TY-PLAY로 이동하기",
+      "contactPaymentService": "결제 대행 서비스 문의하기"
+    }
   }
 }

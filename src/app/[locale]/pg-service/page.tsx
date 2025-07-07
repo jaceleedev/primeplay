@@ -1,23 +1,45 @@
 "use client";
 
 import { useRef } from "react";
+import { useTranslations } from "next-intl";
 import VideoSection from "@/components/sections/home/video-section";
 import PgServiceMockupSection from "@/components/sections/pg-service/pg-service-mockup-section";
 import PgServiceBackgroundSection from "@/components/sections/pg-service/pg-service-background-section";
-import { pgServiceSections } from "@/data/pg-service-sections";
 import PgServiceFeaturesSection from "@/components/sections/pg-service/pg-service-features-section";
 import PgServiceJourneySection from "@/components/sections/pg-service/pg-service-journey-section";
 import PgServiceAdvantagesSection from "@/components/sections/pg-service/pg-service-advantage-section";
 import PgServiceTypesSection from "@/components/sections/pg-service/pg-service-types-section";
 import FixedButtons from "@/components/ui/fixed-buttons";
 
+// 배경 이미지 경로는 정적으로 유지
+const backgroundImages = [
+  "/images/pg-service-background-section-1.webp",
+  "/images/pg-service-background-section-2.webp",
+  "/images/pg-service-background-section-3.webp",
+  "/images/pg-service-background-section-4.webp",
+];
+
 const PGServicePage = () => {
+  const t = useTranslations("PGServicePage.BackgroundSections");
+  const tButtons = useTranslations("PGServicePage.FixedButtons");
   const mockupSectionRef = useRef<HTMLDivElement>(null);
   const typesSectionRef = useRef<HTMLDivElement>(null);
   const journeySectionRef = useRef<HTMLDivElement>(null);
   const featuresSectionRef = useRef<HTMLDivElement>(null);
   const backgroundSectionsRef = useRef<HTMLDivElement>(null);
   const advantagesSectionRef = useRef<HTMLDivElement>(null);
+
+  // 다국어 지원 배경 섹션 데이터 생성
+  const pgServiceSections = backgroundImages.map((imageSrc, index) => ({
+    id: index + 1,
+    imageSrc,
+    firstLine: t.rich(`${index}.firstLine`, {
+      br: (chunks) => <br className="min-[450px]:hidden block" />,
+    }),
+    secondLine: t.rich(`${index}.secondLine`, {
+      br: (chunks) => <br className="min-[450px]:hidden block" />,
+    }),
+  }));
 
   return (
     <main>
@@ -72,14 +94,14 @@ const PGServicePage = () => {
         buttons={[
           {
             logo: "/logos/ty-play-logo.svg",
-            text: "TY-PLAY로 이동하기",
+            text: tButtons("visitTyPlay"),
             url: "https://ty-play.com",
             alt: "TY PLAY Logo",
             isExternal: true,
           },
           {
             logo: "/logos/sk-play-logo.svg",
-            text: "결제 대행 서비스 문의하기",
+            text: tButtons("contactPaymentService"),
             url: "/support",
             alt: "SK PLAY Logo",
             isExternal: false,

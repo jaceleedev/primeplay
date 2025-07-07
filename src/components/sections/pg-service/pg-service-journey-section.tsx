@@ -1,4 +1,10 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 const PgServiceJourneySection = () => {
+  const t = useTranslations("PGServicePage.JourneySection");
+
   return (
     <section className="relative w-full min-h-[400px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-[800px] xl:min-h-[900px] overflow-hidden bg-white">
       {/* 모바일 배경 이미지 */}
@@ -29,19 +35,17 @@ const PgServiceJourneySection = () => {
           <div className="max-w-2xl lg:max-w-3xl xl:max-w-4xl">
             <h2 className="font-paperlogy font-semibold text-black mb-4 sm:mb-6 md:mb-10 lg:mb-14 xl:mb-18">
               <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
-                결제 솔루션부터 사업확장까지
+                {t("titleLine1")}
               </span>
               <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight mt-1 sm:mt-2 md:mt-3 lg:mt-4">
-                모든 여정을 함께합니다.
+                {t("titleLine2")}
               </span>
             </h2>
 
             <div className="font-paperlogy font-normal text-black leading-relaxed text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
-              <span className="block">
-                여러 업체를 통하지 않아도 국내 및 해외 등
-              </span>
+              <span className="block">{t("descriptionLine1")}</span>
               <span className="block mt-1 sm:mt-2">
-                다양한 결제 서비스를 활용할 수 있습니다.
+                {t("descriptionLine2")}
               </span>
             </div>
           </div>
