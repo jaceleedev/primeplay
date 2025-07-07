@@ -3,8 +3,11 @@
 import { useState } from "react";
 import axios from "axios";
 import Modal from "@/components/ui/modal";
+import { useTranslations } from "next-intl";
 
 const ContactUsSection = () => {
+  const t = useTranslations("SupportPage.ContactUsSection");
+
   const [form, setForm] = useState({
     inquiryType: "",
     customerName: "",
@@ -76,8 +79,8 @@ const ContactUsSection = () => {
       // 성공 모달 표시
       showModal(
         "success",
-        "문의 접수 완료",
-        "문의가 성공적으로 접수되었습니다.\n빠른 시일 내에 답변드리겠습니다."
+        t("modal.success.title"),
+        t("modal.success.message")
       );
 
       // 폼 초기화
@@ -96,21 +99,20 @@ const ContactUsSection = () => {
       if (error.response) {
         showModal(
           "error",
-          "문의 접수 실패",
-          error.response.data.message ||
-            "오류가 발생했습니다.\n다시 시도해주세요."
+          t("modal.error.title"),
+          error.response.data.message || t("modal.error.defaultMessage")
         );
       } else if (error.request) {
         showModal(
           "error",
-          "연결 오류",
-          "서버에 연결할 수 없습니다.\n네트워크를 확인해주세요."
+          t("modal.error.networkTitle"),
+          t("modal.error.networkMessage")
         );
       } else {
         showModal(
           "error",
-          "문의 접수 실패",
-          "문의 제출 중 오류가 발생했습니다.\n잠시 후 다시 시도해주세요."
+          t("modal.error.title"),
+          t("modal.error.defaultMessage")
         );
       }
     } finally {
@@ -122,10 +124,8 @@ const ContactUsSection = () => {
     <section className="w-full bg-[#F5F5F5] py-20 font-paperlogy">
       <div className="mx-auto max-w-[1280px] px-4">
         <div className="text-center">
-          <h2 className="text-4xl font-bold">Contact us</h2>
-          <p className="mt-4 text-lg">
-            각종 문의사항과 요청사항을 작성해주세요.
-          </p>
+          <h2 className="text-4xl font-bold">{t("title")}</h2>
+          <p className="mt-4 text-lg">{t("subtitle")}</p>
         </div>
 
         <form
@@ -139,8 +139,11 @@ const ContactUsSection = () => {
                   htmlFor="inquiryType"
                   className="block text-sm font-medium"
                 >
-                  문의 유형 <span className="text-[#FF6D00]">*</span>{" "}
-                  <span className="text-xs text-gray-500">(필수)</span>
+                  {t("form.inquiryType.label")}{" "}
+                  <span className="text-[#FF6D00]">*</span>{" "}
+                  <span className="text-xs text-gray-500">
+                    ({t("form.required")})
+                  </span>
                 </label>
                 <select
                   id="inquiryType"
@@ -151,25 +154,25 @@ const ContactUsSection = () => {
                   className="mt-1 block w-full rounded-md border-[#D9D9D9] bg-white p-3 shadow-sm invalid:text-[#B3B3B3] focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 >
                   <option value="" disabled>
-                    문의 유형을 선택해주세요.
+                    {t("form.inquiryType.placeholder")}
                   </option>
                   <option className="text-black" value="pg">
-                    PG 관련
+                    {t("form.inquiryType.options.pg")}
                   </option>
                   <option className="text-black" value="marketing">
-                    마케팅 관련
+                    {t("form.inquiryType.options.marketing")}
                   </option>
                   <option className="text-black" value="sns">
-                    SNS 관련
+                    {t("form.inquiryType.options.sns")}
                   </option>
                   <option className="text-black" value="csi">
-                    CSI 관련
+                    {t("form.inquiryType.options.csi")}
                   </option>
                   <option className="text-black" value="web/app">
-                    Web/App 개발 관련
+                    {t("form.inquiryType.options.webApp")}
                   </option>
                   <option className="text-black" value="etc">
-                    기타문의
+                    {t("form.inquiryType.options.etc")}
                   </option>
                 </select>
               </div>
@@ -181,8 +184,11 @@ const ContactUsSection = () => {
                   htmlFor="customerName"
                   className="block text-sm font-medium"
                 >
-                  고객명 <span className="text-[#FF6D00]">*</span>{" "}
-                  <span className="text-xs text-gray-500">(필수)</span>
+                  {t("form.customerName.label")}{" "}
+                  <span className="text-[#FF6D00]">*</span>{" "}
+                  <span className="text-xs text-gray-500">
+                    ({t("form.required")})
+                  </span>
                 </label>
                 <input
                   type="text"
@@ -191,7 +197,7 @@ const ContactUsSection = () => {
                   value={form.customerName}
                   onChange={handleChange}
                   required
-                  placeholder="이름을 입력해주세요."
+                  placeholder={t("form.customerName.placeholder")}
                   className="mt-1 block w-full rounded-md border-[#D9D9D9] p-3 shadow-sm placeholder:text-[#B3B3B3] focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 />
               </div>
@@ -200,8 +206,10 @@ const ContactUsSection = () => {
                   htmlFor="isBusiness"
                   className="block text-sm font-medium"
                 >
-                  사업자 여부{" "}
-                  <span className="text-xs text-gray-500">(선택)</span>
+                  {t("form.isBusiness.label")}{" "}
+                  <span className="text-xs text-gray-500">
+                    ({t("form.optional")})
+                  </span>
                 </label>
                 <select
                   id="isBusiness"
@@ -214,13 +222,13 @@ const ContactUsSection = () => {
                   }}
                 >
                   <option value="" disabled>
-                    사업자 여부를 선택해주세요.
+                    {t("form.isBusiness.placeholder")}
                   </option>
                   <option className="text-black" value="yes">
-                    예
+                    {t("form.isBusiness.options.yes")}
                   </option>
                   <option className="text-black" value="no">
-                    아니오
+                    {t("form.isBusiness.options.no")}
                   </option>
                 </select>
               </div>
@@ -228,23 +236,12 @@ const ContactUsSection = () => {
 
             <div className="grid grid-cols-1 gap-x-8 gap-y-8 md:grid-cols-2">
               <div>
-                <label htmlFor="email" className="block text-sm font-medium">
-                  이메일 <span className="text-xs text-gray-500">(선택)</span>
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={form.email}
-                  onChange={handleChange}
-                  placeholder="이메일 주소를 입력해주세요."
-                  className="mt-1 block w-full rounded-md border-[#D9D9D9] p-3 shadow-sm placeholder:text-[#B3B3B3] focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                />
-              </div>
-              <div>
                 <label htmlFor="contact" className="block text-sm font-medium">
-                  연락처 <span className="text-[#FF6D00]">*</span>{" "}
-                  <span className="text-xs text-gray-500">(필수)</span>
+                  {t("form.contact.label")}{" "}
+                  <span className="text-[#FF6D00]">*</span>{" "}
+                  <span className="text-xs text-gray-500">
+                    ({t("form.required")})
+                  </span>
                 </label>
                 <input
                   type="tel"
@@ -253,7 +250,24 @@ const ContactUsSection = () => {
                   value={form.contact}
                   onChange={handleChange}
                   required
-                  placeholder="연락처를 입력해주세요."
+                  placeholder={t("form.contact.placeholder")}
+                  className="mt-1 block w-full rounded-md border-[#D9D9D9] p-3 shadow-sm placeholder:text-[#B3B3B3] focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium">
+                  {t("form.email.label")}{" "}
+                  <span className="text-xs text-gray-500">
+                    ({t("form.optional")})
+                  </span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
+                  placeholder={t("form.email.placeholder")}
                   className="mt-1 block w-full rounded-md border-[#D9D9D9] p-3 shadow-sm placeholder:text-[#B3B3B3] focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 />
               </div>
@@ -261,8 +275,11 @@ const ContactUsSection = () => {
 
             <div>
               <label htmlFor="content" className="block text-sm font-medium">
-                문의 내용 <span className="text-[#FF6D00]">*</span>{" "}
-                <span className="text-xs text-gray-500">(필수)</span>
+                {t("form.content.label")}{" "}
+                <span className="text-[#FF6D00]">*</span>{" "}
+                <span className="text-xs text-gray-500">
+                  ({t("form.required")})
+                </span>
               </label>
               <textarea
                 id="content"
@@ -271,7 +288,7 @@ const ContactUsSection = () => {
                 onChange={handleChange}
                 rows={5}
                 required
-                placeholder="문의하실 내용을 입력해주세요."
+                placeholder={t("form.content.placeholder")}
                 className="mt-1 block w-full rounded-md border-[#D9D9D9] p-3 shadow-sm placeholder:text-[#B3B3B3] focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
               />
             </div>
@@ -283,7 +300,9 @@ const ContactUsSection = () => {
               disabled={isLoading}
               className="cursor-pointer rounded-md bg-[#FF6D00] px-16 py-3 text-lg font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-orange-500 disabled:opacity-50"
             >
-              {isLoading ? "전송 중..." : "전송하기"}
+              {isLoading
+                ? t("form.submitButton.loading")
+                : t("form.submitButton.default")}
             </button>
           </div>
         </form>

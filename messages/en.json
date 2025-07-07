@@ -424,5 +424,76 @@
         ]
       }
     }
+  },
+  "SupportPage": {
+    "ContactUsSection": {
+      "title": "Contact us",
+      "subtitle": "Please write your inquiries and requests.",
+      "form": {
+        "required": "Required",
+        "optional": "Optional",
+        "inquiryType": {
+          "label": "Inquiry Type",
+          "placeholder": "Please select an inquiry type.",
+          "options": {
+            "pg": "PG Related",
+            "marketing": "Marketing Related",
+            "sns": "SNS Related",
+            "csi": "CSI Related",
+            "webApp": "Web/App Development Related",
+            "etc": "Other Inquiries"
+          }
+        },
+        "customerName": {
+          "label": "Customer Name",
+          "placeholder": "Please enter your name."
+        },
+        "isBusiness": {
+          "label": "Business Status",
+          "placeholder": "Please select your business status.",
+          "options": {
+            "yes": "Yes",
+            "no": "No"
+          }
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Please enter your email address."
+        },
+        "contact": {
+          "label": "Contact",
+          "placeholder": "Please enter your contact information."
+        },
+        "content": {
+          "label": "Inquiry Content",
+          "placeholder": "Please enter your inquiry content."
+        },
+        "submitButton": {
+          "default": "Submit",
+          "loading": "Submitting..."
+        }
+      },
+      "modal": {
+        "success": {
+          "title": "Inquiry Submitted",
+          "message": "Your inquiry has been successfully submitted.\nWe will respond as soon as possible."
+        },
+        "error": {
+          "title": "Submission Failed",
+          "networkTitle": "Connection Error",
+          "defaultMessage": "An error occurred.\nPlease try again.",
+          "networkMessage": "Unable to connect to the server.\nPlease check your network connection."
+        }
+      }
+    },
+    "LocationSection": {
+      "mapInstructions": {
+        "mobile": "Use two fingers to move the map.",
+        "desktop": "Hold Ctrl or Cmd and scroll to zoom the map."
+      }
+    },
+    "Modal": {
+      "confirm": "OK"
+    }
   }
 }

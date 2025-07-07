@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 declare global {
   interface Window {
@@ -9,6 +10,7 @@ declare global {
 }
 
 const LocationSection = () => {
+  const t = useTranslations("SupportPage.LocationSection");
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -91,9 +93,7 @@ const LocationSection = () => {
     <section className="relative mx-auto h-[60vh] min-h-[400px]">
       <div id="map" className="absolute left-0 top-0 h-full w-full" />
       <div className="pointer-events-none absolute left-1/2 top-4 z-10 -translate-x-1/2 rounded-md bg-black/70 px-3 py-1.5 text-sm text-white whitespace-nowrap">
-        {isMobile
-          ? "지도를 움직이려면 두 손가락을 사용하세요."
-          : "지도를 확대/축소하려면 Ctrl 또는 Cmd 키를 누른 채 스크롤하세요."}
+        {isMobile ? t("mapInstructions.mobile") : t("mapInstructions.desktop")}
       </div>
     </section>
   );

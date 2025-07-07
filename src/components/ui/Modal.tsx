@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -13,6 +15,8 @@ const Modal: React.FC<ModalProps> = ({
   title,
   message,
 }) => {
+  const t = useTranslations("SupportPage.Modal");
+
   if (!isOpen) return null;
 
   const iconColor = type === "success" ? "text-green-500" : "text-red-500";
@@ -74,7 +78,7 @@ const Modal: React.FC<ModalProps> = ({
                 : "bg-red-500 hover:bg-red-600"
             }`}
           >
-            확인
+            {t("confirm")}
           </button>
         </div>
       </div>
