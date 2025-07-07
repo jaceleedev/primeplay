@@ -1,16 +1,52 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { faqData, FAQItem } from "@/data/faq-data";
+import { useTranslations } from "next-intl";
 
 const ITEMS_PER_PAGE = 10;
 
+// 카테고리 ID 타입 정의
+type CategoryId = "pg" | "web-app" | "marketing";
+
+// FAQ 아이템 타입 정의
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+// 카테고리 타입 정의
+interface FAQCategory {
+  id: CategoryId;
+  name: string;
+  items: FAQItem[];
+}
+
 const FAQSection = () => {
-  const [selectedCategory, setSelectedCategory] = useState("pg");
+  const t = useTranslations("FAQPage");
+  const [selectedCategory, setSelectedCategory] = useState<CategoryId>("pg");
   const [currentPage, setCurrentPage] = useState(1);
   const [isCategoryModalOpen, setIsCategoryModalOpen] = useState(false);
 
-  const currentCategoryData = faqData.find(
+  // 카테고리 데이터 생성
+  const categories: FAQCategory[] = [
+    {
+      id: "pg",
+      name: t("categories.pg.name"),
+      items: t.raw("categories.pg.items") as FAQItem[],
+    },
+    {
+      id: "web-app",
+      name: t("categories.web-app.name"),
+      items: t.raw("categories.web-app.items") as FAQItem[],
+    },
+    {
+      id: "marketing",
+      name: t("categories.marketing.name"),
+      items: t.raw("categories.marketing.items") as FAQItem[],
+    },
+  ];
+
+  const currentCategoryData = categories.find(
     (category) => category.id === selectedCategory
   );
 
@@ -22,7 +58,7 @@ const FAQSection = () => {
   const endIndex = startIndex + ITEMS_PER_PAGE;
   const currentItems = currentCategoryData.items.slice(startIndex, endIndex);
 
-  const handleCategoryChange = (categoryId: string) => {
+  const handleCategoryChange = (categoryId: CategoryId) => {
     setSelectedCategory(categoryId);
     setCurrentPage(1);
     setIsCategoryModalOpen(false);
@@ -54,7 +90,7 @@ const FAQSection = () => {
             className="font-pretendard text-black text-center font-bold leading-normal"
             style={{ fontSize: "clamp(2.5rem, 6vw, 5rem)" }}
           >
-            자주 묻는 질문
+            {t("title")}
           </h1>
         </div>
 
@@ -63,7 +99,7 @@ const FAQSection = () => {
           <div className="hidden md:block md:w-64 flex-shrink-0">
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
               <ul className="space-y-2">
-                {faqData.map((category) => (
+                {categories.map((category) => (
                   <li key={category.id}>
                     <button
                       onClick={() => handleCategoryChange(category.id)}
@@ -104,10 +140,10 @@ const FAQSection = () => {
 
             {/* 모바일 카테고리 Bottom Sheet Modal */}
             <div className={`modal ${isCategoryModalOpen ? "modal-open" : ""}`}>
-              <div className="modal-box absolute bottom-0 left-0 right-0 mx-auto mb-0 w-11/12 max-w-md rounded-t-xl rounded-b-none">
+              <div className="modal-box absolute bottom-0 left-0 right-0 mx-auto mb-0 w-11/12 max-w-md rounded-t-xl rounded-b-none bg-white">
                 <div className="flex items-center justify-between mb-6">
                   <h3 className="font-pretendard font-semibold text-lg text-black">
-                    카테고리 선택
+                    {t("categorySelectTitle")}
                   </h3>
                   <button
                     onClick={() => setIsCategoryModalOpen(false)}
@@ -117,7 +153,7 @@ const FAQSection = () => {
                   </button>
                 </div>
                 <div className="space-y-2">
-                  {faqData.map((category) => (
+                  {categories.map((category) => (
                     <button
                       key={category.id}
                       onClick={() => handleCategoryChange(category.id)}
@@ -144,7 +180,7 @@ const FAQSection = () => {
             <div key={selectedCategory} className="space-y-4">
               {currentItems.map((item, index) => (
                 <div
-                  key={item.id}
+                  key={`${selectedCategory}-${startIndex + index}`}
                   className="collapse collapse-arrow bg-white border border-gray-200"
                 >
                   <input type="checkbox" defaultChecked={index === 0} />
