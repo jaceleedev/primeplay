@@ -33,13 +33,19 @@ const PgServiceBackgroundSection = ({
           <div className="text-center text-white px-0 sm:px-6 md:px-8 lg:px-12 xl:px-16 max-w-7xl mx-auto">
             <p
               className="font-paperlogy font-semibold leading-normal mb-4"
-              style={{ fontSize: "clamp(1.5rem, 5vw, 3rem)" }}
+              style={{
+                fontSize: "clamp(1.5rem, 5vw, 3rem)",
+                textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+              }}
             >
               {firstLine}
             </p>
             <p
               className="font-paperlogy font-semibold leading-normal"
-              style={{ fontSize: "clamp(1.5rem, 5vw, 3rem)" }}
+              style={{
+                fontSize: "clamp(1.5rem, 5vw, 3rem)",
+                textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+              }}
             >
               {secondLine}
             </p>
