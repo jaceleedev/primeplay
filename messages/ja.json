@@ -1,0 +1,659 @@
+{
+  "Navbar": {
+    "businessArea": "事業領域",
+    "viralMarketing": "バイラルマーケティング",
+    "webAppDev": "Web/App開発",
+    "pgService": "PGサービス",
+    "csiPlay": "CSI-PLAY",
+    "faq": "よくある質問",
+    "support": "カスタマーサポート"
+  },
+  "Footer": {
+    "companyName": "Prime Play Co., Ltd.",
+    "copyright": "© 2022 PRIMEPLAY. All rights reserved.",
+    "serviceInfo": "SERVICE INFO",
+    "companyInfo": "COMPANY INFO",
+    "serviceGuide": "サービスガイド",
+    "faq": "よくある質問",
+    "support": "カスタマーサポート",
+    "privacyPolicy": "プライバシーポリシー",
+    "businessNumber": "357-86-00725",
+    "phoneNumber": "(+82) 02-6095-2685",
+    "addressLine1": "466, Gangseo-ro, Gangseo-gu,",
+    "addressLine2": "Seoul, 7th Floor, 702 (Deungchon-dong, Woori Venture Town)"
+  },
+  "VideoSections": {
+    "home": {
+      "mainTitle": "世界にない新しい\nつながり",
+      "subTextLine1": "自分を変える最も速い方法は",
+      "subTextLine2": "すでになりたい姿を持つ人々と",
+      "subTextLine3": "付き合うことである。"
+    },
+    "viralMarketing": {
+      "mainTitle": "結果で証明する\nバイラルマーケティング",
+      "subTextLine1": "数多くの成功事例を通じて実証された",
+      "subTextLine2": "専門家グループが最も効果的な",
+      "subTextLine3": "マーケティング戦略を提示します。"
+    },
+    "webAppDev": {
+      "mainTitle": "実績で検証された\nWeb・App開発ソリューション",
+      "subTextLine1": "企画からデザイン、開発まで",
+      "subTextLine2": "アイデアを一度で成功に導く",
+      "subTextLine3": "最も確実なパートナー"
+    },
+    "pgService": {
+      "mainTitle": "PGサービス",
+      "subTextLine1": "非事業者端末、手入力決済アプリなど",
+      "subTextLine2": "様々なサービスを支援する",
+      "subTextLine3": "決済代行会社"
+    },
+    "csiPlay": {
+      "mainTitle": "CSI PLAY",
+      "subTextLine1": "仮想通貨、株式、不動産投資家が",
+      "subTextLine2": "情報を交流し、実践経験を",
+      "subTextLine3": "共有する投資コミュニティ"
+    }
+  },
+  "HomePage": {
+    "ContactSection": {
+      "expertCollaborationLine1": "様々な分野の専門家が",
+      "expertCollaborationLine2": "アイデアを共有し、",
+      "expertCollaborationLine3": "互いを尊重しコミュニケーション。",
+      "playImportance": "最も 重要な ことは PLAY！",
+      "contactUsTitle": "Contact Us",
+      "contactDescriptionLine1": "ご質問はいつでもお気軽に。",
+      "contactDescriptionLine2": "お客様目線のパートナーになります。",
+      "inquireButton": "お問い合わせ"
+    },
+    "PlayToPSection": {
+      "title": "Play to P",
+      "subtitle": "Prime Playのコア指標",
+      "people": {
+        "hoverTextLine1": "カスタマーエクスペリエンスを",
+        "hoverTextLine2": "最優先に",
+        "hoverTextLine3": ""
+      },
+      "performance": {
+        "hoverTextLine1": "明確な目標設定と",
+        "hoverTextLine2": "品質管理",
+        "hoverTextLine3": ""
+      },
+      "partnership": {
+        "hoverTextLine1": "相互利益を",
+        "hoverTextLine2": "考慮した",
+        "hoverTextLine3": "協力関係"
+      },
+      "progress": {
+        "hoverTextLine1": "継続的な改善と",
+        "hoverTextLine2": "イノベーションを通じて",
+        "hoverTextLine3": "成長可能性を最大化"
+      }
+    },
+    "ProductSection": {
+      "title": "OUR\nPRODUCT",
+      "products": {
+        "pgPayment": {
+          "title": "PG決済代行",
+          "description": "決済代行会社（PG）で\n迅速精算と安定サービスを\n提供します。"
+        },
+        "viralMarketing": {
+          "title": "バイラルマーケティング",
+          "description": "実体験に基づく情報共有で\n高い信頼性を構築します。"
+        },
+        "webAppDev": {
+          "title": "Web/App開発",
+          "description": "最新技術とノウハウで\n高品質サービスを提供します。"
+        },
+        "snsPlay": {
+          "title": "SNS PLAY",
+          "description": "SNS対応の\nマーケティング専用プログラム。"
+        },
+        "csiPlay": {
+          "title": "CSI PLAY",
+          "description": "投資家が株式・仮想通貨情報を\n共有するコミュニティサイト"
+        },
+        "tyPlay": {
+          "title": "TY PLAY",
+          "description": "事業者・個人対応の\n総合決済PGソリューション"
+        }
+      },
+      "viewDetails": "詳細を見る"
+    },
+    "BusinessSolutionSection": {
+      "mainTitleLine1": "効率的ビジネス環境の",
+      "mainTitleLine2": "総合ソリューション",
+      "descriptionLine1": "革新的デジタル戦略で",
+      "descriptionLine2": "企業成長をサポート。",
+      "imageAlt": "ビジネスネットワークを表現する幾何学的パターン"
+    },
+    "DetailSection": {
+      "line1": "細部まで丁寧に",
+      "line2": "小さな部分から全体まで",
+      "line3": "すべてに楽しみを見出します",
+      "imageAlt": "細心なディテールを表現する背景画像"
+    }
+  },
+  "ViralMarketingPage": {
+    "ServicesSection": {
+      "title": "OUR SERVICES",
+      "subtitle": "デジタルマーケティング完全対応",
+      "cards": [
+        {
+          "key": "sns-social",
+          "title": "SNSソーシャルマーケティング",
+          "description": "戦略的SNS広告でブランド認知度とエンゲージメント向上を実現します。"
+        },
+        {
+          "key": "channel-story",
+          "title": "チャンネル & ストーリー & DDN",
+          "description": "カカオチャンネル等で顧客管理・サービス広報をサポート。"
+        },
+        {
+          "key": "naver-marketing",
+          "title": "Naverマーケティング",
+          "description": "Naverエコシステム全体でキーワード・ブログ・画像・ローカル検索を最大化。"
+        },
+        {
+          "key": "brand-blog",
+          "title": "ブランドブログ",
+          "description": "プロフェッショナルなブログ制作とコンテンツ戦略を提供。"
+        },
+        {
+          "key": "keyword-uac",
+          "title": "キーワード & UAC & GDN",
+          "description": "Google広告・ディスプレイ・アプリプロモーションでブランド認知度向上。"
+        },
+        {
+          "key": "experiential",
+          "title": "体験・提案マーケティング",
+          "description": "インフルエンサー・YouTuberとのパートナーシップでブランド拡散。"
+        },
+        {
+          "key": "digital-keyword",
+          "title": "デジタルキーワード & 統合検索",
+          "description": "ターゲット型オンラインメディアキャンペーンで転換率向上。"
+        },
+        {
+          "key": "instagram-marketing",
+          "title": "Instagramマーケティング",
+          "description": "Instagram完全成長 - アカウント設定・最適化・管理まで。"
+        },
+        {
+          "key": "news-media",
+          "title": "ニュース & メディアPRマーケティング",
+          "description": "戦略的報道・メディア関係で信頼性を構築。"
+        }
+      ]
+    },
+    "BackgroundSections": {
+      "channelGrowth": {
+        "text": "効果的に\n希望チャンネルを成長"
+      },
+      "casting": {
+        "text": "インフルエンサー・芸能人・\nモデルをキャスティング"
+      },
+      "videoProduction": {
+        "text": "動画・ライブコンテンツの\n完全ソリューション"
+      }
+    },
+    "ChannelSection": {
+      "title": "様々なチャンネルと連携"
+    }
+  },
+  "WebAppDevPage": {
+    "WorkProcessSection": {
+      "title": "Work Process",
+      "subtitle": "プロジェクト段階に関係なく実装",
+      "steps": [
+        {
+          "key": "consulting",
+          "title": "コンサルティング"
+        },
+        {
+          "key": "planning",
+          "title": "企画"
+        },
+        {
+          "key": "design",
+          "title": "デザイン"
+        },
+        {
+          "key": "development",
+          "title": "開発"
+        },
+        {
+          "key": "maintenance",
+          "title": "メンテナンス"
+        }
+      ]
+    },
+    "SolutionSection": {
+      "slides": [
+        {
+          "title": "Eコマース",
+          "listItems": [
+            "独立型ECプラットフォーム",
+            "ポイント決済・配送対応",
+            "マイオフィス会員連携"
+          ]
+        },
+        {
+          "title": "決済モジュール",
+          "listItems": [
+            "仮想口座で1:1サポート",
+            "PG・カード会社連携",
+            "カード・現金・NFT決済",
+            "決済履歴・データ提供"
+          ]
+        },
+        {
+          "title": "マイオフィス",
+          "listItems": [
+            "自動精算プログラム作成",
+            "会員系図・管理サービス",
+            "ネットワーク販売精算",
+            "条件対応EC・NFTサイト"
+          ]
+        },
+        {
+          "title": "コインウォレット",
+          "listItems": [
+            "NFT・コイン作成、一括送信",
+            "NFT決済対応",
+            "カスタムウォレット制作",
+            "コイン手当一括送信機能"
+          ]
+        }
+      ]
+    },
+    "MoreThanSolutionsSection": {
+      "title": "More than solutions",
+      "subtitle": "開発を超えてビジネス成功まで",
+      "services": [
+        "モバイルアプリ開発",
+        "Webサービス開発",
+        "UX/UIデザイン",
+        "サービス企画"
+      ]
+    },
+    "BlockchainServiceSection": {
+      "title": "Block Chain Service",
+      "subtitle": "Prime Play独自開発サービス",
+      "cards": [
+        {
+          "title": "コインウォレット開発",
+          "description": [
+            "プライベートキー個人管理",
+            "セキュリティ復旧システム",
+            "カスタム機能サポート",
+            "DAPP決済プラットフォーム対応"
+          ]
+        },
+        {
+          "title": "OTC取引所開発",
+          "description": [
+            "KYC・PoC体系管理",
+            "事前検証で安全取引",
+            "直接Bid・Ask注文",
+            "エスクローセキュリティ"
+          ]
+        }
+      ]
+    }
+  },
+  "FAQPage": {
+    "title": "よくある質問",
+    "categorySelectTitle": "カテゴリ選択",
+    "categories": {
+      "pg": {
+        "name": "PG",
+        "items": [
+          {
+            "question": "Q 非事業者でもカード決済サービスを利用できますか？",
+            "answer": "はい。事業者でなくても可能です。露店商、ショップインショップなどすべて可能です。"
+          },
+          {
+            "question": "Q 個人事業者と法人事業者の提出書類にはどのような違いがありますか？",
+            "answer": "個人：事業者登録証、通帳のコピー、身分証\n法人：事業者登録証、法人通帳のコピー、法人登記簿謄本、代表者身分証\n状況によって追加書類が必要な場合があります。オフライン店舗は該当書類のみ準備すれば可能です。"
+          },
+          {
+            "question": "Q オンライン決済をしたいのですが、どのような書類が必要ですか？",
+            "answer": "事業者登録証、通帳のコピー、ホームページ（またはSNS URL）、商品ページが必要です。一部PG会社は電子商取引未登録時、該当内容の登録が必要です。新規事業者は審査基準が厳格であるため、既存の売上または工場または仕入れ資料などが正確である必要があります。"
+          },
+          {
+            "question": "Q ホームページがなくてもオンラインカード決済はできますか？",
+            "answer": "簡便決済またはPG API連動のないリンク決済方式を通じて可能です。また、商品情報を詳細に記載した文書や画像が必要です。"
+          },
+          {
+            "question": "Q 手入力決済はどのように可能ですか？",
+            "answer": "カード番号を手入力するMOTO（手入力決済）方式を意味します。高いリスクで審査基準が厳しく、保証金または預託金が要求される場合があります。"
+          },
+          {
+            "question": "Q 手入力決済時必要な書類は何ですか？",
+            "answer": "信用販売同意書、顧客身分証/カード写真、注文書、取引履歴証明資料、事業者登録証などが必要です。"
+          },
+          {
+            "question": "Q カード決済入金はいつ精算されますか？",
+            "answer": "国内PG会社は通常営業日基準でD+3精算していますが、Prime Playでは手数料と条件によって即時または翌日に精算を進めています。"
+          },
+          {
+            "question": "Q 精算口座は事業者名義である必要がありますか？",
+            "answer": "本人名義の通帳でない場合、精算口座実質名義主との関係を証明する証明書類が必要です。"
+          },
+          {
+            "question": "Q 申請から決済までかかる時間はどのくらいですか？",
+            "answer": "簡便決済：当日から2日以内にオープンが可能です。\nオンラインショッピングモール連動：API開発によって異なりますが、通常2週間以内に審査までセッティングされます。\n手入力決済：3日以上審査後に契約されます。"
+          },
+          {
+            "question": "Q PG契約後別途カード端末機を設置する必要がありますか？",
+            "answer": "オンライン決済は端末機なしで可能であり、オフラインでカード決済を希望する場合は端末機を別途設置する必要があります。端末機契約は購入と賃貸の二つの方式のうち一つを選択できます。賃貸の場合1年約定および通信料納付方式で進行されます。"
+          },
+          {
+            "question": "Q 付加税申告はどのように処理しますか？",
+            "answer": "一般的に加盟店が直接処理し、PG会社は手数料に対する税金計算書を発行します。Prime Playでは加盟店で発生した仕入れ資料を提供しており、該当資料を基に申告手続き進行時税金申告手続きがより簡単になります。"
+          },
+          {
+            "question": "Q 加盟店手数料はどのように決められますか？",
+            "answer": "業種とリスクによって様々であるため相談が必要です。手入力決済や無店舗業種は手数料がより高い方なので参考してください。"
+          },
+          {
+            "question": "Q 顧客が決済後払い戻しを要求したらどうしますか？",
+            "answer": "加盟店が直接PG会社管理者ページでキャンセルするかPG会社に要請する必要があります。決済精算以後の払い戻しは現金払い戻し原則で進行しています。"
+          },
+          {
+            "question": "Q チャージバック（Chargeback）発生時どのように対応すべきですか？",
+            "answer": "カード会社またはPG会社で要請する場合、注文書、商品発送履歴、顧客同意などの書類が必要であり、未提出時加盟店責任で回収されます。"
+          },
+          {
+            "question": "Q 直接的な商品配送のないサービスに対する決済も可能ですか？",
+            "answer": "可能です。ただし、教育/コンサルティング/情報サービスなどの無形商品は取引履歴と利用同意書類が要求される場合があるので参考してください。"
+          },
+          {
+            "question": "Q SNSまたはブログのみで販売しても可能でしょうか？",
+            "answer": "可能です。販売する商品、価格、払い戻し政策などが明示されている必要があります。ただし、PG会社の審査基準によって制限される場合があるので参考してください。"
+          },
+          {
+            "question": "Q 精算時手数料とVATはどのような方式で計算されますか？",
+            "answer": "PG手数料は付加税込み金額基準で計算されます。\n例：売上1,100,000ウォン → PG手数料3.3% = 36,300ウォン → 実際入金 = 1,100,000 - 36,300 = 1,063,700ウォン"
+          },
+          {
+            "question": "Q 複数のサイトで一つのPGアカウントを使用できますか？",
+            "answer": "基本的に各ドメイン、サイト別審査および登録が必要です。ただし、同一事業体運営時一部例外があります。"
+          }
+        ]
+      },
+      "web-app": {
+        "name": "Web/App開発",
+        "items": [
+          {
+            "question": "Q ウェブサイトとアプリ開発のうちどれを先に始めるべきですか？",
+            "answer": "ターゲットユーザーが誰かによって異なります。情報中心ならウェブ優先、プッシュ通知・位置ベースサービスなどモバイル特化機能が必要ならアプリが優先です。\n一般的にはウェブ → レスポンシブ → アプリ順で制作します。"
+          },
+          {
+            "question": "Q アプリはウェブで作ってはいけませんか？（WebViewアプリとは？）",
+            "answer": "可能です。ウェブベースアプリ（WebView）は迅速に配布できますが、ネイティブアプリに比べてパフォーマンスが落ち、アプリストア審査に制約がある場合があります。"
+          },
+          {
+            "question": "Q 開発費用はどの程度予想すべきですか？",
+            "answer": "機能によって異なります。人力と期間および詳細基準によって異なり、詳細な内容を相談を通じて確答できます。"
+          },
+          {
+            "question": "Q ウェブとアプリを同時に開発してもよいですか？",
+            "answer": "可能です。しかし制作費用と期間が増えます。Prime Playでは先にウェブMVP制作後、ユーザー反応を基にアプリを開発します。"
+          },
+          {
+            "question": "Q アプリストア登録は可能ですか？",
+            "answer": "アプリストア登録のためには開発者登録が必要であり、別途費用が追加発生する場合があります。制作オプションによってアプリストア登録が拒否される場合があるので詳細な相談が必要です。"
+          },
+          {
+            "question": "Q 企画書なしで開発は可能ですか？",
+            "answer": "企画書（画面設計書、機能定義書）なしで開発を始めると作業日程が長くなったりコミュニケーションなどに問題が発生する場合があります。したがって制作前十分な相談後、最小限のワイヤーフレームは必ず準備することをお勧めします。"
+          },
+          {
+            "question": "Q メンテナンス費用が必要ですか？",
+            "answer": "メンテナンス費用は別途発生します。"
+          },
+          {
+            "question": "Q ウェブサイトはWordPressで作ってはいけませんか？",
+            "answer": "必要な機能が少ないブログや小規模ホームページを制作する場合、WordPressを活用した制作方式も可能です。セキュリティやカスタマイゼーションが必要なサービス型プラットフォームは自体開発をお勧めしています。"
+          },
+          {
+            "question": "Q 決済システム（PG）連動は難しいですか？",
+            "answer": "Prime PlayではPG決済連動システムも可能です。ただし、事業者登録、ドメイン、商品ページなどの事前準備が必要です。"
+          },
+          {
+            "question": "Q 開発後運営はどのようにしますか？（サーバー/DBなど）",
+            "answer": "一般的にクラウドサーバー（AWS、Cafe 24、ガビアなど）にウェブを配布します。アプリはストア登録、ウェブはドメイン接続およびホスティングセッティングが必要であり、運営中障害対応、DBバックアップ、セキュリティアップデートなどは開発者の助けを受ける必要があります。"
+          }
+        ]
+      },
+      "marketing": {
+        "name": "マーケティング",
+        "items": [
+          {
+            "question": "Q ブログマーケティングで実際に売上が増加しますか？",
+            "answer": "ブログ運営は長期的観点から顧客信頼構築後売上につながると評価されています。現在Prime Playはマーケティング関連ミーティングを優先しており、相談を通じて適切な方式と成果可能性が高いメディアを選別後戦略的に運営しています。"
+          },
+          {
+            "question": "Q ブログコンテンツが検索流入にどのくらい影響しますか？",
+            "answer": "実際の事例中約80%がコンテンツが検索順位に肯定的に作用すると報告しており、週2〜6回投稿する場合成果が50%より高く現れます。ブランドブログは着実な活動が効果的です。自体ブログ代行または会社ブログ運営両方とも可能です。"
+          },
+          {
+            "question": "Q 最も効果的なコンテンツタイプは何ですか？",
+            "answer": "ブログを通じたレビュー、成功事例、製品詳細紹介などが効果的です。業種別顧客現況分析後コンテンツタイプを樹立し、該当内容を基にブログマーケティングおよびNaver Place広告コンテンツを制作します。レビューだけでなく詳細レビュー、使用レビューなどの業種別内部運営ノウハウを基にカスタマイズソリューションを提案しています。"
+          },
+          {
+            "question": "Q ブログコンテンツアップデート周期はどれがよいですか？",
+            "answer": "週1〜2回定期投稿と読者コミュニケーション（コメント対応）が効果的です。"
+          },
+          {
+            "question": "Q Naverカフェ露出が売上に効果がありますか？",
+            "answer": "Prime Playでのマーケティングは適切なターゲット広告を活用しており、適切な分析ツールを活用したアプローチ方式を選択しています。これを基にカフェでの露出を向上させ、ブランド認知度を増加させそれに応じた参加度も高めています。"
+          },
+          {
+            "question": "Q マーケティング成果測定方式はどのようになりますか？",
+            "answer": "露出数、クリック数、CTR、加入者数、転換率などの詳細内容をリアルタイム統計で提供して直接確認できます。\nブログ・カフェ・バンドなどクローリングベースプラットフォーム性能はリアルタイムデータ分析ツールを活用して「露出→流入→転換→売上」フローを追跡するためより具体的な内容を確認できます。"
+          },
+          {
+            "question": "実際進行方式はどのようになりますか？",
+            "answer": "相談後必要なマーケティング方式によって協議を経た後実質業務に着手します。"
+          },
+          {
+            "question": "Q 税金計算書発行は可能ですか？",
+            "answer": "税金計算書発行は必須的に進行しています。"
+          },
+          {
+            "question": "Q 払い戻しは可能ですか？",
+            "answer": "基本契約締結段階時相互協議の下で作成した契約書の払い戻し条件を基に進行します。"
+          }
+        ]
+      }
+    }
+  },
+  "SupportPage": {
+    "BackgroundSection": {
+      "mainTitle": "カスタマーサポート",
+      "subTextLine1": "ご質問がございますか？",
+      "subTextLine2": "様々なお問い合わせ内容をお寄せください",
+      "subTextLine3": ""
+    },
+    "ContactUsSection": {
+      "title": "Contact us",
+      "subtitle": "お問い合わせ事項とご要望事項をご記入ください。",
+      "form": {
+        "required": "必須",
+        "optional": "選択",
+        "inquiryType": {
+          "label": "お問い合わせタイプ",
+          "placeholder": "お問い合わせタイプを選択してください。",
+          "options": {
+            "pg": "PG関連",
+            "marketing": "マーケティング関連",
+            "sns": "SNS関連",
+            "csi": "CSI関連",
+            "webApp": "Web/App開発関連",
+            "etc": "その他お問い合わせ"
+          }
+        },
+        "customerName": {
+          "label": "お客様名",
+          "placeholder": "お名前をご入力ください。"
+        },
+        "isBusiness": {
+          "label": "事業者の有無",
+          "placeholder": "事業者の有無を選択してください。",
+          "options": {
+            "yes": "はい",
+            "no": "いいえ"
+          }
+        },
+        "email": {
+          "label": "メール",
+          "placeholder": "メールアドレスをご入力ください。"
+        },
+        "contact": {
+          "label": "連絡先",
+          "placeholder": "連絡先をご入力ください。"
+        },
+        "content": {
+          "label": "お問い合わせ内容",
+          "placeholder": "お問い合わせ内容をご入力ください。"
+        },
+        "submitButton": {
+          "default": "送信",
+          "loading": "送信中..."
+        }
+      },
+      "modal": {
+        "success": {
+          "title": "お問い合わせ受付完了",
+          "message": "お問い合わせが正常に受付されました。\n早期にご回答いたします。"
+        },
+        "error": {
+          "title": "お問い合わせ受付失敗",
+          "networkTitle": "接続エラー",
+          "defaultMessage": "エラーが発生しました。\n再度お試しください。",
+          "networkMessage": "サーバーに接続できません。\nネットワークをご確認ください。"
+        }
+      }
+    },
+    "LocationSection": {
+      "mapInstructions": {
+        "mobile": "地図を動かすには二本の指を使用してください。",
+        "desktop": "地図を拡大/縮小するにはCtrlまたはCmdキーを押したままスクロールしてください。"
+      }
+    },
+    "Modal": {
+      "confirm": "確認"
+    }
+  },
+  "CsiPlayPage": {
+    "ScrollFeaturesSection": {
+      "features": [
+        {
+          "id": 1,
+          "title": "コミュニティ中心の情報共有",
+          "description": "ユーザーが直接参加するコミュニティ掲示板で\nリアルタイム意見交換と情報共有が可能です。",
+          "screenImage": "/images/community-website-screen.webp"
+        },
+        {
+          "id": 2,
+          "title": "ポイントシステム及びイベント運営",
+          "description": "ルーレットイベント、ポイント積立システムなど\n情報だけでなく楽しみ要素を備えています。",
+          "screenImage": "/images/points-website-screen.webp"
+        },
+        {
+          "id": 3,
+          "title": "多様な投資情報提供",
+          "description": "株式、暗号通貨、不動産など複数分野の\nリアルタイム相場とニュースを一目で見ることができます。",
+          "screenImage": "/images/real-estate-website-screen.webp"
+        },
+        {
+          "id": 4,
+          "title": "コイン上場情報及び相場提供",
+          "description": "Upbit、Bithumb、Binanceなど主要取引所の\n上場コイン情報を統合的に提供します。",
+          "screenImage": "/images/coin-website-screen.webp"
+        },
+        {
+          "id": 5,
+          "title": "自体開発自動取引プログラム",
+          "description": "第2世代デュアルAI自動取引システムを実装して\n1:1担当者マッチングおよび使用法まで提供します。",
+          "screenImage": "/images/csi-bot.webp"
+        }
+      ]
+    },
+    "FixedButtons": {
+      "visitCsiPlay": "CSI-PLAYに移動"
+    }
+  },
+  "PGServicePage": {
+    "TypesSection": {
+      "title": "グローバル決済ソリューション",
+      "types": [
+        {
+          "title": "国内ゲートウェイ",
+          "features": ["高速決済", "POS・端末サポート"]
+        },
+        {
+          "title": "海外ゲートウェイ",
+          "features": ["簡単API設定", "グローバル端末"]
+        }
+      ]
+    },
+    "JourneySection": {
+      "titleLine1": "決済から成長まで",
+      "titleLine2": "信頼のパートナー",
+      "descriptionLine1": "ワンストップ決済サービスで",
+      "descriptionLine2": "ビジネスを加速"
+    },
+    "FeaturesSection": {
+      "title": "統合決済プラットフォーム",
+      "subtitle": "コンサルティングからローンチまで",
+      "features": [
+        {
+          "title": "安全・高速\n処理"
+        },
+        {
+          "title": "簡単連携"
+        },
+        {
+          "title": "多様な決済\nオプション"
+        },
+        {
+          "title": "オン・オフライン\n統合"
+        }
+      ]
+    },
+    "BackgroundSections": [
+      {
+        "firstLine": "Web・モバイルで",
+        "secondLine": "決済を一元管理"
+      },
+      {
+        "firstLine": "カード・振込・領収書を",
+        "secondLine": "Web・アプリ・デバイスに"
+      },
+      {
+        "firstLine": "ビジネスニーズに合わせた",
+        "secondLine": "決済ソリューション"
+      },
+      {
+        "firstLine": "簡単設定ガイドで",
+        "secondLine": "スピード導入"
+      }
+    ],
+    "AdvantagesSection": {
+      "title": "高速決済の特長",
+      "advantages": [
+        "5-9日待ちから翌日入金へ",
+        "日次決済で資金繰り改善",
+        "流動性向上で円滑運営",
+        "提携銀行で業界最低手数料"
+      ]
+    },
+    "FixedButtons": {
+      "visitTyPlay": "TY-PLAYへ",
+      "contactPaymentService": "決済サービス問い合わせ"
+    }
+  }
+}
