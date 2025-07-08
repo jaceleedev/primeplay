@@ -6,7 +6,14 @@
     "pgService": "PGサービス",
     "csiPlay": "CSI-PLAY",
     "faq": "よくある質問",
-    "support": "カスタマーサポート"
+    "support": "サポート",
+    "language": "言語選択",
+    "languages": {
+      "ko": "한국어",
+      "en": "English",
+      "ja": "日本語",
+      "zh": "中文"
+    }
   },
   "Footer": {
     "companyName": "Prime Play Co., Ltd.",
@@ -15,7 +22,7 @@
     "companyInfo": "COMPANY INFO",
     "serviceGuide": "サービスガイド",
     "faq": "よくある質問",
-    "support": "カスタマーサポート",
+    "support": "サポート",
     "privacyPolicy": "プライバシーポリシー",
     "businessNumber": "357-86-00725",
     "phoneNumber": "(+82) 02-6095-2685",

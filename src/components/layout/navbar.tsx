@@ -3,12 +3,32 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
+import { useParams } from "next/navigation";
+import GlobeIcon from "@/components/icons/globe-icon";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
   const detailsRef = useRef<HTMLDetailsElement>(null);
   const mobileDetailsRef = useRef<HTMLDetailsElement>(null);
+  const languageDetailsRef = useRef<HTMLDetailsElement>(null);
+  const mobileLanguageDetailsRef = useRef<HTMLDetailsElement>(null);
+
+  const pathname = usePathname();
+  const router = useRouter();
+  const params = useParams();
+  const currentLocale = params.locale as string;
+
+  const locales = [
+    { code: "ko", name: t("languages.ko") },
+    { code: "en", name: t("languages.en") },
+    { code: "ja", name: t("languages.ja") },
+    { code: "zh", name: t("languages.zh") },
+  ];
+
+  const handleLanguageChange = (newLocale: string) => {
+    router.push(pathname, { locale: newLocale });
+  };
 
   const handleLinkClick = () => {
     // Close desktop dropdown
@@ -18,6 +38,13 @@ export default function Navbar() {
     // Close mobile dropdown
     if (mobileDetailsRef.current) {
       mobileDetailsRef.current.removeAttribute("open");
+    }
+    // Close language dropdowns
+    if (languageDetailsRef.current) {
+      languageDetailsRef.current.removeAttribute("open");
+    }
+    if (mobileLanguageDetailsRef.current) {
+      mobileLanguageDetailsRef.current.removeAttribute("open");
     }
     // Close mobile sidebar
     const drawerToggle = document.getElementById(
@@ -41,6 +68,18 @@ export default function Navbar() {
         !mobileDetailsRef.current.contains(event.target as Node)
       ) {
         mobileDetailsRef.current.removeAttribute("open");
+      }
+      if (
+        languageDetailsRef.current &&
+        !languageDetailsRef.current.contains(event.target as Node)
+      ) {
+        languageDetailsRef.current.removeAttribute("open");
+      }
+      if (
+        mobileLanguageDetailsRef.current &&
+        !mobileLanguageDetailsRef.current.contains(event.target as Node)
+      ) {
+        mobileLanguageDetailsRef.current.removeAttribute("open");
       }
     };
 
@@ -176,6 +215,39 @@ export default function Navbar() {
                     {t("support")}
                   </Link>
                 </li>
+                <li>
+                  <details ref={languageDetailsRef}>
+                    <summary className="text-white text-center font-pretendard text-lg font-bold leading-normal hover:bg-transparent flex items-center">
+                      <GlobeIcon width={30} height={30} className="mr-2" />
+                      {
+                        locales.find((locale) => locale.code === currentLocale)
+                          ?.name
+                      }
+                    </summary>
+                    <ul
+                      className="menu rounded-box z-[1] w-32 p-2 shadow-lg mt-3"
+                      style={{
+                        background: "rgba(72, 72, 72, 0.9)",
+                        backdropFilter: "blur(4px)",
+                        border: "1px solid rgba(255, 255, 255, 0.1)",
+                      }}
+                    >
+                      {locales.map((locale) => (
+                        <li key={locale.code}>
+                          <button
+                            onClick={() => {
+                              handleLanguageChange(locale.code);
+                              handleLinkClick();
+                            }}
+                            className="text-white font-pretendard text-base font-medium rounded-md"
+                          >
+                            {locale.name}
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
               </ul>
             </div>
           </div>
@@ -257,6 +329,32 @@ export default function Navbar() {
               >
                 {t("support")}
               </Link>
+            </li>
+            <li className="mb-3">
+              <details ref={mobileLanguageDetailsRef}>
+                <summary className="text-white font-pretendard text-xl font-bold leading-normal flex items-center">
+                  <GlobeIcon width={30} height={30} className="mr-2" />
+                  {
+                    locales.find((locale) => locale.code === currentLocale)
+                      ?.name
+                  }
+                </summary>
+                <ul className="p-2">
+                  {locales.map((locale) => (
+                    <li key={locale.code} className="mb-2">
+                      <button
+                        onClick={() => {
+                          handleLanguageChange(locale.code);
+                          handleLinkClick();
+                        }}
+                        className="text-white text-center font-pretendard text-base font-medium"
+                      >
+                        {locale.name}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </details>
             </li>
           </ul>
         </div>

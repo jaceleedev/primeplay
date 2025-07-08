@@ -6,7 +6,14 @@
     "pgService": "PG服务",
     "csiPlay": "CSI-PLAY",
     "faq": "常见问题",
-    "support": "客户支持"
+    "support": "客户支持",
+    "language": "语言选择",
+    "languages": {
+      "ko": "한국어",
+      "en": "English",
+      "ja": "日本語",
+      "zh": "中文"
+    }
   },
   "Footer": {
     "companyName": "Prime Play Co., Ltd.",
@@ -59,7 +66,7 @@
       "expertCollaborationLine1": "各领域专家齐聚一堂",
       "expertCollaborationLine2": "共同思考创意",
       "expertCollaborationLine3": "相互沟通，彼此尊重。",
-      "playImportance": "最重要的是PLAY！",
+      "playImportance": "最 重 要 的 是 PLAY！",
       "contactUsTitle": "Contact Us",
       "contactDescriptionLine1": "有任何疑问请随时咨询。",
       "contactDescriptionLine2": "我们将成为从客户角度思考的伙伴。",

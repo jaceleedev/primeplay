@@ -6,7 +6,14 @@
     "pgService": "PG 서비스",
     "csiPlay": "CSI-PLAY",
     "faq": "자주 묻는 질문",
-    "support": "고객지원"
+    "support": "고객지원",
+    "language": "언어 선택",
+    "languages": {
+      "ko": "한국어",
+      "en": "English",
+      "ja": "日本語",
+      "zh": "中文"
+    }
   },
   "Footer": {
     "companyName": "Prime Play Co., Ltd.",
