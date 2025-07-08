@@ -5,6 +5,8 @@ import WorkProcessSection from "@/components/sections/web-app-dev/work-process-s
 import BlockchainServiceSection from "@/components/sections/web-app-dev/blockchain-service-section";
 import { generatePageMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
+import JsonLd from "@/components/seo/json-ld";
+import { webAppDevSchema } from "@/lib/json-ld";
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -17,16 +19,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const WebAppDevPage = () => {
   return (
-    <main>
-      <VideoSection
-        videoSrc="/videos/web-app-dev-background.webm"
-        translationKey="VideoSections.webAppDev"
-      />
-      <WorkProcessSection />
-      <SolutionSection />
-      <MoreThanSolutionsSection />
-      <BlockchainServiceSection />
-    </main>
+    <>
+      <JsonLd data={webAppDevSchema} />
+      <main>
+        <VideoSection
+          videoSrc="/videos/web-app-dev-background.webm"
+          translationKey="VideoSections.webAppDev"
+        />
+        <WorkProcessSection />
+        <SolutionSection />
+        <MoreThanSolutionsSection />
+        <BlockchainServiceSection />
+      </main>
+    </>
   );
 };
 

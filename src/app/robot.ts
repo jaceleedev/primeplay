@@ -1,23 +1,36 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://primeplay.kr";
+
   return {
     rules: [
       {
         userAgent: "*",
         allow: "/",
         disallow: [
-          "/api/", // API 경로 차단
-          "/admin/", // 관리자 페이지 차단 (나중에 생기면)
-          "/_next/", // Next.js 내부 파일
-          "/private/", // 비공개 폴더 (나중에 생기면)
+          "/api/",
+          "/admin/",
+          "/_next/",
+          "/private/",
+          "/*?*", // 쿼리 파라미터가 있는 페이지
         ],
       },
       {
-        userAgent: "GPTBot", // ChatGPT 봇 차단 (선택사항)
+        userAgent: "GPTBot",
         disallow: "/",
       },
+      {
+        userAgent: "ChatGPT-User",
+        disallow: "/",
+      },
+      // 검색엔진별 크롤링 주기 조정
+      {
+        userAgent: "Googlebot",
+        crawlDelay: 1,
+      },
     ],
-    sitemap: "https://primeplay.kr/sitemap.xml",
+    sitemap: `${baseUrl}/sitemap.xml`,
+    host: baseUrl,
   };
 }

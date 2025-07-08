@@ -5,6 +5,8 @@ import SimpleFixedButtons from "@/components/ui/simple-fixed-buttons";
 import { generatePageMetadata } from "@/lib/metadata";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import { csiPlaySchema } from "@/lib/json-ld";
+import JsonLd from "@/components/seo/json-ld";
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -20,28 +22,31 @@ const CsiPlayPage = async ({ params }: Props) => {
   const t = await getTranslations("CsiPlayPage.FixedButtons");
 
   return (
-    <main>
-      <VideoSection
-        videoSrc="/videos/csi-play-background.webm"
-        translationKey="VideoSections.csiPlay"
-      />
-      <CsiMockupSection />
-      <CsiScrollFeaturesSection />
+    <>
+      <JsonLd data={csiPlaySchema} />
+      <main>
+        <VideoSection
+          videoSrc="/videos/csi-play-background.webm"
+          translationKey="VideoSections.csiPlay"
+        />
+        <CsiMockupSection />
+        <CsiScrollFeaturesSection />
 
-      {/* Fixed CSI-PLAY 이동 버튼 - 항상 표시 */}
-      <SimpleFixedButtons
-        buttons={[
-          {
-            logo: "/logos/csi-play-logo.svg",
-            text: t("visitCsiPlay"),
-            url: "https://csi-play.com",
-            alt: "CSI PLAY Logo",
-            isExternal: true,
-          },
-        ]}
-        position="bottom"
-      />
-    </main>
+        {/* Fixed CSI-PLAY 이동 버튼 - 항상 표시 */}
+        <SimpleFixedButtons
+          buttons={[
+            {
+              logo: "/logos/csi-play-logo.svg",
+              text: t("visitCsiPlay"),
+              url: "https://csi-play.com",
+              alt: "CSI PLAY Logo",
+              isExternal: true,
+            },
+          ]}
+          position="bottom"
+        />
+      </main>
+    </>
   );
 };
 

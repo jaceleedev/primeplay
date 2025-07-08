@@ -9,6 +9,8 @@ import SimpleFixedButtons from "@/components/ui/simple-fixed-buttons";
 import { generatePageMetadata } from "@/lib/metadata";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import JsonLd from "@/components/seo/json-ld";
+import { pgServiceSchema } from "@/lib/json-ld";
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -40,49 +42,52 @@ const PGServicePage = async ({ params }: Props) => {
   }));
 
   return (
-    <main>
-      <VideoSection
-        videoSrc="/videos/pg-service-background.webm"
-        translationKey="VideoSections.pgService"
-      />
-      <PgServiceMockupSection />
-      <PgServiceTypesSection />
-      <PgServiceJourneySection />
-      <PgServiceFeaturesSection />
-
-      {/* PG 서비스 배경 이미지 섹션들 */}
-      {pgServiceSections.map((section) => (
-        <PgServiceBackgroundSection
-          key={section.id}
-          imageSrc={section.imageSrc}
-          firstLine={section.firstLine}
-          secondLine={section.secondLine}
+    <>
+      <JsonLd data={pgServiceSchema} />
+      <main>
+        <VideoSection
+          videoSrc="/videos/pg-service-background.webm"
+          translationKey="VideoSections.pgService"
         />
-      ))}
+        <PgServiceMockupSection />
+        <PgServiceTypesSection />
+        <PgServiceJourneySection />
+        <PgServiceFeaturesSection />
 
-      <PgServiceAdvantagesSection />
+        {/* PG 서비스 배경 이미지 섹션들 */}
+        {pgServiceSections.map((section) => (
+          <PgServiceBackgroundSection
+            key={section.id}
+            imageSrc={section.imageSrc}
+            firstLine={section.firstLine}
+            secondLine={section.secondLine}
+          />
+        ))}
 
-      {/* Fixed PG Service 버튼들 - 항상 표시 */}
-      <SimpleFixedButtons
-        buttons={[
-          {
-            logo: "/logos/ty-play-logo.svg",
-            text: tButtons("visitTyPlay"),
-            url: "https://ty-play.com",
-            alt: "TY PLAY Logo",
-            isExternal: true,
-          },
-          {
-            logo: "/logos/sk-play-logo.svg",
-            text: tButtons("contactPaymentService"),
-            url: "/support",
-            alt: "SK PLAY Logo",
-            isExternal: false,
-          },
-        ]}
-        position="bottom"
-      />
-    </main>
+        <PgServiceAdvantagesSection />
+
+        {/* Fixed PG Service 버튼들 - 항상 표시 */}
+        <SimpleFixedButtons
+          buttons={[
+            {
+              logo: "/logos/ty-play-logo.svg",
+              text: tButtons("visitTyPlay"),
+              url: "https://ty-play.com",
+              alt: "TY PLAY Logo",
+              isExternal: true,
+            },
+            {
+              logo: "/logos/sk-play-logo.svg",
+              text: tButtons("contactPaymentService"),
+              url: "/support",
+              alt: "SK PLAY Logo",
+              isExternal: false,
+            },
+          ]}
+          position="bottom"
+        />
+      </main>
+    </>
   );
 };
 

@@ -29,8 +29,8 @@ export async function generatePageMetadata(
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://primeplay.kr";
 
   // 공통 이미지 사용 (2개 사이즈)
-  const ogImageLarge = `${baseUrl}/images/og-image-1200x630.jpg`; // 1200x630
-  const ogImageSquare = `${baseUrl}/images/og-image-1200x1200.jpg`; // 1200x1200
+  const ogImageLarge = `${baseUrl}/images/og-image-1200x630.png`; // 1200x630
+  const ogImageSquare = `${baseUrl}/images/og-image-1200x1200.png`; // 1200x1200
 
   // URL 구조: 한국어는 기본 경로, 다른 언어는 /언어코드
   const getLocalizedUrl = (targetLocale: string, path: string = "") => {

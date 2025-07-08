@@ -1,4 +1,6 @@
 import FAQSection from "@/components/sections/faq/faq-section";
+import JsonLd from "@/components/seo/json-ld";
+import { faqSchema } from "@/lib/json-ld";
 import { generatePageMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 
@@ -13,9 +15,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const FAQPage = () => {
   return (
-    <main>
-      <FAQSection />
-    </main>
+    <>
+      <JsonLd data={faqSchema} />
+      <main>
+        <FAQSection />
+      </main>
+    </>
   );
 };
 
