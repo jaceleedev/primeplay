@@ -1,12 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import { TextReveal } from "@/components/magicui/text-reveal";
+import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 
 const ContactSection = () => {
   const t = useTranslations("HomePage.ContactSection");
+
+  // playImportance 텍스트를 두 줄로 분리
+  const playImportanceText = t("playImportance");
+  const playIndex = playImportanceText.indexOf("PLAY");
+  const firstLine = playImportanceText.substring(0, playIndex).trim();
+  const secondLine = playImportanceText.substring(playIndex).trim();
 
   return (
     <section className="relative w-full pt-16 sm:pt-20 md:pt-24 lg:pt-32 bg-white">
@@ -14,7 +20,7 @@ const ContactSection = () => {
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* 첫 번째 텍스트 */}
-          <div className="text-center mb-52 sm:mb-56 md:mb-60 lg:mb-64">
+          <div className="text-center mb-26 sm:mb-28 md:mb-30 lg:mb-32">
             <p className="font-paperlogy font-medium text-black leading-normal text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px]">
               {t("expertCollaborationLine1")}
               <br />
@@ -24,18 +30,25 @@ const ContactSection = () => {
             </p>
           </div>
 
-          {/* 두 번째 텍스트 */}
-          <div className="relative">
-            <TextReveal
-              className="text-center mb-52 sm:mb-56 md:mb-60 lg:mb-64"
-              textClassName="font-paperlogy font-medium text-black leading-normal text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] tracking-[8px] sm:tracking-[12px] md:tracking-[14px] lg:tracking-[16px]"
-            >
-              {t("playImportance")}
-            </TextReveal>
+          {/* 두 번째 텍스트 - BoxReveal로 교체 */}
+          <div className="text-center mb-26 sm:mb-28 md:mb-30 lg:mb-32">
+            <div className="flex flex-col items-center gap-4">
+              <BoxReveal boxColor="#C4353B" duration={0.5}>
+                <p className="font-paperlogy font-medium text-black leading-normal text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] tracking-[4px] sm:tracking-[6px] md:tracking-[7px] lg:tracking-[8px]">
+                  {firstLine}
+                </p>
+              </BoxReveal>
+
+              <BoxReveal boxColor="#C4353B" duration={0.5}>
+                <p className="font-paperlogy font-medium text-black leading-normal text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] tracking-[4px] sm:tracking-[6px] md:tracking-[7px] lg:tracking-[8px]">
+                  {secondLine}
+                </p>
+              </BoxReveal>
+            </div>
           </div>
 
           {/* 세 번째 텍스트 */}
-          <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <div className="text-center mb-5 sm:mb-6 md:mb-8">
             <h2 className="font-giants font-bold text-black leading-normal text-2xl sm:text-3xl md:text-4xl lg:text-[44px]">
               {t("contactUsTitle")}
             </h2>
