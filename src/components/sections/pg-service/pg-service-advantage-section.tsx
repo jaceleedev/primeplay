@@ -57,7 +57,7 @@ const PgServiceAdvantagesSection = () => {
           </div>
 
           {/* 오른쪽 텍스트 */}
-          <div className="flex flex-col justify-center items-center lg:items-start">
+          <div className="flex flex-col justify-center items-center lg:items-start px-4 lg:px-0">
             <div className="space-y-6 sm:space-y-8 w-full max-w-md lg:max-w-none">
               {/* 장점 리스트 */}
               {Array.from({ length: advantageCount }).map((_, index) => (
