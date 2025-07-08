@@ -1,0 +1,654 @@
+{
+  "Navbar": {
+    "businessArea": "业务领域",
+    "viralMarketing": "病毒式营销",
+    "webAppDev": "Web/App开发",
+    "pgService": "PG服务",
+    "csiPlay": "CSI-PLAY",
+    "faq": "常见问题",
+    "support": "客户支持"
+  },
+  "Footer": {
+    "companyName": "Prime Play Co., Ltd.",
+    "copyright": "© 2022 PRIMEPLAY. All rights reserved.",
+    "serviceInfo": "SERVICE INFO",
+    "companyInfo": "COMPANY INFO",
+    "serviceGuide": "服务指南",
+    "faq": "常见问题",
+    "support": "客户支持",
+    "privacyPolicy": "隐私政策",
+    "businessNumber": "357-86-00725",
+    "phoneNumber": "(+82) 02-6095-2685",
+    "addressLine1": "466, Gangseo-ro, Gangseo-gu,",
+    "addressLine2": "Seoul, 7th Floor, 702 (Deungchon-dong, Woori Venture Town)"
+  },
+  "VideoSections": {
+    "home": {
+      "mainTitle": "前所未有的\n创新连接",
+      "subTextLine1": "改变自己最快的方法",
+      "subTextLine2": "就是与那些已经成为",
+      "subTextLine3": "理想模样的人在一起。"
+    },
+    "viralMarketing": {
+      "mainTitle": "成果验证的\n病毒式营销",
+      "subTextLine1": "经无数成功案例验证的",
+      "subTextLine2": "专家团队提供最有效的",
+      "subTextLine3": "营销策略。"
+    },
+    "webAppDev": {
+      "mainTitle": "实绩验证的\nWeb/App开发方案",
+      "subTextLine1": "从企划到设计、开发",
+      "subTextLine2": "一站式将创意",
+      "subTextLine3": "转化为成功的可靠伙伴"
+    },
+    "pgService": {
+      "mainTitle": "PG服务",
+      "subTextLine1": "非商户终端、手动支付应用等",
+      "subTextLine2": "支持多种服务的",
+      "subTextLine3": "支付代理商"
+    },
+    "csiPlay": {
+      "mainTitle": "CSI PLAY",
+      "subTextLine1": "加密货币、股票、房地产投资者",
+      "subTextLine2": "信息交流和分享",
+      "subTextLine3": "实战经验的投资社区"
+    }
+  },
+  "HomePage": {
+    "ContactSection": {
+      "expertCollaborationLine1": "各领域专家齐聚一堂",
+      "expertCollaborationLine2": "共同思考创意",
+      "expertCollaborationLine3": "相互沟通，彼此尊重。",
+      "playImportance": "最重要的是PLAY！",
+      "contactUsTitle": "Contact Us",
+      "contactDescriptionLine1": "有任何疑问请随时咨询。",
+      "contactDescriptionLine2": "我们将成为从客户角度思考的伙伴。",
+      "inquireButton": "咨询"
+    },
+    "PlayToPSection": {
+      "title": "Play to P",
+      "subtitle": "Prime Play的核心指标",
+      "people": {
+        "hoverTextLine1": "客户体验",
+        "hoverTextLine2": "为最优先",
+        "hoverTextLine3": ""
+      },
+      "performance": {
+        "hoverTextLine1": "明确的目标设定",
+        "hoverTextLine2": "与品质管理",
+        "hoverTextLine3": ""
+      },
+      "partnership": {
+        "hoverTextLine1": "考虑相互利益的",
+        "hoverTextLine2": "合作关系",
+        "hoverTextLine3": ""
+      },
+      "progress": {
+        "hoverTextLine1": "通过持续改进与创新",
+        "hoverTextLine2": "最大化",
+        "hoverTextLine3": "成长可能性"
+      }
+    },
+    "ProductSection": {
+      "title": "OUR\nPRODUCT",
+      "products": {
+        "pgPayment": {
+          "title": "PG支付代理",
+          "description": "通过支付代理公司(PG)\n提供快速结算和\n稳定的服务。"
+        },
+        "viralMarketing": {
+          "title": "病毒式营销",
+          "description": "基于实际使用经验的\n信息分享构建\n高可信度。"
+        },
+        "webAppDev": {
+          "title": "Web/App开发",
+          "description": "基于最新技术和专业知识\n提供高品质服务。"
+        },
+        "snsPlay": {
+          "title": "SNS PLAY",
+          "description": "提供适用于SNS的\n专业营销程序。"
+        },
+        "csiPlay": {
+          "title": "CSI PLAY",
+          "description": "投资者分享股票、\n加密货币信息并\n交流的社区网站"
+        },
+        "tyPlay": {
+          "title": "TY PLAY",
+          "description": "商户与个人均可使用的\n综合支付PG解决方案"
+        }
+      },
+      "viewDetails": "查看详情"
+    },
+    "BusinessSolutionSection": {
+      "mainTitleLine1": "提供高效商业环境的",
+      "mainTitleLine2": "综合解决方案代理",
+      "descriptionLine1": "基于创新数字战略实施，",
+      "descriptionLine2": "为成功的企业成长提供解决方案。",
+      "imageAlt": "表现商业网络的几何图案"
+    },
+    "DetailSection": {
+      "line1": "从细微之处开始用心",
+      "line2": "从小细节到大格局",
+      "line3": "我们在一切中寻找乐趣",
+      "imageAlt": "表现精心细节的背景图像"
+    }
+  },
+  "ViralMarketingPage": {
+    "ServicesSection": {
+      "title": "OUR SERVICES",
+      "subtitle": "支持在线营销服务的多个领域",
+      "cards": [
+        {
+          "key": "sns-social",
+          "title": "SNS社交营销",
+          "description": "通过SNS广告与用户沟通，提升品牌知名度和参与度。"
+        },
+        {
+          "key": "channel-story",
+          "title": "频道 & 故事 & DDN",
+          "description": "利用KakaoTalk频道等进行客户管理和服务推广。"
+        },
+        {
+          "key": "naver-marketing",
+          "title": "Naver效果营销",
+          "description": "利用Naver网站，帮助关键词、博客、咖啡厅、图片、地点等多种曝光。"
+        },
+        {
+          "key": "brand-blog",
+          "title": "品牌博客",
+          "description": "从博客发布到品牌专用博客专业制作支持。"
+        },
+        {
+          "key": "keyword-uac",
+          "title": "关键词 & UAC & GDN",
+          "description": "通过Google广告GDN展示广告和应用下载广告等提升品牌知名度。"
+        },
+        {
+          "key": "experiential",
+          "title": "体验及提案营销",
+          "description": "通过YouTuber和网红提案广告扩散品牌知名度。"
+        },
+        {
+          "key": "digital-keyword",
+          "title": "数字关键词及综合搜索",
+          "description": "利用在线媒体的转化广告提高曝光度。"
+        },
+        {
+          "key": "instagram-marketing",
+          "title": "Instagram效果营销",
+          "description": "帮助Instagram上位曝光、账户创建及曝光、管理。"
+        },
+        {
+          "key": "news-media",
+          "title": "新闻 & 媒体宣传营销",
+          "description": "通过可信的媒体快速宣传新消息。"
+        }
+      ]
+    },
+    "BackgroundSections": {
+      "channelGrowth": {
+        "text": "有效地\n发展所需频道，"
+      },
+      "casting": {
+        "text": "招募网红、艺人、模特等\n企划所需的出演人员，"
+      },
+      "videoProduction": {
+        "text": "各种宣传视频、直播视频等\n从视频企划到拍摄编辑。"
+      }
+    },
+    "ChannelSection": {
+      "title": "与多种频道合作"
+    }
+  },
+  "WebAppDevPage": {
+    "WorkProcessSection": {
+      "title": "Work Process",
+      "subtitle": "无论项目进行阶段如何都可实现。",
+      "steps": [
+        {
+          "key": "consulting",
+          "title": "咨询"
+        },
+        {
+          "key": "planning",
+          "title": "企划"
+        },
+        {
+          "key": "design",
+          "title": "设计"
+        },
+        {
+          "key": "development",
+          "title": "开发"
+        },
+        {
+          "key": "maintenance",
+          "title": "维护"
+        }
+      ]
+    },
+    "SolutionSection": {
+      "slides": [
+        {
+          "title": "购物商城",
+          "listItems": [
+            "非租赁型的独立购物商城",
+            "积分支付及配送地址支持",
+            "我的办公室会员联动服务支持"
+          ]
+        },
+        {
+          "title": "支付模块",
+          "listItems": [
+            "发放虚拟账户为客户提供1:1支持",
+            "PG公司联动及卡片联动支持",
+            "卡片、现金存款及NFT支付支持",
+            "提供支付记录等必要资料"
+          ]
+        },
+        {
+          "title": "我的办公室",
+          "listItems": [
+            "自动化结算程序制作支持",
+            "会员族谱图及下属会员检索、管理服务",
+            "网络访问销售结算解决方案",
+            "根据条件支持购物商城、NFT网站"
+          ]
+        },
+        {
+          "title": "虚拟币钱包",
+          "listItems": [
+            "NFT、虚拟币生成、批量传送、钱包管理",
+            "可使用NFT支付",
+            "额外津贴和虚拟币数量等定制钱包制作",
+            "虚拟币津贴支付时实现批量传送功能"
+          ]
+        }
+      ]
+    },
+    "MoreThanSolutionsSection": {
+      "title": "More than solutions",
+      "subtitle": "超越单纯开发，共同走向商业成功",
+      "services": ["移动应用开发", "Web服务开发", "UX/UI设计", "服务企划"]
+    },
+    "BlockchainServiceSection": {
+      "title": "Block Chain Service",
+      "subtitle": "任何地方都看不到的Prime Play自主制作服务",
+      "cards": [
+        {
+          "title": "Coin Wallet平台开发",
+          "description": [
+            "Private Key个人保管方式",
+            "安全手段随时可恢复",
+            "必要功能定制服务支持",
+            "基于DAPP，与支付平台兼容"
+          ]
+        },
+        {
+          "title": "Over The Counter开发",
+          "description": [
+            "系统性管理KYC和PoC",
+            "事前验证安全交易及高可信度",
+            "为有利FX可直接Bid、Ask订单",
+            "支持托管安全系统"
+          ]
+        }
+      ]
+    }
+  },
+  "FAQPage": {
+    "title": "常见问题",
+    "categorySelectTitle": "选择类别",
+    "categories": {
+      "pg": {
+        "name": "PG",
+        "items": [
+          {
+            "question": "Q 非商户也可以使用信用卡支付服务吗？",
+            "answer": "可以。没有商户资格也可以。路边摊、店中店等都可以。"
+          },
+          {
+            "question": "Q 个体商户和法人商户的提交文件有什么区别？",
+            "answer": "个体：营业执照、银行账户复印件、身份证\n法人：营业执照、法人银行账户复印件、法人登记证明、代表人身份证\n根据情况可能需要补充文件。线下门店只需准备相应文件即可。"
+          },
+          {
+            "question": "Q 想要在线支付需要什么文件？",
+            "answer": "需要营业执照、银行账户复印件、网站（或SNS URL）、商品页面。部分PG公司在未注册电子商务时需要注册相关内容。新商户审查标准严格，因此现有销售或工厂或采购资料等必须准确。"
+          },
+          {
+            "question": "Q 没有网站也可以在线信用卡支付吗？",
+            "answer": "可以通过简便支付或无PG API联动的链接支付方式实现。另外还需要详细记载商品信息的文档或图片。"
+          },
+          {
+            "question": "Q 手动支付是如何实现的？",
+            "answer": "指手动输入卡号的MOTO（手动支付）方式。由于风险高，审查标准严格，可能要求保证金或押金。"
+          },
+          {
+            "question": "Q 手动支付时需要什么文件？",
+            "answer": "需要信用销售同意书、客户身份证/卡片照片、订单书、交易记录证明资料、营业执照等。"
+          },
+          {
+            "question": "Q 信用卡支付入账何时结算？",
+            "answer": "国内PG公司通常按营业日基准D+3结算，但Prime Play根据手续费和条件立即或次日进行结算。"
+          },
+          {
+            "question": "Q 结算账户必须是商户名义吗？",
+            "answer": "如果不是本人名义的银行账户，需要证明与结算账户实际名义人关系的证明文件。"
+          },
+          {
+            "question": "Q 从申请到支付需要多长时间？",
+            "answer": "简便支付：当日至2日内可开通。\n在线购物商城联动：根据API开发不同，通常2周内完成审查和设置。\n手动支付：3日以上审查后签约。"
+          },
+          {
+            "question": "Q PG合约后需要单独安装信用卡终端吗？",
+            "answer": "在线支付无需终端即可，如希望线下信用卡支付需要单独安装终端。终端合约可选择购买和租赁两种方式之一。租赁情况下以1年约定及通信费缴纳方式进行。"
+          },
+          {
+            "question": "Q 增值税申报如何处理？",
+            "answer": "一般由加盟店直接处理，PG公司就手续费发行税务发票。Prime Play提供加盟店发生的采购资料，基于该资料进行申报程序时税务申报程序更加简便。"
+          },
+          {
+            "question": "Q 加盟店手续费如何制定？",
+            "answer": "根据行业和风险不同需要咨询。手动支付或无店铺行业手续费较高，请参考。"
+          },
+          {
+            "question": "Q 客户支付后要求退款如何处理？",
+            "answer": "加盟店需要直接在PG公司管理页面取消或向PG公司申请。支付结算后的退款按现金退款原则进行。"
+          },
+          {
+            "question": "Q 发生拒付(Chargeback)时如何应对？",
+            "answer": "信用卡公司或PG公司要求时需要订单书、商品发送记录、客户同意等文件，未提交时由加盟店责任回收。"
+          },
+          {
+            "question": "Q 没有直接商品配送的服务支付也可以吗？",
+            "answer": "可以。但是教育/咨询/信息服务等无形商品可能要求交易记录和使用同意文件，请参考。"
+          },
+          {
+            "question": "Q 仅通过SNS或博客销售也可以吗？",
+            "answer": "可以。需要明示销售商品、价格、退款政策等。但根据PG公司的审查标准可能受到限制，请参考。"
+          },
+          {
+            "question": "Q 结算时手续费和VAT如何计算？",
+            "answer": "PG手续费按含增值税金额基准计算。\n例：销售1,100,000韩元 → PG手续费3.3% = 36,300韩元 → 实际入账 = 1,100,000 - 36,300 = 1,063,700韩元"
+          },
+          {
+            "question": "Q 多个网站可以使用一个PG账户吗？",
+            "answer": "基本上需要各域名、网站的审查及注册。但同一商业实体运营时有部分例外。"
+          }
+        ]
+      },
+      "web-app": {
+        "name": "Web/App开发",
+        "items": [
+          {
+            "question": "Q 网站和应用开发哪个应该先开始？",
+            "answer": "根据目标用户不同。以信息为中心的话网站优先，需要推送通知、位置服务等移动特化功能的话应用优先。\n一般按网站 → 响应式 → 应用顺序制作。"
+          },
+          {
+            "question": "Q 应用用网页制作不行吗？（什么是WebView应用？）",
+            "answer": "可以。基于网页的应用（WebView）可以快速发布，但与原生应用相比性能较差，应用商店审查可能有限制。"
+          },
+          {
+            "question": "Q 开发费用应该预想多少？",
+            "answer": "根据功能不同。根据人力、期间及其他详细基准不同，可通过详细咨询给出确答。"
+          },
+          {
+            "question": "Q 网页和应用可以同时开发吗？",
+            "answer": "可以。但制作费用和期间会增加。Prime Play先制作网页MVP后，基于用户反应开发应用。"
+          },
+          {
+            "question": "Q 应用商店注册可能吗？",
+            "answer": "应用商店注册需要开发者注册，可能产生额外费用。根据制作选项应用商店注册可能被拒绝，需要详细咨询。"
+          },
+          {
+            "question": "Q 没有企划书可以开发吗？",
+            "answer": "没有企划书（界面设计书、功能定义书）开始开发可能使工作日程变长或在沟通等方面发生问题。因此制作前充分咨询后，最少的线框图必须准备。"
+          },
+          {
+            "question": "Q 需要维护费用吗？",
+            "answer": "维护费用单独产生。"
+          },
+          {
+            "question": "Q 网站用WordPress制作不行吗？",
+            "answer": "制作需要功能少的博客或小规模主页时，利用WordPress的制作方式也可能。需要安全性或定制的服务型平台推荐自主开发。"
+          },
+          {
+            "question": "Q 支付系统（PG）联动困难吗？",
+            "answer": "Prime Play也可以PG支付联动系统。但需要事前准备营业执照、域名、商品页面等。"
+          },
+          {
+            "question": "Q 开发后运营如何？（服务器/DB等）",
+            "answer": "一般将网页发布到云服务器（AWS、Cafe 24、Gabia等）。应用需要商店注册，网页需要域名连接及托管设置，运营中故障应对、DB备份、安全更新等需要开发者帮助。"
+          }
+        ]
+      },
+      "marketing": {
+        "name": "营销",
+        "items": [
+          {
+            "question": "Q 博客营销实际增加销售吗？",
+            "answer": "博客运营从长期观点构建客户信任后连接到销售。目前Prime Play优先营销相关会议，通过咨询选择适当方式和成果可能性高的媒体后战略性运营。"
+          },
+          {
+            "question": "Q 博客内容对搜索流入影响多少？",
+            "answer": "实际案例中约80%报告内容对搜索排名产生积极作用，每周2~6次发布时成果高出50%。品牌博客持续活动有效。自主博客代理或公司博客运营都可以。"
+          },
+          {
+            "question": "Q 最有效的内容类型是什么？",
+            "answer": "通过博客的评价、成功案例、产品详细介绍等有效。分析各行业客户现状后树立内容类型，基于相关内容制作博客营销和Naver Place广告内容。基于各行业内部运营专业知识提案定制解决方案，不仅评价还有详细评价、使用评价等。"
+          },
+          {
+            "question": "Q 博客内容更新周期什么好？",
+            "answer": "每周1~2次定期发布和读者沟通（评论应对）有效。"
+          },
+          {
+            "question": "Q Naver咖啡厅曝光对销售有效果吗？",
+            "answer": "Prime Play的营销利用适当的目标广告，选择利用适当分析工具的接近方式。基于此提高咖啡厅曝光，增加品牌知名度，相应提高参与度。"
+          },
+          {
+            "question": "Q 营销成果测定方式如何？",
+            "answer": "曝光数、点击数、CTR、加入者数、转换率等详细内容通过实时统计提供，可直接确认。\n博客·咖啡厅·频道等基于爬虫的平台性能利用实时数据分析工具追踪\"曝光→流入→转换→销售\"流程，可确认更具体内容。"
+          },
+          {
+            "question": "实际进行方式如何？",
+            "answer": "咨询后根据需要的营销方式协议后着手实际业务。"
+          },
+          {
+            "question": "Q 可以发行税务发票吗？",
+            "answer": "税务发票发行必须进行。"
+          },
+          {
+            "question": "Q 可以退款吗？",
+            "answer": "基于基本合约签订阶段时相互协议下制作的合约书退款条件进行。"
+          }
+        ]
+      }
+    }
+  },
+  "SupportPage": {
+    "BackgroundSection": {
+      "mainTitle": "客户支持",
+      "subTextLine1": "有疑问吗？",
+      "subTextLine2": "请留下各种咨询内容",
+      "subTextLine3": ""
+    },
+    "ContactUsSection": {
+      "title": "Contact us",
+      "subtitle": "请填写咨询事项和要求事项。",
+      "form": {
+        "required": "必填",
+        "optional": "选填",
+        "inquiryType": {
+          "label": "咨询类型",
+          "placeholder": "请选择咨询类型。",
+          "options": {
+            "pg": "PG相关",
+            "marketing": "营销相关",
+            "sns": "SNS相关",
+            "csi": "CSI相关",
+            "webApp": "Web/App开发相关",
+            "etc": "其他咨询"
+          }
+        },
+        "customerName": {
+          "label": "客户姓名",
+          "placeholder": "请输入姓名。"
+        },
+        "isBusiness": {
+          "label": "商户状态",
+          "placeholder": "请选择商户状态。",
+          "options": {
+            "yes": "是",
+            "no": "否"
+          }
+        },
+        "email": {
+          "label": "邮箱",
+          "placeholder": "请输入邮箱地址。"
+        },
+        "contact": {
+          "label": "联系方式",
+          "placeholder": "请输入联系方式。"
+        },
+        "content": {
+          "label": "咨询内容",
+          "placeholder": "请输入咨询内容。"
+        },
+        "submitButton": {
+          "default": "发送",
+          "loading": "发送中..."
+        }
+      },
+      "modal": {
+        "success": {
+          "title": "咨询接收完成",
+          "message": "咨询已成功接收。\n我们将尽快回复。"
+        },
+        "error": {
+          "title": "咨询接收失败",
+          "networkTitle": "连接错误",
+          "defaultMessage": "发生错误。\n请重试。",
+          "networkMessage": "无法连接服务器。\n请检查网络。"
+        }
+      }
+    },
+    "LocationSection": {
+      "mapInstructions": {
+        "mobile": "移动地图请使用两个手指。",
+        "desktop": "缩放地图请按住Ctrl或Cmd键滚动。"
+      }
+    },
+    "Modal": {
+      "confirm": "确认"
+    }
+  },
+  "CsiPlayPage": {
+    "ScrollFeaturesSection": {
+      "features": [
+        {
+          "id": 1,
+          "title": "以社区为中心的信息分享",
+          "description": "用户直接参与的社区论坛\n可进行实时意见交换和信息分享。",
+          "screenImage": "/images/community-website-screen.webp"
+        },
+        {
+          "id": 2,
+          "title": "积分系统及活动运营",
+          "description": "轮盘活动、积分积累系统等\n不仅有信息还具备趣味元素。",
+          "screenImage": "/images/points-website-screen.webp"
+        },
+        {
+          "id": 3,
+          "title": "多样化投资信息提供",
+          "description": "股票、加密货币、房地产等多个领域的\n实时行情和新闻一目了然。",
+          "screenImage": "/images/real-estate-website-screen.webp"
+        },
+        {
+          "id": 4,
+          "title": "虚拟币上市信息及行情提供",
+          "description": "Upbit、Bithumb、Binance等主要交易所的\n上市虚拟币信息综合提供。",
+          "screenImage": "/images/coin-website-screen.webp"
+        },
+        {
+          "id": 5,
+          "title": "自主开发自动交易程序",
+          "description": "实现第2代双AI自动交易系统\n提供1:1负责人匹配及使用方法。",
+          "screenImage": "/images/csi-bot.webp"
+        }
+      ]
+    },
+    "FixedButtons": {
+      "visitCsiPlay": "前往CSI-PLAY"
+    }
+  },
+  "PGServicePage": {
+    "TypesSection": {
+      "title": "国内外支付代理一站式",
+      "types": [
+        {
+          "title": "国内支付代理",
+          "features": ["预结算系统支持", "POS、终端、手动支付支持"]
+        },
+        {
+          "title": "海外支付代理",
+          "features": ["API联动简便支持", "海外支付终端支持"]
+        }
+      ]
+    },
+    "JourneySection": {
+      "titleLine1": "从支付解决方案到事业扩张",
+      "titleLine2": "与您同行所有旅程",
+      "descriptionLine1": "无需通过多个公司，国内外等",
+      "descriptionLine2": "可利用多种支付服务"
+    },
+    "FeaturesSection": {
+      "title": "支付基础设施构建的高效综合解决方案",
+      "subtitle": "从PG咨询到开发及发布",
+      "features": [
+        {
+          "title": "安全快速\n支付及结算"
+        },
+        {
+          "title": "简单支付联动"
+        },
+        {
+          "title": "多种支付手段及\n附加服务"
+        },
+        {
+          "title": "线上线下综合支付"
+        }
+      ]
+    },
+    "BackgroundSections": [
+      {
+        "firstLine": "支付、管理、结算",
+        "secondLine": "在网页和移动端综合管理"
+      },
+      {
+        "firstLine": "信用卡、账户转账、现金收据",
+        "secondLine": "提供给网页、应用、支付设备"
+      },
+      {
+        "firstLine": "线上线下综合支付服务",
+        "secondLine": "提供客户定制型"
+      },
+      {
+        "firstLine": "PC网页和移动网页联动指南",
+        "secondLine": "可轻松支付联动"
+      }
+    ],
+    "AdvantagesSection": {
+      "title": "预结算服务的优点",
+      "advantages": [
+        "原需5~9天的结算金额在销售发生次日即可入账",
+        "销售发生后次日结算，可进行快速准确的资金管理",
+        "现金流动性增加，支持顺畅的加盟店运营",
+        "通过合作金融机构提供业界最低手续费率"
+      ]
+    },
+    "FixedButtons": {
+      "visitTyPlay": "前往TY-PLAY",
+      "contactPaymentService": "咨询支付代理服务"
+    }
+  }
+}
