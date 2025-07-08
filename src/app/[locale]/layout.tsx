@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Gothic_A1 } from "next/font/google";
+import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import Script from "next/script";
 import "../globals.css";
@@ -16,15 +16,7 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
-  preload: true,
-});
-
-const gothicA1 = Gothic_A1({
-  subsets: ["latin"],
-  variable: "--font-gothic-a1",
-  display: "swap",
-  preload: true,
-  weight: ["700", "800", "900"],
+  preload: false,
 });
 
 const pretendard = localFont({
@@ -137,7 +129,7 @@ const sCoreDream = localFont({
   ],
   variable: "--font-s-core-dream",
   display: "swap",
-  preload: true,
+  preload: false,
 });
 
 const cafe24OhsquareAir = localFont({
@@ -150,7 +142,7 @@ const cafe24OhsquareAir = localFont({
   ],
   variable: "--font-cafe24-ohsquare-air",
   display: "swap",
-  preload: true,
+  preload: false,
 });
 
 const giants = localFont({
@@ -168,7 +160,7 @@ const giants = localFont({
   ],
   variable: "--font-giants",
   display: "swap",
-  preload: true,
+  preload: false,
 });
 
 // 메타데이터 생성
@@ -289,7 +281,7 @@ export default async function LocaleLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${gothicA1.variable} ${pretendard.variable} ${paperlogy.variable} ${sCoreDream.variable} ${cafe24OhsquareAir.variable} ${giants.variable} antialiased`}
+        className={`${inter.variable} ${pretendard.variable} ${paperlogy.variable} ${sCoreDream.variable} ${cafe24OhsquareAir.variable} ${giants.variable} antialiased`}
       >
         <NextIntlClientProvider>
           <Navbar />

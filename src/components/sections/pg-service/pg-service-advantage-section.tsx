@@ -41,9 +41,9 @@ const PgServiceAdvantagesSection = () => {
         </div>
 
         {/* 이미지와 텍스트 레이아웃 */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-16 xl:gap-20 items-center">
           {/* 왼쪽 이미지 */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end lg:col-span-2">
             <div className="relative w-full max-w-md lg:max-w-lg xl:max-w-xl">
               <Image
                 src="/images/smartphone-creditcard-with-alarm.webp"
@@ -57,7 +57,7 @@ const PgServiceAdvantagesSection = () => {
           </div>
 
           {/* 오른쪽 텍스트 */}
-          <div className="flex flex-col justify-center items-center lg:items-start px-4 lg:px-0">
+          <div className="flex flex-col justify-center items-center lg:items-start px-4 lg:px-0 lg:col-span-3">
             <div className="space-y-6 sm:space-y-8 w-full max-w-md lg:max-w-none">
               {/* 장점 리스트 */}
               {Array.from({ length: advantageCount }).map((_, index) => (
