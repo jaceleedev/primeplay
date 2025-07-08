@@ -2,6 +2,17 @@ import VideoSection from "@/components/sections/home/video-section";
 import ServicesSection from "@/components/sections/viral-marketing/services-section";
 import BackgroundImageSection from "@/components/sections/viral-marketing/background-image-section";
 import ChannelSection from "@/components/sections/viral-marketing/channel-section";
+import { generatePageMetadata } from "@/lib/metadata";
+import type { Metadata } from "next";
+
+interface Props {
+  params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return generatePageMetadata(locale, "viralMarketing");
+}
 
 const ViralMarketingPage = () => {
   return (

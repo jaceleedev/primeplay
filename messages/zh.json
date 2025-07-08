@@ -1,4 +1,41 @@
 {
+  "metadata": {
+    "default": {
+      "title": "Prime Play - 专业数字解决方案",
+      "description": "从营销、支付代理到web/app规划、制作、执行、分析，我们负责到底。能够处理各个领域细节的综合解决方案代理公司。",
+      "keywords": "病毒式营销, 效果营销, 社交媒体营销, 数字营销, 内容营销, 支付代理, 网页开发, 应用开发, Prime Play"
+    },
+    "pages": {
+      "home": {
+        "title": "Prime Play - 综合数字解决方案代理公司",
+        "description": "从营销到支付、开发，提供一站式数字解决方案的Prime Play。"
+      },
+      "viralMarketing": {
+        "title": "病毒式营销 - Prime Play",
+        "description": "提供SNS营销、Naver营销、品牌博客等经过验证的病毒式营销服务。"
+      },
+      "webAppDev": {
+        "title": "Web/App开发 - Prime Play",
+        "description": "从规划到设计、开发、维护，负责Web和App开发的所有流程。"
+      },
+      "pgService": {
+        "title": "PG支付服务 - Prime Play",
+        "description": "提供国内外支付代理服务和快速结算系统的PG服务。"
+      },
+      "csiPlay": {
+        "title": "CSI-PLAY - Prime Play",
+        "description": "为股票、虚拟货币、房地产投资者提供信息共享和自动交易的社区平台。"
+      },
+      "faq": {
+        "title": "常见问题 - Prime Play",
+        "description": "查看关于Prime Play服务的常见问题。"
+      },
+      "support": {
+        "title": "客户支持 - Prime Play",
+        "description": "如有任何疑问请随时联系我们。我们提供客户定制解决方案。"
+      }
+    }
+  },
   "Navbar": {
     "businessArea": "业务领域",
     "viralMarketing": "病毒式营销",

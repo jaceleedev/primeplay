@@ -4,6 +4,17 @@ import BusinessSolutionSection from "@/components/sections/home/business-solutio
 import ProductSection from "@/components/sections/home/product-section";
 import PlayToPSection from "@/components/sections/home/play-to-p-section";
 import ContactSection from "@/components/sections/home/contact-section";
+import { generatePageMetadata } from "@/lib/metadata";
+import type { Metadata } from "next";
+
+interface Props {
+  params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return generatePageMetadata(locale, "home");
+}
 
 export default function Home() {
   return (

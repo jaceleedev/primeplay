@@ -9,7 +9,9 @@ import ScrollToTopButton from "@/components/ui/scroll-to-top-button";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { getTranslations } from "next-intl/server";
 
+// 폰트 설정
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -169,28 +171,103 @@ const giants = localFont({
   preload: true,
 });
 
-export const metadata: Metadata = {
-  title: "프라임플레이 - Prime Play",
-  description:
-    "마케팅, 결제대행, web/app 기획부터 제작, 실행, 분석까지 책임집니다. 다양한 분야의 디테일을 모두 챙길 수 있는 종합 솔루션 대행사.",
-  keywords: [
-    "바이럴 마케팅",
-    "퍼포먼스 마케팅",
-    "SNS 마케팅",
-    "디지털 마케팅",
-    "콘텐츠 마케팅",
-    "퍼포먼스 마케팅",
-    "언론 홍보",
-    "TY플레이",
-    "SNS플레이",
-    "결제대행사",
-    "디지털 마케팅 에이전시",
-    "프라임플레이",
-    "웹 개발",
-    "앱 개발",
-  ],
-};
+// 메타데이터 생성
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "metadata" });
 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://primeplay.kr";
+
+  // PNG 이미지 사용
+  const ogImageLarge = `${baseUrl}/images/og-image-1200x630.png`;
+  const ogImageSquare = `${baseUrl}/images/og-image-1200x1200.png`;
+
+  return {
+    metadataBase: new URL(baseUrl),
+    title: {
+      default: t("default.title"),
+      template: "%s | Prime Play",
+    },
+    description: t("default.description"),
+    keywords: t("default.keywords"),
+
+    // 기본 정보
+    authors: [{ name: "Prime Play" }],
+    creator: "Prime Play",
+    publisher: "Prime Play",
+
+    // Open Graph
+    openGraph: {
+      type: "website",
+      locale: locale,
+      url: locale === "ko" ? baseUrl : `${baseUrl}/${locale}`,
+      siteName: "Prime Play",
+      title: t("default.title"),
+      description: t("default.description"),
+      images: [
+        {
+          url: ogImageLarge,
+          width: 1200,
+          height: 630,
+          alt: t("default.title"),
+        },
+        {
+          url: ogImageSquare,
+          width: 1200,
+          height: 1200,
+          alt: t("default.title"),
+        },
+      ],
+    },
+
+    // Twitter
+    twitter: {
+      card: "summary_large_image",
+      title: t("default.title"),
+      description: t("default.description"),
+      images: [ogImageLarge],
+    },
+
+    // 다국어 설정
+    alternates: {
+      canonical: locale === "ko" ? baseUrl : `${baseUrl}/${locale}`,
+      languages: {
+        ko: baseUrl,
+        en: `${baseUrl}/en`,
+        ja: `${baseUrl}/ja`,
+        zh: `${baseUrl}/zh`,
+      },
+    },
+
+    // 크롤링 설정
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+
+    // 추가 설정
+    category: "technology",
+    referrer: "origin-when-cross-origin",
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
+  };
+}
+
+// 레이아웃 컴포넌트
 export default async function LocaleLayout({
   children,
   params,
@@ -198,7 +275,6 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }>) {
-  // Ensure that the incoming `locale` is valid
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();

@@ -1,4 +1,41 @@
 {
+  "metadata": {
+    "default": {
+      "title": "Prime Play - プライムプレイ",
+      "description": "マーケティング、決済代行、web/app企画から制作、実行、分析まで責任を持って対応いたします。様々な分野の詳細をすべて対応できる総合ソリューション代行会社。",
+      "keywords": "バイラルマーケティング, パフォーマンスマーケティング, SNSマーケティング, デジタルマーケティング, コンテンツマーケティング, 決済代行, ウェブ開発, アプリ開発, プライムプレイ"
+    },
+    "pages": {
+      "home": {
+        "title": "Prime Play - 総合デジタルソリューション代行会社",
+        "description": "マーケティングから決済、開発まで一貫したデジタルソリューションを提供するPrime Playです。"
+      },
+      "viralMarketing": {
+        "title": "バイラルマーケティング - Prime Play",
+        "description": "SNSマーケティング、Naverマーケティング、ブランドブログなど実証されたバイラルマーケティングサービスを提供します。"
+      },
+      "webAppDev": {
+        "title": "Web/App開発 - Prime Play",
+        "description": "企画からデザイン、開発、メンテナンスまでWebとアプリ開発のすべてのプロセスを責任を持って対応します。"
+      },
+      "pgService": {
+        "title": "PG決済サービス - Prime Play",
+        "description": "国内外決済代行サービスと高速決済システムを提供するPGサービスです。"
+      },
+      "csiPlay": {
+        "title": "CSI-PLAY - Prime Play",
+        "description": "株式、仮想通貨、不動産投資家のための情報共有および自動売買コミュニティプラットフォームです。"
+      },
+      "faq": {
+        "title": "よくある質問 - Prime Play",
+        "description": "Prime Playサービスに関する疑問点をご確認ください。"
+      },
+      "support": {
+        "title": "カスタマーサポート - Prime Play",
+        "description": "ご質問がございましたらいつでもお気軽にお問い合わせください。お客様に合わせたソリューションを提供いたします。"
+      }
+    }
+  },
   "Navbar": {
     "businessArea": "事業領域",
     "viralMarketing": "バイラルマーケティング",

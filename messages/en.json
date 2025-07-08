@@ -1,4 +1,41 @@
 {
+  "metadata": {
+    "default": {
+      "title": "Prime Play - Comprehensive Digital Solutions",
+      "description": "From marketing and payment processing to web/app development - we handle every detail of your digital solution needs.",
+      "keywords": "viral marketing, performance marketing, social media marketing, digital marketing, payment gateway, web development, app development, Prime Play"
+    },
+    "pages": {
+      "home": {
+        "title": "Prime Play - Complete Digital Solution Agency",
+        "description": "Prime Play provides one-stop digital solutions from marketing to payments and development."
+      },
+      "viralMarketing": {
+        "title": "Viral Marketing - Prime Play",
+        "description": "We provide proven viral marketing services including SNS marketing, Naver marketing, and brand blogging."
+      },
+      "webAppDev": {
+        "title": "Web/App Development - Prime Play",
+        "description": "We handle every aspect of web and app development from planning to design, development, and maintenance."
+      },
+      "pgService": {
+        "title": "PG Payment Service - Prime Play",
+        "description": "Domestic and international payment gateway services with fast settlement systems."
+      },
+      "csiPlay": {
+        "title": "CSI-PLAY - Investment Community",
+        "description": "Information sharing and automated trading community platform for stock, crypto, and real estate investors."
+      },
+      "faq": {
+        "title": "FAQ - Prime Play",
+        "description": "Find answers to frequently asked questions about Prime Play services."
+      },
+      "support": {
+        "title": "Customer Support - Prime Play",
+        "description": "Contact us anytime with your inquiries. We provide customized solutions for our customers."
+      }
+    }
+  },
   "Navbar": {
     "businessArea": "Business Area",
     "viralMarketing": "Viral Marketing",
